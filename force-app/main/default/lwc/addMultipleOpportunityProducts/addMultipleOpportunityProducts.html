@@ -1,0 +1,87 @@
+<template>
+    <template if:true={showFlow}>
+        <div style="margin-top:50px;  margin-bottom:50px;" >
+            <lightning-flow flow-api-name={flowName} flow-input-variables={flowInputVariables}
+                onstatuschange={handleFlowStatusChange}>
+            </lightning-flow>
+        </div>
+    </template>
+    <template if:false={showFlow}>
+        <template if:true={showOpty}>
+            <div style="margin-top:50px;  margin-bottom:50px;" >
+            <lightning-record-edit-form object-api-name="Opportunity" >
+                <lightning-messages></lightning-messages>
+                <div style="margin-bottom:10px; margin-left:20px; margin-right:10px;">
+                    <table>
+                        <template for:each={optyData} for:item="col">
+                            <tr key={col.key}>
+                                <td>
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-size_1-of-1">
+                                            <lightning-input-field data-item={col.key} field-name={col.key} data-colname={col.key}  value={col.value} required="true" onchange={handleChangeOpty}></lightning-input-field>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </template>
+                    </table>
+                </div>
+            </lightning-record-edit-form>
+            <div class="slds-grid slds-gutters slds-text-align_center" style="margin-top:20px; margin-bottom:10px; ">
+                <lightning-layout-item flexibility="auto" padding="horizontal-small" alignment-bump="right">
+                    <lightning-button variant="brand" label="Save" title="Submit" onclick={handleSaveValues} class="slds-m-left_x-small"></lightning-button>  
+                </lightning-layout-item>
+            </div>
+            </div>
+        </template>
+        <template if:false={showOpty}>
+        <div style="height:300px;  margin-bottom:100px;">
+            <div class="slds-grid slds-gutters" style="margin-top:10px; margin-bottom:10px; margin-left:20px; margin-right:10px; width:100%">
+                <template for:each={columns} for:item="col">
+                    <div class={col.classDetails} key={col.fieldAPI}>
+                        <span><lightning-formatted-text value={col.fieldLabel}></lightning-formatted-text></span>
+                    </div>
+                </template>
+            </div>
+            <template for:each={data} for:item="oli">
+                <lightning-record-edit-form object-api-name="OpportunityLineItem" key={oli.recordId}>
+                    <lightning-messages></lightning-messages>
+                    <div class="slds-grid slds-gutters" style="margin-bottom:10px; margin-left:20px; margin-right:10px; width:100%">
+                        <template for:each={oli.wData} for:item="col">
+                            <div class={col.classDetails} key={col.recordId}>
+                                <span><lightning-input-field data-item={oli.recordId} field-name={col.fieldAPI} data-colname={col.fieldAPI}  value={col.fieldValue} disabled={col.disabled} variant="label-hidden" onchange={handleChange}></lightning-input-field>{col.labelValue}</span>
+                                <template if:true={col.isLabel}>
+                                    
+                                </template>
+                                <template if:false={col.isLabel}>
+                                    
+                                </template>
+                            </div>
+                        </template>
+                        <div class={oli.classDetails}>
+                            <lightning-button-icon name={oli.recordId} data-id={oli.recordId} icon-name="utility:delete" alternative-text="Delete" class="slds-m-left_xx-small" title="Delete" onclick={handleDelete}></lightning-button-icon>
+                            <lightning-button-icon name={oli.recordId} data-id={oli.recordId} icon-name="utility:copy" alternative-text="Transfer OLI to Cloned Opp" class="slds-m-left_xx-small" title="Transfer OLI to Cloned Opp" onclick={handleClone} disabled={isOpportunityClosed}></lightning-button-icon>
+                        </div>
+                    </div>
+                </lightning-record-edit-form>
+            </template>  
+            
+            <div if:false={isLoaded} class="slds-is-relative">
+                <lightning-spinner
+                    alternative-text="In Progress..." variant="brand">
+                </lightning-spinner>
+            </div>
+            <template if:true={isFooterButtonVisible}>
+                <div class="slds-grid slds-gutters slds-text-align_center" style="margin-top:20px; margin-bottom:10px; ">
+                    <lightning-layout-item flexibility="auto" padding="horizontal-small" alignment-bump="right">
+                        <lightning-button variant="brand" label="Add New" title="Add New Product" onclick={addNew} class="slds-m-left_x-small"></lightning-button>
+                        <lightning-button variant="brand" label="Save" title="Submit Product" onclick={handleSave} class="slds-m-left_x-small"></lightning-button>
+                        <lightning-button variant="brand" label="Cancel" title="Cancel" onclick={closeAction} class="slds-m-left_x-small"></lightning-button>   
+                    </lightning-layout-item>
+                </div>
+            </template>
+        </div>
+    </template>
+    </template>
+    
+</template>

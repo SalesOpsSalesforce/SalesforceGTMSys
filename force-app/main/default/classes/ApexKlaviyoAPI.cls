@@ -1,0 +1,97 @@
+public class ApexKlaviyoAPI implements Database.AllowsCallouts {
+    /**
+    * Handle any Track and Identify calls originating from other Apex code
+     */
+    private String baseUrl = 'https://a.klaviyo.com/api/';
+    private String publicKey = '';
+    private String privateKey = '';
+
+    // Construct API request object using a map of API keys
+    public ApexKlaviyoAPI(Map<String,String>  apiKeys) {
+      this.publicKey = apiKeys.get('PublicKey');
+      this.privateKey = apiKeys.get('PrivateKey');
+    }
+
+    // Lock the timestamp to "now"
+    public Long lockTimestamp() {
+        Datetime dt = Datetime.now();
+        return dt.getTime() / 1000;
+    }
+
+    // Base64 and URL encode parameters for request
+    public String buildQueryString(Map<String,Object> params) {
+        return EncodingUtil.urlEncode(
+          EncodingUtil.base64Encode(
+            Blob.valueOf(
+              JSON.serialize(params)
+            )
+          ), 'UTF-8'
+        );
+    }
+
+    // Make a request to the specified Klaviyo API path
+    public void makeRequest(String method, String url) {
+      // Build request
+      HttpRequest request = new HttpRequest();
+      request.setTimeout(5000);
+      request.setMethod(method);
+      request.setEndpoint(url);
+      // Send request
+      try {
+          HTTPResponse res = new HTTP().send(request);
+      	  System.debug(url);
+          System.debug(res.toString());
+      } catch (System.CalloutException e) {
+      	  System.debug(url);
+          System.debug('ERROR:' + e);
+      }
+    }
+
+    // Build Identify payload
+    public Map<String,Object> buildIdentifyPayload(Map<String,Object> properties) {
+        return new Map<String,Object>{
+          'token' => this.publicKey,
+          'properties' => properties
+        };
+    }
+
+    // Build Identify URL and send request
+    public void identify(Map<String,Object> payload) {
+        String url = this.baseUrl + 'identify' + '?data=';
+        makeRequest('GET', url + buildQueryString(payload));
+    }
+
+    // Build Track payload if track is sent with only an event name and email
+    public Map<String,Object> buildTrackPayload(String event, Map<String,Object> customerProperties) {
+      return buildTrackPayload(event, customerProperties, new Map<String,Object> ());
+    }
+
+    // Build Track payload if track is sent with only an event name and email and timestamp
+    public Map<String,Object> buildTrackPayload(String event, Map<String,Object> customerProperties, Long timestamp) {
+      return buildTrackPayload(event, customerProperties, new Map<String,Object> (), timestamp);
+    }
+
+    // Build Track payload if track is sent without a timestamp, lock it to now
+    public Map<String,Object> buildTrackPayload(String event, Map<String,Object> customerProperties, Map<String,Object> properties) {
+      return buildTrackPayload(event, customerProperties, properties, lockTimestamp());
+    }
+
+    // Build Track payload if all parameters are sent
+    public Map<String,Object> buildTrackPayload(String event, Map<String,Object> customerProperties, Map<String,Object> properties, Long timestamp) {
+        return new Map<String,Object> {
+          'token' => this.publicKey,
+          'event' => event,
+          'customer_properties' => customerProperties,
+          'properties' => properties,
+          'time' => timestamp
+      };
+    }
+
+    public void track(Map<String,Object> payload) {
+        String url = this.baseUrl + 'track' + '?data=';
+        makeRequest('GET', url + buildQueryString(payload));
+    }
+
+
+
+}

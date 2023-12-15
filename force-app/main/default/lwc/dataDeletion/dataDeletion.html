@@ -1,0 +1,19 @@
+<template>
+
+    <lightning-card title="Data Deletion">
+
+        <div class="slds-p-horizontal_small">
+            <div class="slds-m-vertical_medium">
+                <lightning-input type="email" label="Enter the email address (only one at a time)" value={emailAddress} onchange={handleChange}></lightning-input>
+            </div>
+
+            <div>
+                {leadJSON}
+            </div>
+
+            <lightning-button variant="brand" label="Delete" title="Search" onclick={handleClick}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </lightning-card>
+
+</template>
