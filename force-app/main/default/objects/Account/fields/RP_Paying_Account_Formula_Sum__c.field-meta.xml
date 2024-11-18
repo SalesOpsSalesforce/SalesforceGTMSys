@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Paying_Account_Formula_Sum__c</fullName>
+    <externalId>false</externalId>
+    <label>Paying Account Formula Sum</label>
+    <summarizedField>Opportunity.FM_Is_Paying_Account_Formula__c</summarizedField>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

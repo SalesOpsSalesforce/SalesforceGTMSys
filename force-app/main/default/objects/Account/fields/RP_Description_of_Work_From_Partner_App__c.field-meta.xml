@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Description_of_Work_From_Partner_App__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>From the Klaviyo Partner Application Google form. Loaded through Zapier. Asks &quot;Which best describes your work?&quot;</inlineHelpText>
+    <label>Description of Work From Partner App</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

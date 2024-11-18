@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FLOW_Date_of_Last_Reach_out_to_AM__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The date of the most recent activity indicating a client reaching out to an Account Manager.</inlineHelpText>
+    <label>Date of Last Reach out to CSM</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

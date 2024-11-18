@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_SIC_4_Digit_Codes__c</fullName>
+    <description>A list of primary and secondary four digit company Standard Industry Classification (SIC) codes.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A list of primary and secondary four digit company Standard Industry Classification (SIC) codes.</inlineHelpText>
+    <label>Clearbit SIC 4 Digit Codes</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

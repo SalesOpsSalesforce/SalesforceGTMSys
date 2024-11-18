@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fferpcore__VatStatus__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The tax status for this account for VAT/GST accounts.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The tax status for this account for VAT/GST accounts.</inlineHelpText>
+    <label>Tax Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Home</fullName>
+                <default>false</default>
+                <label>Home</label>
+            </value>
+            <value>
+                <fullName>EC Non-registered</fullName>
+                <default>false</default>
+                <label>EC Non-registered</label>
+            </value>
+            <value>
+                <fullName>EC Registered</fullName>
+                <default>false</default>
+                <label>EC Registered</label>
+            </value>
+            <value>
+                <fullName>Export</fullName>
+                <default>false</default>
+                <label>Export</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

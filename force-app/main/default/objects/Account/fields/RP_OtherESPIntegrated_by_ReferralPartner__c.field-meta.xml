@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_OtherESPIntegrated_by_ReferralPartner__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>From Klaviyo Partner Program Application. ESP used by the client.</inlineHelpText>
+    <label>Referral Partner&apos;s ESPs</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

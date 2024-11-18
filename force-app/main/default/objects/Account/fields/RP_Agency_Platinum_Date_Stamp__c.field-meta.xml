@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Agency_Platinum_Date_Stamp__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The Date/Time stamp for when a Referral Partner&apos;s Tier is set to &quot;Platinum&quot;</inlineHelpText>
+    <label>Agency Platinum Date Stamp</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FINANCE_Payment_Plan_Frequency__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The frequency at which payments are made. Use &quot;Monthly + Manual Overages&quot; if an account is charged extra for the number of emails they send on a monthly basis.</inlineHelpText>
+    <label>Payment Plan Frequency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Monthly</fullName>
+                <default>true</default>
+                <label>Monthly</label>
+            </value>
+            <value>
+                <fullName>Monthly + Manual Overages</fullName>
+                <default>false</default>
+                <label>Monthly + Manual Overages</label>
+            </value>
+            <value>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+                <label>Quarterly</label>
+            </value>
+            <value>
+                <fullName>Semiannually</fullName>
+                <default>false</default>
+                <label>Semiannually</label>
+            </value>
+            <value>
+                <fullName>Annually</fullName>
+                <default>false</default>
+                <label>Annually</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

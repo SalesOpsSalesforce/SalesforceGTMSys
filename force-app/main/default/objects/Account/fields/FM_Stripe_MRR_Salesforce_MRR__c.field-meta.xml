@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Stripe_MRR_Salesforce_MRR__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF
+(AND(ISPICKVAL(FINANCE_Payment_Method__c, &quot;Stripe&quot;),ISPICKVAL(FINANCE_Payment_Plan_Frequency__c,&quot;Monthly&quot;)),
+MRRCalc__c-Klaviyo_Product_Usage__r.PRODUCT_Stripe_Net_MRR__c,
+MRRCalc__c-MRRCalc__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Account MRR in Salesforce minus the Net MRR from Stripe.</inlineHelpText>
+    <label>Stripe MRR - Salesforce MRR</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

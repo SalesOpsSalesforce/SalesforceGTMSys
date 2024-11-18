@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SUPPORT_Account_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>THIS FIELD HAS HISTORY TRACKING APPLIED - DO NOT REMOVE HISTORY TRACKING.
+This field is used by Data Engineering in assessing who the month_start_csm and month_end_csm was at the month start and month end respectively for an account. Do not disable tracking on this field without first checking with Padrig Tuck and Evan Cover as it has direct implications in determining variable compensation for the CSM organization.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The assigned Account Manager for the related Klaviyo account.</inlineHelpText>
+    <label>Customer Success Manager</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Accountmanager</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

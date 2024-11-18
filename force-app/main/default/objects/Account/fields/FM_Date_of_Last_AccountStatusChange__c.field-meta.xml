@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Date_of_Last_AccountStatusChange__c</fullName>
+    <description>Date/Time stamp of the last time the Account Status was Changed. Stamped by a Flow.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date/Time stamp of the last time the Account Status was Changed. Stamped by a Flow.</inlineHelpText>
+    <label>Date of Last Account Status Change</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

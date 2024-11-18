@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Transfer_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>CS Transfer Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Currently Managed by Partner</fullName>
+                <default>false</default>
+                <label>Currently Managed by Partner</label>
+            </value>
+            <value>
+                <fullName>Customer Requested New CSM</fullName>
+                <default>false</default>
+                <label>Customer Requested New CSM</label>
+            </value>
+            <value>
+                <fullName>Capacity Constraints</fullName>
+                <default>false</default>
+                <label>Capacity Constraints</label>
+            </value>
+            <value>
+                <fullName>High Growth Account</fullName>
+                <default>false</default>
+                <label>High Growth Account</label>
+            </value>
+            <value>
+                <fullName>Incorrect Geo or Timezone</fullName>
+                <default>false</default>
+                <label>Incorrect Geo or Timezone</label>
+            </value>
+            <value>
+                <fullName>No Longer Managed by Partner</fullName>
+                <default>false</default>
+                <label>No Longer Managed by Partner</label>
+            </value>
+            <value>
+                <fullName>CSM Is Inactive</fullName>
+                <default>false</default>
+                <label>CSM Is Inactive</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Agency to Mid Market - MRR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Agency to Mid Market - MRR</label>
+            </value>
+            <value>
+                <fullName>Agency to Mid Touch - MRR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Agency to Mid Touch - MRR</label>
+            </value>
+            <value>
+                <fullName>Agency to SMB - Red Health</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Agency to SMB - Red Health</label>
+            </value>
+            <value>
+                <fullName>CSM Attrition,</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CSM Attrition</label>
+            </value>
+            <value>
+                <fullName>CSM to Growth - MRR,</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CSM to Growth - MRR</label>
+            </value>
+            <value>
+                <fullName>CSM to Growth - Unresponsive,,</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CSM to Growth - Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Geographic Location,</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Geographic Location</label>
+            </value>
+            <value>
+                <fullName>Growth to Agency - Partner MRR Threshold,</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Growth to Agency - Partner MRR Threshold</label>
+            </value>
+            <value>
+                <fullName>Growth to CSM - MRR,</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Growth to CSM - MRR</label>
+            </value>
+            <value>
+                <fullName>Growth to Mid Market - MRR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Growth to Mid Market - MRR</label>
+            </value>
+            <value>
+                <fullName>Growth to Mid Touch - MRR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Growth to Mid Touch - MRR</label>
+            </value>
+            <value>
+                <fullName>Growth to SMB - Red Health</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Growth to SMB - Red Health</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

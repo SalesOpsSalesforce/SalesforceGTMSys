@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PlatformPartnerMatchKey__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>A unique Id used to tie lead sources and details to a specific Partner Account. TP 103794. Did it this way to avoid hardcoding Ids into functionality. Many platform partners have worked by simply being a lead source to date.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>A unique Id used to tie lead sources and details to a specific Partner Account.</inlineHelpText>
+    <label>PlatformPartnerMatchKey</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

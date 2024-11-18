@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Registration_Expiration_Days__c</fullName>
+    <description>CAM or Channel Ops maintains that indicates the number of days they have for the lead to close. Then we will use that field when the payout spins up (at closed won) to check &quot;Is the time between lead submission and close date &lt; the number field on the partner&quot;. This field tells us what the terms of the agreement are and how many days from lead submission to opportunity close they have in which they will get payout credit. Added as part of TP#111315</description>
+    <externalId>false</externalId>
+    <label>Partner Registration Expiration Days</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

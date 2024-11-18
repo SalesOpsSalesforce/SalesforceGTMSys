@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Partner_Split_Created__c</fullName>
+    <description>SFDC- 1140. Date stamped when first split created for a Partner. Used in Scheduled Apex to roll up MRR amounts attributed to Partner.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SFDC- 1140. Date stamped when first split created for a Partner. Used in Scheduled Apex to roll up MRR amounts attributed to Partner.</inlineHelpText>
+    <label>First Partner Split Created</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

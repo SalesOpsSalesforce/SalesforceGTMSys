@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPU_Aggregated_Ecommerce_Platform__c</fullName>
+    <description>Partner Ecommerce platform.
+The value is populated from Aggregated Ecommerce Platform field (bi_Aggregated_Ecommerce_Platform__c) of KPU object record</description>
+    <externalId>false</externalId>
+    <label>KPU: Aggregated Ecommerce Platform</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Shopify</fullName>
+                <default>false</default>
+                <label>Shopify</label>
+            </value>
+            <value>
+                <fullName>Platform not known</fullName>
+                <default>false</default>
+                <label>Platform not known</label>
+            </value>
+            <value>
+                <fullName>Shopify Plus</fullName>
+                <default>false</default>
+                <label>Shopify Plus</label>
+            </value>
+            <value>
+                <fullName>WooCommerce</fullName>
+                <default>false</default>
+                <label>WooCommerce</label>
+            </value>
+            <value>
+                <fullName>BigCommerce</fullName>
+                <default>false</default>
+                <label>BigCommerce</label>
+            </value>
+            <value>
+                <fullName>Magento</fullName>
+                <default>false</default>
+                <label>Magento</label>
+            </value>
+            <value>
+                <fullName>Salesforce Commerce Cloud</fullName>
+                <default>false</default>
+                <label>Salesforce Commerce Cloud</label>
+            </value>
+            <value>
+                <fullName>API Integration</fullName>
+                <default>false</default>
+                <label>API Integration</label>
+            </value>
+            <value>
+                <fullName>Long Tail</fullName>
+                <default>false</default>
+                <label>Long Tail</label>
+            </value>
+            <value>
+                <fullName>PrestaShop</fullName>
+                <default>false</default>
+                <label>PrestaShop</label>
+            </value>
+            <value>
+                <fullName>WIX</fullName>
+                <default>false</default>
+                <label>WIX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

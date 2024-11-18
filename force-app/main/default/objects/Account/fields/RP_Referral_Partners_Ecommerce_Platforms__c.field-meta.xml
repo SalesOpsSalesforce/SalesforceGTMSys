@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Referral_Partners_Ecommerce_Platforms__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Multi-select picklist of the platforms the Referral Partner&apos;s Clients use.</inlineHelpText>
+    <label>Referral Partner&apos;s Ecommerce Platforms</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

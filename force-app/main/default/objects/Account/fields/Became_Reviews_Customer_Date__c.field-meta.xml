@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Became_Reviews_Customer_Date__c</fullName>
+    <description>SFDC-1346. Days since the most recent closed won Additional Product Reviews opportunity.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SFDC-1346. Days since the most recent closed won Additional Product Reviews opportunity.</inlineHelpText>
+    <label>Became Reviews Customer Date</label>
+    <summarizedField>Opportunity.CloseDate</summarizedField>
+    <summaryFilterItems>
+        <field>Opportunity.Concatenated_Net_New_Opportunity_Product__c</field>
+        <operation>contains</operation>
+        <value>Klaviyo Reviews</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>Closed Won</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RU_Has_Opportunity_for_Review__c</fullName>
+    <externalId>false</externalId>
+    <label>Has Opportunity for Review</label>
+    <summarizedField>Opportunity.FM_Needs_Review__c</summarizedField>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

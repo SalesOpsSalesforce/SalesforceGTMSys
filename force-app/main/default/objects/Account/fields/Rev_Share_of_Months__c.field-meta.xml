@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rev_Share_of_Months__c</fullName>
+    <description>Number of Months a partner receives Rev Share credit for.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of Months a partner receives Rev Share credit for.</inlineHelpText>
+    <label>Rev Share # of Months</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

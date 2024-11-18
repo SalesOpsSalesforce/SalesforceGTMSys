@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stamped_Territory__c</fullName>
+    <description>SFDC 5309 - This is a new picklist strictly for the use of Account Claim Dispute Triggered on Account Claim Flow</description>
+    <externalId>false</externalId>
+    <label>Stamped Territory</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AMER Entrepreneur Central</fullName>
+                <default>false</default>
+                <label>AMER Entrepreneur Central</label>
+            </value>
+            <value>
+                <fullName>AMER Entrepreneur East</fullName>
+                <default>false</default>
+                <label>AMER Entrepreneur East</label>
+            </value>
+            <value>
+                <fullName>AMER Entrepreneur West</fullName>
+                <default>false</default>
+                <label>AMER Entrepreneur West</label>
+            </value>
+            <value>
+                <fullName>AMER Mid Market Central</fullName>
+                <default>false</default>
+                <label>AMER Mid Market Central</label>
+            </value>
+            <value>
+                <fullName>AMER Mid Market East</fullName>
+                <default>false</default>
+                <label>AMER Mid Market East</label>
+            </value>
+            <value>
+                <fullName>AMER Mid Market West</fullName>
+                <default>false</default>
+                <label>AMER Mid Market West</label>
+            </value>
+            <value>
+                <fullName>AMER SMB Central</fullName>
+                <default>false</default>
+                <label>AMER SMB Central</label>
+            </value>
+            <value>
+                <fullName>AMER SMB East</fullName>
+                <default>false</default>
+                <label>AMER SMB East</label>
+            </value>
+            <value>
+                <fullName>AMER SMB West</fullName>
+                <default>false</default>
+                <label>AMER SMB West</label>
+            </value>
+            <value>
+                <fullName>APAC Entrepreneur</fullName>
+                <default>false</default>
+                <label>APAC Entrepreneur</label>
+            </value>
+            <value>
+                <fullName>APAC SMB</fullName>
+                <default>false</default>
+                <label>APAC SMB</label>
+            </value>
+            <value>
+                <fullName>APAC Mid Market</fullName>
+                <default>false</default>
+                <label>APAC Mid Market</label>
+            </value>
+            <value>
+                <fullName>EMEA SMB France</fullName>
+                <default>false</default>
+                <label>EMEA SMB France</label>
+            </value>
+            <value>
+                <fullName>EMEA Entrepreneur DACH</fullName>
+                <default>false</default>
+                <label>EMEA Entrepreneur DACH</label>
+            </value>
+            <value>
+                <fullName>EMEA Entrepreneur France</fullName>
+                <default>false</default>
+                <label>EMEA Entrepreneur France</label>
+            </value>
+            <value>
+                <fullName>EMEA SMB DACH</fullName>
+                <default>false</default>
+                <label>EMEA SMB DACH</label>
+            </value>
+            <value>
+                <fullName>EMEA SMB Rest of EMEA</fullName>
+                <default>false</default>
+                <label>EMEA SMB Rest of EMEA</label>
+            </value>
+            <value>
+                <fullName>EMEA Entrepreneur Rest of EMEA</fullName>
+                <default>false</default>
+                <label>EMEA Entrepreneur Rest of EMEA</label>
+            </value>
+            <value>
+                <fullName>EMEA Mid Market DACH</fullName>
+                <default>false</default>
+                <label>EMEA Mid Market DACH</label>
+            </value>
+            <value>
+                <fullName>EMEA Mid Market France</fullName>
+                <default>false</default>
+                <label>EMEA Mid Market France</label>
+            </value>
+            <value>
+                <fullName>EMEA Mid Market Rest of EMEA</fullName>
+                <default>false</default>
+                <label>EMEA Mid Market Rest of EMEA</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

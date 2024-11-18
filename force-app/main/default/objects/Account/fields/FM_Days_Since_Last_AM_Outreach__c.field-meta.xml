@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Days_Since_Last_AM_Outreach__c</fullName>
+    <externalId>false</externalId>
+    <formula>TODAY()-SUPPORT_DateofLastAMReachOut__c</formula>
+    <inlineHelpText>The number days between the date of last AM reach out and today.</inlineHelpText>
+    <label>Days Since Last AM Outreach</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

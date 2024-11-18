@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stamp_Current_Owner_Director__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SFDC 5309 - Used for Email Alerts related to Account Dispute Process. Updated in Account Claim Flow</description>
+    <externalId>false</externalId>
+    <label>Stamp Current Owner Director</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>AccountsEHgb</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

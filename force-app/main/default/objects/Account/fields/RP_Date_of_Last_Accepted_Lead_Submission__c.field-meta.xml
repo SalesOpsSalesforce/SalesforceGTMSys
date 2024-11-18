@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Date_of_Last_Accepted_Lead_Submission__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Date of the Last Accepted Lead Submission by the Referral Partner.</inlineHelpText>
+    <label>Date of Last Accepted Lead Submission</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

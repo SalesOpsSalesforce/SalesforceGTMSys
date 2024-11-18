@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_Location__c</fullName>
+    <description>The company headquarters address.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The company headquarters address.</inlineHelpText>
+    <label>Clearbit Location</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

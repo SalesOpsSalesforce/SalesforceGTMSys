@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stripe_Customer_ID__c</fullName>
+    <caseSensitive>true</caseSensitive>
+    <externalId>true</externalId>
+    <inlineHelpText>The ID that is unique to the connected Klaviyo Account&apos;s Stripe account.</inlineHelpText>
+    <label>Stripe Customer ID</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

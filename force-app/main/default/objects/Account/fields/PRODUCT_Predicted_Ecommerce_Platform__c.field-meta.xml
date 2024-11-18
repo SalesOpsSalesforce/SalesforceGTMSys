@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Predicted_Ecommerce_Platform__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Using Datanyze to predict the Lead&apos;s ecommerce platform. Set upon signup and updated with nightly Klaviyo - SFDC Sync.</inlineHelpText>
+    <label>Ecommerce Platform (Klaviyo / Algorithm)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Shopify</fullName>
+                <default>false</default>
+                <label>Shopify</label>
+            </value>
+            <value>
+                <fullName>Magento</fullName>
+                <default>false</default>
+                <label>Magento</label>
+            </value>
+            <value>
+                <fullName>Magento 2</fullName>
+                <default>false</default>
+                <label>Magento 2</label>
+            </value>
+            <value>
+                <fullName>BigCommerce</fullName>
+                <default>false</default>
+                <label>BigCommerce</label>
+            </value>
+            <value>
+                <fullName>WooCommerce</fullName>
+                <default>false</default>
+                <label>WooCommerce</label>
+            </value>
+            <value>
+                <fullName>Spree</fullName>
+                <default>false</default>
+                <label>Spree</label>
+            </value>
+            <value>
+                <fullName>OpenCart</fullName>
+                <default>false</default>
+                <label>OpenCart</label>
+            </value>
+            <value>
+                <fullName>Custom or Home Grown</fullName>
+                <default>false</default>
+                <label>Custom or Home Grown</label>
+            </value>
+            <value>
+                <fullName>Not Ecommerce</fullName>
+                <default>false</default>
+                <label>Not Ecommerce</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

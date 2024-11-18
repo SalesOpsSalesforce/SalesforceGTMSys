@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Account_Claim_eCommerce_Platform__c</fullName>
+    <description>SFDC-243 Stores value of eCommerce Platform populated in Account Claim flow. Used to update eCommerce Platform field upon approval of account claim.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Stores value of eCommerce Platform populated in Account Claim flow. Used to update eCommerce Platform field upon approval of account claim.</inlineHelpText>
+    <label>Pending Account Claim eCommerce Platform</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Ecommerce_Platform</valueSetName>
+    </valueSet>
+</CustomField>

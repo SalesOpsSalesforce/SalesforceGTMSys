@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Sending_Campaigns_Compiled__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Is_Sending_Campaigns_Custom_Integration__c=TRUE,TRUE,Klaviyo_Product_Usage__r.PRODUCT_Is_Sending_Campaigns__c)</formula>
+    <label>Is Sending Campaigns (Compiled)</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

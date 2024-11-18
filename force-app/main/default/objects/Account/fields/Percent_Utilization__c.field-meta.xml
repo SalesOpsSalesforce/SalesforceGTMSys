@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Percent_Utilization__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF( Klaviyo_Product_Usage__r.PRODUCT_Is_Sending_Flows__c , 1, 0) +
+IF( Klaviyo_Product_Usage__r.PRODUCT_Is_Sending_Campaigns__c , 1, 0) +
+IF( Klaviyo_Product_Usage__r.PRODUCT_Has_Email_Sign_Ups_Integrated__c  , 1, 0) +
+IF( Klaviyo_Product_Usage__r.PRODUCT_Metrics_StartedCheckout_Value__c &gt; 0 , 1, 0) +
+IF( Klaviyo_Product_Usage__r.PRODUCT_Metrics_ViewedProduct_Count__c &gt; 0 , 1, 0) +
+IF( Klaviyo_Product_Usage__r.PRODUCT_Is_Welcome_Series_Live__c  , 1, 0) +
+IF( Klaviyo_Product_Usage__r.PRODUCT_Is_Abandoned_Cart_Live__c  , 1, 0) +
+IF( Klaviyo_Product_Usage__r.PRODUCT_Is_Customer_Win_Back_Live__c  , 1, 0)) / 8</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Percent Utilization</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

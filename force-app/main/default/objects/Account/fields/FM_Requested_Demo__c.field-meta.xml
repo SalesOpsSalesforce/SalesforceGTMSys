@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Requested_Demo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( LEAD_Date_Time_of_Last_Demo_Request__c ) = TRUE, FALSE, TRUE)</formula>
+    <inlineHelpText>Checked if Date/Time of Last Demo Request is populated with any date.</inlineHelpText>
+    <label>Requested Demo?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>accountBuyingStage6sense__c</fullName>
+    <description>The categorical representation of the measure of how much an account is behaving like accounts with which there is a history of previously opened opportunities. Target:Awareness:Consideration:Decision:Purchase</description>
+    <externalId>false</externalId>
+    <label>6sense Account Buying Stage</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

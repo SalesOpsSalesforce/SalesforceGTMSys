@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RU_of_Open_Opportunities__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of Open Opportunities associated with this Account. Calculated with the Rollup COUNT field.</inlineHelpText>
+    <label># of Open Opportunities</label>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>notEqual</operation>
+        <value>&lt;NEEDS RESOLUTION&gt;, Sales Accepted Opportunity, Best Case, Most Likely, Commit, Not Forecastable Opportunity</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>notEqual</operation>
+        <value>Closed Won, Closed Lost, Closed Won - Needs Review</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.Opportunity_Product__c</field>
+        <operation>notEqual</operation>
+        <value>Toll Free Number Subscription, Complimentary Long Number Subscription, Long Number Subscription, Short Code Subscription, Short Code Throughput Increase Subscription, Toll Free Number Throughput Increase Subscription, SMS Funds</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

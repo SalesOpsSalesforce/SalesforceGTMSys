@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Confirmed_Reference_Source__c</fullName>
+    <description>For tracking.  How the Confirmed Reference Disposition came to be collected.  Either via the &quot;Onboarding CSAT Survey&quot; in Klaviyo, the &quot;Growth Reference Confirmation Request Survey&quot; in Gainsight, or from Marketing or Sales.  This field is loaded via Gainsight automation as confirmed reference dispositions are collected from CSAT and Growth surveys.  If this field is null, but a Confirmed Reference Disposition is populated, then it was populated manually.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How the Confirmed Reference Disposition came to be collected.  Set by automation to &quot;Onboarding CSAT Survey&quot; or &quot;Growth Reference Confirmation Survey&quot; if responses were collected by either of those 2 mediums.  If Confirmed Reference Disposition is populated but this field is blank, assume Disposition was input manually Sales, CS, or Marketing.</inlineHelpText>
+    <label>Confirmed Reference Source</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

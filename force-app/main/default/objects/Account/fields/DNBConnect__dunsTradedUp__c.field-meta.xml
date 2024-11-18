@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DNBConnect__dunsTradedUp__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field indicates if the D-U-N-S value on this record has been Traded Up. The D-U-N-S Trade Up feature enables D&amp;B Connect to enrich records with HQ location data directly into records matched at lower levels of the corporate family tree.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field indicates if the D-U-N-S value on this record has been Traded Up. The D-U-N-S Trade Up feature enables D&amp;B Connect to enrich records with HQ location data directly into records matched at lower levels of the corporate family tree.</inlineHelpText>
+    <label>D-U-N-S Traded Up</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

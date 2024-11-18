@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MAGENTRIX_Payout_Method__c</fullName>
+    <description>This is a formula field to summarize the Partner&apos;s Rev Share Payment Method for the purpose of sharing in Magentrix (partner portal)</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(RP_Partner_Rev_Share_Payment_Method__c,&quot;Verifying Payment Method&quot;),&quot;Verifying Payment Method&quot;,
+IF(ISPICKVAL(RP_Partner_Rev_Share_Payment_Method__c,&quot;Paypal&quot;),&quot;Paypal&quot;,
+IF(ISPICKVAL(RP_Partner_Rev_Share_Payment_Method__c,&quot;Gusto CND&quot;),&quot;ACH&quot;,
+IF(ISPICKVAL(RP_Partner_Rev_Share_Payment_Method__c,&quot;SVB Wire&quot;),&quot;Wire&quot;,
+IF(ISPICKVAL(RP_Partner_Rev_Share_Payment_Method__c,&quot;SVB ACH&quot;),&quot;ACH&quot;,
+IF(ISPICKVAL(RP_Partner_Rev_Share_Payment_Method__c,&quot;SVB-Check&quot;),&quot;Check&quot;,
+IF(ISPICKVAL(RP_Partner_Rev_Share_Payment_Method__c,&quot;JPM CQP&quot;),&quot;ACH&quot;,
+IF(ISPICKVAL(RP_Partner_Rev_Share_Payment_Method__c,&quot;Payment information incorrect - reaching out&quot;),&quot;Payment Method Invalid&quot;,
+&quot;Not Submitted&quot;))))))))</formula>
+    <label>Payout Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

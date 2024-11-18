@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X6Sense_Account_Segments__c</fullName>
+    <description>Segment Names from our 6Sense integration</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Segment Names from our 6Sense integration</inlineHelpText>
+    <label>6Sense Account Segments</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

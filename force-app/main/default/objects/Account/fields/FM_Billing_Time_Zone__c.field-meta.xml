@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Billing_Time_Zone__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+LEN(BillingState)&gt;2,
+ISNULL(BillingState),
+BillingState=&quot;-&quot;,
+BillingState=&quot;&quot;),&quot;No Known Timezone&quot;,
+
+IF(
+CONTAINS(&quot;AK&quot;,LEFT(BillingState,2)),&quot;Alaska&quot;,
+
+IF(
+CONTAINS(&quot;AL,AR,FL,IA,IL,IN,KS,KY,LA,MN,MO,MS,ND,NE,OK,SD,TN,WI&quot;,LEFT(BillingState,2)),&quot;Central&quot;,
+
+IF(
+CONTAINS(&quot;CT,DC,DE,FL,GA,IN,KY,MA,MD,ME,MI,NC,NH,NJ,NY,OH,PA,RI,SC,TN,VA,VT,WV&quot;,LEFT(BillingState,2)),&quot;Eastern&quot;,
+
+IF(
+CONTAINS(&quot;AZ,CO,ID,KS,MT,ND,NE,NM,OR,SD,TX,UT,WY&quot;,LEFT(BillingState,2)),&quot;Mountain&quot;,
+
+IF(
+CONTAINS(&quot;CA,ID,NV,OR,WA&quot;,LEFT(BillingState,2)),&quot;Pacific&quot;,&quot;No Known Timezone&quot;))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Billing Time Zone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

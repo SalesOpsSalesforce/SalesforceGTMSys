@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Initial_Email_Integration__c</fullName>
+    <description>Stamped by Salesforce/Maps from the Lead.</description>
+    <externalId>false</externalId>
+    <label>Initial Email Integration</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

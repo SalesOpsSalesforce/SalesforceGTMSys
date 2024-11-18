@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Average_MRR_Size_From_Partner__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The predicted/estimated average deal size in MRR that the Referral Partner will bring to Klaviyo.</inlineHelpText>
+    <label>Average MRR Size From Partner</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

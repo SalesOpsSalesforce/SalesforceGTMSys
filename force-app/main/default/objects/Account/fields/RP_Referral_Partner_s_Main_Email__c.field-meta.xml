@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Referral_Partner_s_Main_Email__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Email where welcome email is sent to the agency for applying to the agency program</inlineHelpText>
+    <label>Referral Partner&apos;s Main Email</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Email</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Trigger_Update_Widget_Change__c</fullName>
+    <externalId>false</externalId>
+    <formula>ISBLANK(Update_Widget__c)
+||
+ISBLANK(FLOW_Date_Time_Last_Update_Widget_Change__c)
+||
+FLOW_Date_Time_Last_Update_Widget_Change__c-LastModifiedDate&lt;-0.0001</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Trigger Update Widget Change?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

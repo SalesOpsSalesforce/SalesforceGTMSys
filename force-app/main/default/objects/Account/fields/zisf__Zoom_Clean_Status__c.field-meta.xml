@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zisf__Zoom_Clean_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>ZoomInfo Clean Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Different</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Different</label>
+            </value>
+            <value>
+                <fullName>In Sync</fullName>
+                <color>#33CC00</color>
+                <default>false</default>
+                <label>In Sync</label>
+            </value>
+            <value>
+                <fullName>Not Found</fullName>
+                <color>#EFAE73</color>
+                <default>false</default>
+                <label>Not Found</label>
+            </value>
+            <value>
+                <fullName>Error</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Error</label>
+            </value>
+            <value>
+                <fullName>Not Compared</fullName>
+                <color>#AFCADF</color>
+                <default>true</default>
+                <label>Not Compared</label>
+            </value>
+            <value>
+                <fullName>Clean</fullName>
+                <color>#009900</color>
+                <default>false</default>
+                <label>Clean</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

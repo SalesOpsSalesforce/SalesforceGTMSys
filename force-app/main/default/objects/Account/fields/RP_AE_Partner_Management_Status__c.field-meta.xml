@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_AE_Partner_Management_Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Sell: They don&apos;t have a paid account 
+Proof: Has at least one paid account &amp; AE is proving value
+Onboarding: Proven value to at least 1 account and in process of bringing over more.
+Maintain: Understands value and Klaviyo.
+Hunt: Angie&apos;s pursuit status</inlineHelpText>
+    <label>Partner Management Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ASSIGNED - NEEDS RESOLUTION</fullName>
+                <default>false</default>
+                <label>ASSIGNED - NEEDS RESOLUTION</label>
+            </value>
+            <value>
+                <fullName>Qualifying</fullName>
+                <default>false</default>
+                <label>Qualifying</label>
+            </value>
+            <value>
+                <fullName>Sell</fullName>
+                <default>false</default>
+                <label>Sell</label>
+            </value>
+            <value>
+                <fullName>Proof</fullName>
+                <default>false</default>
+                <label>Proof</label>
+            </value>
+            <value>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+                <label>Onboarding</label>
+            </value>
+            <value>
+                <fullName>Maintain</fullName>
+                <default>false</default>
+                <label>Maintain</label>
+            </value>
+            <value>
+                <fullName>Hunt</fullName>
+                <default>false</default>
+                <label>Hunt</label>
+            </value>
+            <value>
+                <fullName>Self-Serve</fullName>
+                <default>false</default>
+                <label>Self-Serve</label>
+            </value>
+            <value>
+                <fullName>Prequalified</fullName>
+                <default>false</default>
+                <label>Prequalified</label>
+            </value>
+            <value>
+                <fullName>Attempted</fullName>
+                <default>false</default>
+                <label>Attempted</label>
+            </value>
+            <value>
+                <fullName>Disqualified</fullName>
+                <default>false</default>
+                <label>Disqualified -- Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Disqualified -- Junk</fullName>
+                <default>false</default>
+                <label>Disqualified -- Junk</label>
+            </value>
+            <value>
+                <fullName>Disqualified -- Agency Signed Up Too Early</fullName>
+                <default>false</default>
+                <label>Disqualified -- Agency Signed Up Too Early</label>
+            </value>
+            <value>
+                <fullName>Disqualified - Do Not Contact</fullName>
+                <default>false</default>
+                <label>Disqualified - Do Not Contact</label>
+            </value>
+            <value>
+                <fullName>High Touch</fullName>
+                <default>false</default>
+                <label>High Touch</label>
+            </value>
+            <value>
+                <fullName>Medium Touch</fullName>
+                <default>false</default>
+                <label>Medium Touch</label>
+            </value>
+            <value>
+                <fullName>Low Touch</fullName>
+                <default>false</default>
+                <label>Low Touch</label>
+            </value>
+            <value>
+                <fullName>CAM Managed</fullName>
+                <default>false</default>
+                <label>CAM Managed</label>
+            </value>
+            <value>
+                <fullName>Dormant/Unmanaged</fullName>
+                <default>false</default>
+                <label>Dormant/Unmanaged</label>
+            </value>
+            <value>
+                <fullName>O1: Discovery</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>O1: Discovery</label>
+            </value>
+            <value>
+                <fullName>O2: Demo</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>O2: Demo</label>
+            </value>
+            <value>
+                <fullName>O3: Partner Program Overview</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>O3: Partner Program Overview</label>
+            </value>
+            <value>
+                <fullName>O4: Getting Started Overview</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>O4: Getting Started Overview</label>
+            </value>
+            <value>
+                <fullName>O5: Onboarded</fullName>
+                <color>#F96FB7</color>
+                <default>false</default>
+                <label>O5: Onboarded</label>
+            </value>
+            <value>
+                <fullName>1:1 Onboarding</fullName>
+                <default>false</default>
+                <label>1:1 Onboarding</label>
+            </value>
+            <value>
+                <fullName>Webinar Onboarding</fullName>
+                <default>false</default>
+                <label>Webinar Onboarding</label>
+            </value>
+            <value>
+                <fullName>COMPLETED 1:1 Onboarding</fullName>
+                <default>false</default>
+                <label>COMPLETED 1:1 Onboarding</label>
+            </value>
+            <value>
+                <fullName>Reactivation 1:1 Onboarding</fullName>
+                <default>false</default>
+                <label>Reactivation 1:1 Onboarding</label>
+            </value>
+            <value>
+                <fullName>Reactivations 1:1 Onboarding Complete</fullName>
+                <default>false</default>
+                <label>Reactivations 1:1 Onboarding Complete</label>
+            </value>
+            <value>
+                <fullName>Collaboration Account</fullName>
+                <default>false</default>
+                <label>Collaboration Account</label>
+            </value>
+            <value>
+                <fullName>HUNT - SI/DEV (ACTIVE)</fullName>
+                <default>false</default>
+                <label>HUNT - SI/DEV (ACTIVE)</label>
+            </value>
+            <value>
+                <fullName>HUNT - MKTG (ACTIVE)</fullName>
+                <default>false</default>
+                <label>HUNT - MKTG (ACTIVE)</label>
+            </value>
+            <value>
+                <fullName>DQ HUNT - SI/DEV</fullName>
+                <default>false</default>
+                <label>DQ HUNT - SI/DEV</label>
+            </value>
+            <value>
+                <fullName>DQ HUNT - MKTG</fullName>
+                <default>false</default>
+                <label>DQ HUNT - MKTG</label>
+            </value>
+            <value>
+                <fullName>Terminated - Legal - Inactive</fullName>
+                <default>false</default>
+                <label>Terminated - Legal - Inactive</label>
+            </value>
+            <value>
+                <fullName>Terminated - Legal - Payment</fullName>
+                <default>false</default>
+                <label>Terminated - Legal - Payment</label>
+            </value>
+            <value>
+                <fullName>GPM Account</fullName>
+                <default>false</default>
+                <label>GPM Account</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

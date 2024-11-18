@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Revenue_Per_WelcomeSeriesSent__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Klaviyo_Product_Usage__r.PRODUCT_Welcome_Series_Conversion_Value__c=0,Klaviyo_Product_Usage__r.PRODUCT_Welcome_Series_Conversion_Value__c,
+Klaviyo_Product_Usage__r.PRODUCT_Welcome_Series_Conversion_Value__c/Klaviyo_Product_Usage__r.PRODUCT_Num_Welcome_Series_Delivered__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The value of conversions from the Welcome Series Flow divided by the number of Welcome Series Emails Sent in the last 30 days.</inlineHelpText>
+    <label>Revenue Per Welcome Series Email Sent</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Revenue_Per_Conversion_Last_30__c</fullName>
+    <description>Old formula: IF(
+OR((ISBLANK(PRODUCT_Revenue_From_Last_30_Days__c)),(ISBLANK(PRODUCT_Num_Conversions_in_Last_30_Days__c))),NULL,
+PRODUCT_Revenue_From_Last_30_Days__c/PRODUCT_Num_Conversions_in_Last_30_Days__c)</description>
+    <externalId>false</externalId>
+    <formula>IF(Klaviyo_Product_Usage__r.PRODUCT_Revenue_From_Last_30_Days__c=0,Klaviyo_Product_Usage__r.PRODUCT_Revenue_From_Last_30_Days__c,
+Klaviyo_Product_Usage__r.PRODUCT_Revenue_From_Last_30_Days__c/Klaviyo_Product_Usage__r.PRODUCT_Num_Conversions_in_Last_30_Days__c)</formula>
+    <inlineHelpText>The revenue from the last 30 days divided by the number of conversions in the last 30 days.</inlineHelpText>
+    <label>Email Revenue / Conversion</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

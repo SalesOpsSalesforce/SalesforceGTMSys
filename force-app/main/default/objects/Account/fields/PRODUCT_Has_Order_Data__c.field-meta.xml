@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Has_Order_Data__c</fullName>
+    <externalId>false</externalId>
+    <formula>Klaviyo_Product_Usage__r.PRODUCT_Metrics_PlacedOrder_Value__c &gt; 0 &amp;&amp; Klaviyo_Product_Usage__r.PRODUCT_Metrics_OrderedProduct_Value__c &gt; 0 &amp;&amp;  ( ISPICKVAL(Klaviyo_Product_Usage__r.PRODUCT_Ecommerce_Integration__c, &quot;volusion&quot;) || Klaviyo_Product_Usage__r.PRODUCT_Metrics_FulfilledOrder_Value__c &gt; 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>True if an account has &quot;Placed Order,&quot; &quot;Ordered Product&quot; and &quot;Fulfilled Order&quot; data and that data has revenue data. For Volusion, we don&apos;t check &quot;Fulfilled Order&quot; because it&apos;s not available via the API.</inlineHelpText>
+    <label>Has Order Data</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

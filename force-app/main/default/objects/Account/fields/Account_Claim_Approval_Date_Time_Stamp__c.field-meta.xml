@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Claim_Approval_Date_Time_Stamp__c</fullName>
+    <description>SFDC 5309 - Stamps when the Approval Process gets Approved. Triggered by Account Claim Process and updated in Account Before Save</description>
+    <externalId>false</externalId>
+    <label>Account Claim Approval Date/Time Stamp</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

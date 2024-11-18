@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_of_Active_Retainer_Status__c</fullName>
+    <description>This is the date the agency retainer status was moved from Pending to Active via the survey response</description>
+    <externalId>false</externalId>
+    <label>Most Recent Active Retainer Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

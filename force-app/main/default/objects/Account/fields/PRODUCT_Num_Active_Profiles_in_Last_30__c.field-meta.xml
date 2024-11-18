@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Num_Active_Profiles_in_Last_30__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Active profiles are ones that have at least one activity / event recorded in the last 30 days excluding received emails or push notifications. This is not used in Klaviyo, it&apos;s a measure of how active the profiles in Klaviyo have been with that company.</inlineHelpText>
+    <label>Active Profiles in Last 30 Days</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Business_Name__c</fullName>
+    <description>Complete Legal Name of account used for Compliance
+Populated by the Partner Application form
+JIRA SFDC-527</description>
+    <externalId>false</externalId>
+    <label>Legal Business Name</label>
+    <length>100</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

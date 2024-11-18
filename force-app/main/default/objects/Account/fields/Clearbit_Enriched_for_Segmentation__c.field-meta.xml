@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_Enriched_for_Segmentation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SFDC-3627 Indicates Clearbit Enrichment has done &amp; its ready for segmentation sync</description>
+    <externalId>false</externalId>
+    <label>Clearbit Enriched for Segmentation</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

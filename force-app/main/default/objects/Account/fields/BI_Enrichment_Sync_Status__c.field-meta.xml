@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BI_Enrichment_Sync_Status__c</fullName>
+    <description>SFDC-3629 Flag for error recovery related to BI enrichment</description>
+    <externalId>false</externalId>
+    <label>BI Enrichment Sync Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Success - segment</fullName>
+                <default>false</default>
+                <label>Success - segment</label>
+            </value>
+            <value>
+                <fullName>Failed - segment</fullName>
+                <default>false</default>
+                <label>Failed - segment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Charm_Revenue__c</fullName>
+    <description>Guess at brand&apos;s revenue</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Guess at brand&apos;s revenue</inlineHelpText>
+    <label>Charm Revenue</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

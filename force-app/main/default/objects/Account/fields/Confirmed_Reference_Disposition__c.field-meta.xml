@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Confirmed_Reference_Disposition__c</fullName>
+    <description>Used to track referenceable customers. Set to &quot;Willing&quot; by automation when CSAT response is received and KPU.Onboarding_CSAT_Reference_Decision_Maker__c =TRUE or KPU.Onboarding_CSAT_Reference_Primary_User__c = TRUE. Set manually to Willing or Not Willing if customer is confirmed to consent or disagree to providing a reference. Blank field indicates not confirmed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set this field when reference disposition is confirmed. Willing = customer agreed to provide reference; Not Willing = customer declined to provide reference; Blank = unconfirmed</inlineHelpText>
+    <label>Confirmed Reference Disposition</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Willing to be Referenced</fullName>
+                <default>false</default>
+                <label>Willing to be Referenced</label>
+            </value>
+            <value>
+                <fullName>Not Willing to be Referenced</fullName>
+                <default>false</default>
+                <label>Not Willing to be Referenced</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

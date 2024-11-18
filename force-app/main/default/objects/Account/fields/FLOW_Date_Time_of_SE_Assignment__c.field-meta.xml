@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FLOW_Date_Time_of_SE_Assignment__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The Date/Time at which an SE was assigned to work with this Referral Partner</inlineHelpText>
+    <label>Date/Time of SE Assignment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

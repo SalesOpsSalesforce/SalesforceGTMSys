@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PlatformPartnerPaidWithRP__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>TP103583. When checked this indicates that the platform partner can be paid alongside a referral partner on a deal. Default is that they cannot.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When checked this indicates that the platform partner can be paid alongside a referral partner on a deal. Default is that they cannot.</inlineHelpText>
+    <label>PlatformPartnerPaidWithRP</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

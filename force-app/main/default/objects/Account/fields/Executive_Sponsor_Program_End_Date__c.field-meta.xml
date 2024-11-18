@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Executive_Sponsor_Program_End_Date__c</fullName>
+    <description>SFDC 3211</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date the Executive Sponsor Program Status was set = &quot;Archived&quot;.  The date the customer left the Executive Sponsor Program</inlineHelpText>
+    <label>Executive Sponsor Program End Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

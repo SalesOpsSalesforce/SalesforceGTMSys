@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RU_Starting_MRR__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The Amount of the first closed won Land: New Account Opportunity</inlineHelpText>
+    <label>Starting MRR</label>
+    <summarizedField>Opportunity.MRR__c</summarizedField>
+    <summaryFilterItems>
+        <field>Opportunity.Type__c</field>
+        <operation>equals</operation>
+        <value>Land: New Account</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>Closed Won</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

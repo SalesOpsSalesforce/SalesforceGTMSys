@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Potential_Reference_Details__c</fullName>
+    <description>Used to track potential references. AEs include details on the Opp around why the customer is identified as a potential reference. Opp values are set to Account when opp is closed/won or values are updated on closed/won Land opp</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used to track potential references.  Details around why the customer is identified as a potential reference.</inlineHelpText>
+    <label>Potential Reference Details</label>
+    <length>2000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

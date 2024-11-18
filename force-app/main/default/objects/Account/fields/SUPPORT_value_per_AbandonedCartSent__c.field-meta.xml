@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SUPPORT_value_per_AbandonedCartSent__c</fullName>
+    <description>PRODUCT_Abandoned_Cart_Conversion_Value__c/PRODUCT_Num_Abandoned_Cart_Delivered__c</description>
+    <externalId>false</externalId>
+    <formula>IF(Klaviyo_Product_Usage__r.PRODUCT_Abandoned_Cart_Conversion_Value__c=0,Klaviyo_Product_Usage__r.PRODUCT_Abandoned_Cart_Conversion_Value__c,
+Klaviyo_Product_Usage__r.PRODUCT_Abandoned_Cart_Conversion_Value__c/Klaviyo_Product_Usage__r.PRODUCT_Num_Abandoned_Cart_Delivered__c)</formula>
+    <inlineHelpText>The value of conversions from Abandoned Cart Flow values divided by the number of Abandoned Cart emails sent in last 30 days.</inlineHelpText>
+    <label>Revenue Per Abandoned Cart Email Sent</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

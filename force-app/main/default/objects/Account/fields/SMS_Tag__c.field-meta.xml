@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_Tag__c</fullName>
+    <externalId>false</externalId>
+    <label>SMS Tag</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ENT-W-COMP</fullName>
+                <default>false</default>
+                <label>ENT-W-COMP</label>
+            </value>
+            <value>
+                <fullName>Install Base SMS Setup Incomplete</fullName>
+                <default>false</default>
+                <label>Install Base SMS Setup Incomplete</label>
+            </value>
+            <value>
+                <fullName>Low funds-sub customer</fullName>
+                <default>false</default>
+                <label>Low funds-sub customer</label>
+            </value>
+            <value>
+                <fullName>New Customer SMS Setup Incomplete</fullName>
+                <default>false</default>
+                <label>New Customer SMS Setup Incomplete</label>
+            </value>
+            <value>
+                <fullName>SMS Rip/Replace</fullName>
+                <default>false</default>
+                <label>SMS Rip/Replace</label>
+            </value>
+            <value>
+                <fullName>CSM - Green</fullName>
+                <default>false</default>
+                <label>CSM - Green</label>
+            </value>
+            <value>
+                <fullName>CSM - Red</fullName>
+                <default>false</default>
+                <label>CSM - Red</label>
+            </value>
+            <value>
+                <fullName>CSM - Yellow</fullName>
+                <default>false</default>
+                <label>CSM - Yellow</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

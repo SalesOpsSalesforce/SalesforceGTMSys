@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PWR_In_Account_Dedupe__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field to indicate Account was part of PWR Deduplication and was winning record</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field to indicate Account was part of PWR Deduplication and was winning record</inlineHelpText>
+    <label>PWR - In Account Dedupe</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

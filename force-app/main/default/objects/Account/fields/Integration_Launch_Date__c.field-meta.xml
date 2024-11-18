@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integration_Launch_Date__c</fullName>
+    <description>TP110713. Integration Launch Date allows up to report and have visibility into upcoming integration launches so we can plan comarketing go-to-market activities accordingly. This also serves as a timestamp to gauge our onboarding speed and efficiency.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Integration Launch Date allows up to report and have visibility into upcoming integration launches so we can plan comarketing go-to-market activities accordingly. This also serves as a timestamp to gauge our onboarding speed and efficiency.</inlineHelpText>
+    <label>Integration Launch Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

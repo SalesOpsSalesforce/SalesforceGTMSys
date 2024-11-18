@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Type_Algorithm__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Set by Klaviyo code or human.</inlineHelpText>
+    <label>Business Type (Klaviyo / Algorithm)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Business_Type</valueSetName>
+    </valueSet>
+</CustomField>

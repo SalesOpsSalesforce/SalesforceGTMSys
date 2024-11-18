@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AM_Account_Status_Notes__c</fullName>
+    <description>Account Management field to help classify the &quot;health&quot; of accounts. Used by Account Managers.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Account Management field to help classify the &quot;health&quot; of accounts. Used by Account Managers.</inlineHelpText>
+    <label>Account Status Notes</label>
+    <length>10000</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DNBConnect__D_B_Match_Grade__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The compound rating that comprises one rating per type of data scored by a match engine. For example, in AABZBAAAFBZ the &quot;A&quot;; in the 1st position means that the Name scored between 80-100 and the &quot;A&quot;; in the 2nd position means that the Street Number had to score exactly 100. For more details, please see the Identity Resolution guide.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The compound rating that comprises one rating per type of data scored by a match engine. For example, in AABZBAAAFBZ the &quot;A&quot;; in the 1st position means that the Name scored between 80-100 and the &quot;A&quot;; in the 2nd position means that the Street Number had to score exactly 100. For more details, please see the Identity Resolution guide.</inlineHelpText>
+    <label>D&amp;B Match Grade</label>
+    <length>11</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

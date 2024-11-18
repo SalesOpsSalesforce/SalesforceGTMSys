@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DNBConnect__D_B_Match_Data_Profile__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The information that the matching process used to arrive at a match in addition to the application&apos;s business rules and parameters specified by the requestor. This is a 28-byte string consisting of 14 components of 2 bytes each. The 14 components are, in order, Name, Street Number, Street Name, Town Name, Territory Name, P.O. Box, Telephone, Post Code, D-U-N-S Number, Industry Code, Geographical Density, Location Uniqueness, Registration Number and URL.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The information that the matching process used to arrive at a match in addition to the application&apos;s business rules and parameters specified by the requestor. This is a 28-byte string consisting of 14 components of 2 bytes each. The 14 components are, in order, Name, Street Number, Street Name, Town Name, Territory Name, P.O. Box, Telephone, Post Code, D-U-N-S Number, Industry Code, Geographical Density, Location Uniqueness, Registration Number and URL.</inlineHelpText>
+    <label>D&amp;B Match Data Profile</label>
+    <length>28</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

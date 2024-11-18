@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Last_At_Risk__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+DATEVALUE(FLOW_Last_Exited_Defend_Date_Stamp__c)&lt;DATEVALUE(FLOW_Last_Entered_Defend_Date_Stamp__c),
+ISPICKVAL(SUPPORT_Account_Status__c, &quot;At Risk&quot;)
+),
+
+TODAY()-DATEVALUE(FLOW_Last_Entered_Defend_Date_Stamp__c),
+
+IF(
+DATEVALUE(FLOW_Last_Exited_Defend_Date_Stamp__c)&gt; DATEVALUE(FLOW_Last_Entered_Defend_Date_Stamp__c),
+DATEVALUE(FLOW_Last_Exited_Defend_Date_Stamp__c)-DATEVALUE(FLOW_Last_Entered_Defend_Date_Stamp__c),
+0
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days Last At Risk</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

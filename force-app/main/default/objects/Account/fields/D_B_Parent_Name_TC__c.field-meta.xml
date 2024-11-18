@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>D_B_Parent_Name_TC__c</fullName>
+    <description>If Parent is blank, headquarters will be used</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( D_B_Parent_Business_Name__c ), D_B_Headquarter_Business_Name__c , D_B_Parent_Business_Name__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>D&amp;B Parent Name - TC</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Sentiment__c</fullName>
+    <description>SFDC-2907.  Currently synced from Gainsight health scorecards.  Measures the CSM&apos;s perception of the customer&apos;s sentiment towards Klaviyo.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Measures the CSM&apos;s perception of the customer&apos;s sentiment towards Klaviyo.  Synced to SFDC from Gainsight health scorecards.</inlineHelpText>
+    <label>Customer Sentiment</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

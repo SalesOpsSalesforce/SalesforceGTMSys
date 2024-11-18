@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>accountProfileFit6sense__c</fullName>
+    <description>A measure of how similar a company is to the ideal customer profile. Firmographic and technographic factors of an account, along with historical opportunity history, are used by data science models to create this measure.</description>
+    <externalId>false</externalId>
+    <label>6sense Account Profile Fit</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

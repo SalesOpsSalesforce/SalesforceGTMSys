@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Total_MRR_of_Parent_Account__c</fullName>
+    <description>Parent MRR - If there is no Parent MRR, shows MRR of this Account</description>
+    <externalId>false</externalId>
+    <formula>IF(
+Parent.Total_MRR__c != 0,
+Parent.Total_MRR__c,
+ Total_MRR__c 
+)</formula>
+    <inlineHelpText>Parent MRR - If there is no Parent MRR, shows MRR of this Account</inlineHelpText>
+    <label>Total MRR of Parent Account</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

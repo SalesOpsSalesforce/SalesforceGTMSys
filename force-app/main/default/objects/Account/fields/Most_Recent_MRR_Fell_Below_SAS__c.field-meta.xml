@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Most_Recent_MRR_Fell_Below_SAS__c</fullName>
+    <description>SFDC-5897.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The most recent date the account&apos;s MRR changed from =&gt; 1000 to &lt; 1000</inlineHelpText>
+    <label>Most Recent MRR Fell Below SAS</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

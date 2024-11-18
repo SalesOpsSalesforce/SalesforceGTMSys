@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interested_in_Email__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Temp field to address sync issues with bad column in integration.</description>
+    <externalId>false</externalId>
+    <label>Interested in Email</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

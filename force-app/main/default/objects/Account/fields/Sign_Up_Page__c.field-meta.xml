@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sign_Up_Page__c</fullName>
+    <externalId>false</externalId>
+    <label>Sign Up Page</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Index</fullName>
+                <default>false</default>
+                <label>Index</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Shopify Integration</fullName>
+                <default>false</default>
+                <label>Shopify Integration</label>
+            </value>
+            <value>
+                <fullName>Generic Templates</fullName>
+                <default>false</default>
+                <label>Generic Templates</label>
+            </value>
+            <value>
+                <fullName>Shopify Templates</fullName>
+                <default>false</default>
+                <label>Shopify Templates</label>
+            </value>
+            <value>
+                <fullName>Magento Templates</fullName>
+                <default>false</default>
+                <label>Magento Templates</label>
+            </value>
+            <value>
+                <fullName>Zencart Templates</fullName>
+                <default>false</default>
+                <label>Zencart Templates</label>
+            </value>
+            <value>
+                <fullName>eCommerce Templates</fullName>
+                <default>false</default>
+                <label>eCommerce Templates</label>
+            </value>
+            <value>
+                <fullName>Integration: Magento</fullName>
+                <default>false</default>
+                <label>Integration: Magento</label>
+            </value>
+            <value>
+                <fullName>Integration: BigCommerce</fullName>
+                <default>false</default>
+                <label>Integration: BigCommerce</label>
+            </value>
+            <value>
+                <fullName>Integration: Volusion</fullName>
+                <default>false</default>
+                <label>Integration: Volusion</label>
+            </value>
+            <value>
+                <fullName>Integration: AfterShip</fullName>
+                <default>false</default>
+                <label>Integration: AfterShip</label>
+            </value>
+            <value>
+                <fullName>Integration: Chargify</fullName>
+                <default>false</default>
+                <label>Integration: Chargify</label>
+            </value>
+            <value>
+                <fullName>Integration: HighRise</fullName>
+                <default>false</default>
+                <label>Integration: HighRise</label>
+            </value>
+            <value>
+                <fullName>Integration: MailChimp</fullName>
+                <default>false</default>
+                <label>Integration: MailChimp</label>
+            </value>
+            <value>
+                <fullName>Integration: osCommerce</fullName>
+                <default>false</default>
+                <label>Integration: osCommerce</label>
+            </value>
+            <value>
+                <fullName>Integration: PrestaShop</fullName>
+                <default>false</default>
+                <label>Integration: PrestaShop</label>
+            </value>
+            <value>
+                <fullName>Integration: SalesForce</fullName>
+                <default>false</default>
+                <label>Integration: SalesForce</label>
+            </value>
+            <value>
+                <fullName>Integration: Shopify</fullName>
+                <default>false</default>
+                <label>Integration: Shopify</label>
+            </value>
+            <value>
+                <fullName>Integration: SugarCRM</fullName>
+                <default>false</default>
+                <label>Integration: SugarCRM</label>
+            </value>
+            <value>
+                <fullName>Integration: Unbounce</fullName>
+                <default>false</default>
+                <label>Integration: Unbounce</label>
+            </value>
+            <value>
+                <fullName>Integration: WooCommerce</fullName>
+                <default>false</default>
+                <label>Integration: WooCommerce</label>
+            </value>
+            <value>
+                <fullName>Integration: Zendesk</fullName>
+                <default>false</default>
+                <label>Integration: Zendesk</label>
+            </value>
+            <value>
+                <fullName>Feature Page: newsletters</fullName>
+                <default>false</default>
+                <label>Feature Page: newsletters</label>
+            </value>
+            <value>
+                <fullName>Feature Page: autoresponders</fullName>
+                <default>false</default>
+                <label>Feature Page: autoresponders</label>
+            </value>
+            <value>
+                <fullName>Feature Page: subscriber-management</fullName>
+                <default>false</default>
+                <label>Feature Page: subscriber-management</label>
+            </value>
+            <value>
+                <fullName>Feature Page: individual-profiles</fullName>
+                <default>false</default>
+                <label>Feature Page: individual-profiles</label>
+            </value>
+            <value>
+                <fullName>Feature Page: web-tracking</fullName>
+                <default>false</default>
+                <label>Feature Page: web-tracking</label>
+            </value>
+            <value>
+                <fullName>Feature Page: dynamic-lists</fullName>
+                <default>false</default>
+                <label>Feature Page: dynamic-lists</label>
+            </value>
+            <value>
+                <fullName>Feature Page: drip-campaigns</fullName>
+                <default>false</default>
+                <label>Feature Page: drip-campaigns</label>
+            </value>
+            <value>
+                <fullName>Feature Page: segmentation</fullName>
+                <default>false</default>
+                <label>Feature Page: segmentation</label>
+            </value>
+            <value>
+                <fullName>Feature Page: email-analytics</fullName>
+                <default>false</default>
+                <label>Feature Page: email-analytics</label>
+            </value>
+            <value>
+                <fullName>Feature Page: integrations</fullName>
+                <default>false</default>
+                <label>Feature Page: integrations</label>
+            </value>
+            <value>
+                <fullName>Feature Page: real-time-ifications</fullName>
+                <default>false</default>
+                <label>Feature Page: real-time-ifications</label>
+            </value>
+            <value>
+                <fullName>Feature Page: reports-and-insights</fullName>
+                <default>false</default>
+                <label>Feature Page: reports-and-insights</label>
+            </value>
+            <value>
+                <fullName>High Volume Pricing</fullName>
+                <default>false</default>
+                <label>High Volume Pricing</label>
+            </value>
+            <value>
+                <fullName>Features</fullName>
+                <default>false</default>
+                <label>Features</label>
+            </value>
+            <value>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+                <label>Integrations</label>
+            </value>
+            <value>
+                <fullName>Quick Mail</fullName>
+                <default>false</default>
+                <label>Quick Mail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

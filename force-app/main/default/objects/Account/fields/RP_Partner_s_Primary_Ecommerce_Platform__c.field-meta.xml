@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Partner_s_Primary_Ecommerce_Platform__c</fullName>
+    <externalId>false</externalId>
+    <label>Partner&apos;s Primary Ecommerce Platform</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Ecommerce_Platform</valueSetName>
+    </valueSet>
+</CustomField>

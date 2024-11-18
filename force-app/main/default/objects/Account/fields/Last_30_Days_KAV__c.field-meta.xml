@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_30_Days_KAV__c</fullName>
+    <description>SFDC-5285. Last 30 days of KAV stamped up to account from KPU.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Last 30 days of KAV per the Klaviyo Product.</inlineHelpText>
+    <label>Last 30 Days KAV</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

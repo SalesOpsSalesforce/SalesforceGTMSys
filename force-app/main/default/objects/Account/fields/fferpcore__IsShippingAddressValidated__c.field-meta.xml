@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fferpcore__IsShippingAddressValidated__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates whether the shipping address has been validated against the addresses in the external tax calculation service.</description>
+    <externalId>false</externalId>
+    <formula>fferpcore__MaterializedShippingAddressValidated__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Indicates whether the shipping address has been validated against the addresses in the external tax calculation service.</inlineHelpText>
+    <label>Shipping Address Validated</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

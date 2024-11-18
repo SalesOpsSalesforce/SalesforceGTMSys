@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Success_Manager_ID__c</fullName>
+    <externalId>false</externalId>
+    <formula>Partner_Success_Manager__r.Id</formula>
+    <inlineHelpText>Used during PWR Phase 1 backfills</inlineHelpText>
+    <label>Partner Success Manager ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

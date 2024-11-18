@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Failed_Redpoint_Sync__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SFDC-1161 The field is set to handle the Redpoint sync failure</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Set to True if Redpoint Sync Fails</inlineHelpText>
+    <label>Failed Redpoint Sync</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

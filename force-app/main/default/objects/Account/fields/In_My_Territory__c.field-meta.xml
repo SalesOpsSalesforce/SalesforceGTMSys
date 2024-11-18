@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>In_My_Territory__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(AND(
+CONTAINS($UserRole.Name, &apos;EMEA MM&apos;),
+OR(TEXT(SALES_Geographical_Location__c)=&quot;Europe&quot;,TEXT(SALES_Geographical_Location__c)=&quot;Middle East&quot;,TEXT(SALES_Geographical_Location__c)=&quot;Africa&quot;),
+Charm_Revenue__c&gt;=20000000),
+TRUE,
+
+IF(AND(
+CONTAINS($UserRole.Name, &apos;EMEA U SMB&apos;),
+OR(TEXT(SALES_Geographical_Location__c)=&quot;Europe&quot;,TEXT(SALES_Geographical_Location__c)=&quot;Middle East&quot;,TEXT(SALES_Geographical_Location__c)=&quot;Africa&quot;),
+OR(Charm_Revenue__c&lt;20000000,ISBLANK(Charm_Revenue__c)),
+Similarweb_Total_Visits__c&gt;=50000),
+TRUE,
+
+IF(AND(
+CONTAINS($UserRole.Name, &apos;EMEA L SMB&apos;),
+OR(TEXT(SALES_Geographical_Location__c)=&quot;Europe&quot;,TEXT(SALES_Geographical_Location__c)=&quot;Middle East&quot;,TEXT(SALES_Geographical_Location__c)=&quot;Africa&quot;),
+OR(Charm_Revenue__c&lt;20000000,ISBLANK(Charm_Revenue__c)),
+OR(Similarweb_Total_Visits__c&lt;50000,ISBLANK(Similarweb_Total_Visits__c))),
+TRUE,
+
+IF(AND(
+CONTAINS($UserRole.Name, &apos;APAC MM&apos;),
+OR(TEXT(SALES_Geographical_Location__c) = &quot;Asia&quot;,TEXT(SALES_Geographical_Location__c) = &quot;Australia&quot;,TEXT(SALES_Geographical_Location__c) = &quot;New Zealand&quot;),
+Charm_Revenue__c &gt;= 20000000),
+TRUE,
+
+IF(AND(
+CONTAINS($UserRole.Name, &apos;APAC U SMB&apos;),
+OR(TEXT(SALES_Geographical_Location__c) = &quot;Asia&quot;,TEXT(SALES_Geographical_Location__c) = &quot;Australia&quot;,TEXT(SALES_Geographical_Location__c) = &quot;New Zealand&quot;),
+OR(Charm_Revenue__c &lt; 20000000,ISBLANK(Charm_Revenue__c)),
+Similarweb_Total_Visits__c &gt;= 30000),
+TRUE,
+
+IF(AND(
+CONTAINS($UserRole.Name, &apos;APAC L SMB&apos;),
+OR(TEXT(SALES_Geographical_Location__c) = &quot;Asia&quot;,TEXT(SALES_Geographical_Location__c) = &quot;Australia&quot;,TEXT(SALES_Geographical_Location__c) = &quot;New Zealand&quot;),
+OR(Charm_Revenue__c &lt; 20000000,ISBLANK(Charm_Revenue__c)),
+OR(Similarweb_Total_Visits__c&lt;30000,ISBLANK(Similarweb_Total_Visits__c))),
+TRUE,
+
+IF(AND(
+CONTAINS($User.Division,&apos;Enterprise&apos;),
+TEXT(SALES_Geographical_Location__c) != &quot;Europe&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Middle East&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Africa&quot;,
+TEXT(SALES_Geographical_Location__c) != &quot;Asia&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Australia&quot;,TEXT(SALES_Geographical_Location__c) != &quot;New Zealand&quot;,
+Charm_Revenue__c &gt;= 400000000),
+TRUE,
+
+IF(AND(
+TEXT(SALES_Geographical_Location__c) != &quot;Europe&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Middle East&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Africa&quot;,
+TEXT(SALES_Geographical_Location__c) != &quot;Asia&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Australia&quot;,TEXT(SALES_Geographical_Location__c) != &quot;New Zealand&quot;,
+NOT(CONTAINS($UserRole.Name, &apos;EMEA&apos;)),NOT(CONTAINS($UserRole.Name, &apos;APAC&apos;)),
+CONTAINS($UserRole.Name, &apos;MM&apos;),
+AND(Charm_Revenue__c&lt;400000000,Charm_Revenue__c&gt;=20000000)),
+TRUE,
+
+IF(AND(
+TEXT(SALES_Geographical_Location__c) != &quot;Europe&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Middle East&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Africa&quot;,
+TEXT(SALES_Geographical_Location__c) != &quot;Asia&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Australia&quot;,TEXT(SALES_Geographical_Location__c) != &quot;New Zealand&quot;,
+NOT(CONTAINS($UserRole.Name, &apos;EMEA&apos;)),NOT(CONTAINS($UserRole.Name, &apos;APAC&apos;)),
+CONTAINS($UserRole.Name, &apos;U SMB&apos;),
+AND(Similarweb_Total_Visits__c&gt;=30000, OR(Charm_Revenue__c&lt;20000000,ISBLANK(Charm_Revenue__c)))),
+TRUE,
+
+IF(AND(
+TEXT(SALES_Geographical_Location__c) != &quot;Europe&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Middle East&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Africa&quot;,
+TEXT(SALES_Geographical_Location__c) != &quot;Asia&quot;,TEXT(SALES_Geographical_Location__c) != &quot;Australia&quot;,TEXT(SALES_Geographical_Location__c) != &quot;New Zealand&quot;,
+NOT(CONTAINS($UserRole.Name, &apos;EMEA&apos;)),NOT(CONTAINS($UserRole.Name, &apos;APAC&apos;)),NOT(CONTAINS($UserRole.Name, &apos;Enterprise&apos;)),
+CONTAINS($UserRole.Name, &apos;L SMB&apos;),
+OR(Similarweb_Total_Visits__c &lt; 30000,ISBLANK(Similarweb_Total_Visits__c)),
+OR(Charm_Revenue__c &lt; 20000000, ISBLANK(Charm_Revenue__c))),
+TRUE, 
+
+FALSE))))))))))</formula>
+    <label>In My Territory?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

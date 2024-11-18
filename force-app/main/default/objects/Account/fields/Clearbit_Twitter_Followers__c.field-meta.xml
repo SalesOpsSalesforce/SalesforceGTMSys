@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_Twitter_Followers__c</fullName>
+    <description>The number of followers the company has on Twitter.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of followers the company has on Twitter.</inlineHelpText>
+    <label>Clearbit Twitter Followers</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

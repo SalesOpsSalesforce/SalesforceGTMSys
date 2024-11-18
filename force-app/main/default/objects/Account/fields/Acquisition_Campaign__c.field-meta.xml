@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acquisition_Campaign__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Used to denote the Acquisition Campaign that nudged a Prospective Partner to apply to become a Partner</description>
+    <externalId>false</externalId>
+    <label>Acquisition Campaign</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Campaign.Type</field>
+            <operation>equals</operation>
+            <value>Partner Acquisition</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Campaign</referenceTo>
+    <relationshipLabel>Partner Accounts (Partner Acquisition Campaigns)</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

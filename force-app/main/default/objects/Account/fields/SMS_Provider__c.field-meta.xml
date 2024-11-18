@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_Provider__c</fullName>
+    <externalId>false</externalId>
+    <label>SMS Provider</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Attentive</fullName>
+                <default>false</default>
+                <label>Attentive</label>
+            </value>
+            <value>
+                <fullName>Emotive</fullName>
+                <default>false</default>
+                <label>Emotive</label>
+            </value>
+            <value>
+                <fullName>Podium</fullName>
+                <default>false</default>
+                <label>Podium</label>
+            </value>
+            <value>
+                <fullName>Postscript</fullName>
+                <default>false</default>
+                <label>Postscript</label>
+            </value>
+            <value>
+                <fullName>SMS Mode</fullName>
+                <default>false</default>
+                <label>SMS Mode</label>
+            </value>
+            <value>
+                <fullName>Wunderkind</fullName>
+                <default>false</default>
+                <label>Wunderkind</label>
+            </value>
+            <value>
+                <fullName>Yotpo</fullName>
+                <default>false</default>
+                <label>Yotpo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

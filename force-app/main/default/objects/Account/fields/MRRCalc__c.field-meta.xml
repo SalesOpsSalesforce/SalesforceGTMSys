@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MRRCalc__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The sum of all Closed Won Opportunity MRR associated with this SF account.</inlineHelpText>
+    <label>MRR</label>
+    <summarizedField>Opportunity.MRR__c</summarizedField>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>Closed Won</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.Type__c</field>
+        <operation>notEqual</operation>
+        <value>Initial Transaction, Subsequent Transaction</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

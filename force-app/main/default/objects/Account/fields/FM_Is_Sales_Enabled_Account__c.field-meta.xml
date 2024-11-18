@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Is_Sales_Enabled_Account__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+
+RU_Numof_Won_Sales_Enabled_Opportunities__c&gt;0,1,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If the Account has at least 1 Sales Enabled Closed Won Opportunity, this field returns &quot;1&quot;.</inlineHelpText>
+    <label>Is Sales Enabled Account?</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

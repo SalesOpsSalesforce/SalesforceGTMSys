@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Link_to_Executive_Sponsor_Briefing_Doc__c</fullName>
+    <description>SFDC 3211</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The link to the Executive Sponsor briefing doc for this customer</inlineHelpText>
+    <label>Link to Executive Sponsor Briefing Doc</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

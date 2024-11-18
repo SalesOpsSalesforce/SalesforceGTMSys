@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lowercase_18_Id__c</fullName>
+    <description>Lowercase value of the account Id. Used in some matching on leads to partner accounts. The lower case value comes in from affiliate links which is why we match based on this.</description>
+    <externalId>false</externalId>
+    <formula>LOWER( CASESAFEID(Id))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lowercase 18 Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

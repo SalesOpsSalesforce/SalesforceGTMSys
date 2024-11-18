@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_Onboarding_Specialist__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>User who onboarded the customer for SMS specifically.  Set by the Customer Onboarding request Flow as the user who created the Customer Onboarding record from the SMS opp.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>User who onboarded the customer for SMS specifically.  Set by the Customer Onboarding request Flow as the user who created the Customer Onboarding record from the SMS opp.</inlineHelpText>
+    <label>SMS Onboarding Specialist</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>AccountsmDKQ</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

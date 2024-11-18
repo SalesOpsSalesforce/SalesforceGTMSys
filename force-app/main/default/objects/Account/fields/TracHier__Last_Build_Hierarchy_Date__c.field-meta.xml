@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TracHier__Last_Build_Hierarchy_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The date and time of the most recent processing by Build Hierarchies.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date and time of the most recent processing by Build Hierarchies.</inlineHelpText>
+    <label>Last Build Hierarchy Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

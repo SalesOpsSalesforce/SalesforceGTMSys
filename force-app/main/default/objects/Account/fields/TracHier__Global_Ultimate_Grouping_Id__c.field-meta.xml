@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TracHier__Global_Ultimate_Grouping_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Field used by Traction Hierarchies for grouping by Global Ultimate Parent account in reports</description>
+    <externalId>false</externalId>
+    <formula>TracHier__Hierarchy_ID__c</formula>
+    <inlineHelpText>Use this field to group records by Global Ultimate Parent account in reports</inlineHelpText>
+    <label>Global Ultimate Grouping Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ultimate_Parent_Segment_Director__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SFDC-243 Segment Director of the Ultimate Parent Account as determined by the Segment Director Custom Metadata. Used in Parent Account Claim Approval Processes.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Segment Director of the Ultimate Parent Account as determined by the Segment Director Custom Metadata</inlineHelpText>
+    <label>Ultimate Parent Segment Director</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>AccountshzFx</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

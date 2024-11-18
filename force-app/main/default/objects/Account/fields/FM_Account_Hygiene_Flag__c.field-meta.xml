@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Account_Hygiene_Flag__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(MRRCalc__c&lt;0,&quot;Negative MRR - &quot;,&quot;&quot;)
+
+&amp;
+
+IF(
+OR(
+RP_Paying_Account_Formula_Sum__c&gt;1,
+RP_Paying_Account_Formula_Sum__c&lt;-1),&quot;Incorrect Paying Account Formula on Opps - &quot;,&quot;&quot;)
+
+&amp;
+
+IF(
+AND(
+MRRCalc__c&gt;0,
+OR(
+TODAY()-DATEVALUE( Klaviyo_Product_Usage__r.PRODUCT_Last_Sync_Time_With_Klaviyo__c )&gt;3,
+ISBLANK(Klaviyo_Product_Usage__r.PRODUCT_Last_Sync_Time_With_Klaviyo__c ))),
+&quot;Paying Account Not Synced Recently - &quot;,&quot;&quot;)
+
+&amp;
+
+IF(
+AND(
+ISPICKVAL(FINANCE_Payment_Method__c,&quot;Stripe&quot;),
+TODAY()-Date_of_Last_MRR_Change__c&gt;3,
+MRRCalc__c&lt;&gt; Klaviyo_Product_Usage__r.PRODUCT_Stripe_Net_MRR__c ),
+&quot;Mismatched Saleforce / Stripe MRR = &quot;,&quot;&quot;)
+
+&amp;
+
+IF(
+AND(
+MRRCalc__c&gt;1000,
+ISBLANK(SUPPORT_Account_Manager__c)),
+&quot;$1000 Account Needs Account Manager - &quot;,&quot;&quot;)
+
+&amp;
+
+IF(
+AND(
+MRRCalc__c&gt;0,
+ISPICKVAL(FINANCE_Payment_Method__c,&quot;Stripe&quot;),
+OR(
+ISPICKVAL( Klaviyo_Product_Usage__r.PRODUCT_Klaviyo_Accout_Billing_Status__c ,&quot;unpaid&quot;),
+ISPICKVAL(Klaviyo_Product_Usage__r.PRODUCT_Klaviyo_Accout_Billing_Status__c,&quot;  Not Active&quot;))),
+&quot;Incorrect Billing Status = &quot;+TEXT(Klaviyo_Product_Usage__r.PRODUCT_Klaviyo_Accout_Billing_Status__c),&quot;&quot;)
+
+&amp;
+
+IF(
+AND(
+NOT(ISPICKVAL(RP_Referral_Partner_Tier__c,&quot;&quot;)),
+NOT(ISPICKVAL(RP_Referral_Partner_Tier__c,&quot;Left Program&quot;)),
+ISBLANK(RP_Referral_Partner_AE_of_Record__c)),
+&quot;Agency Without AE of Record - &quot;,&quot;&quot;)
+
+&amp;
+
+IF(
+ISPICKVAL(RP_AE_Partner_Management_Status__c,&quot;ASSIGNED - NEEDS RESOLUTION&quot;),
+&quot;Agency AE Management Status NEEDS RESOLUTION - &quot;,&quot;&quot;)
+
+&amp;
+
+IF(
+AND(
+NOT(ISPICKVAL(RP_Referral_Partner_Tier__c,&quot;&quot;)),
+NOT(ISPICKVAL(RP_Referral_Partner_Tier__c,&quot;Left Program&quot;)),
+CONTAINS(Name,&quot;&amp;&quot;)),
+&quot;Agency Account Name Contains Ampersand - &quot;,&quot;&quot;)
+
+
+&amp;
+
+IF(
+AND(
+TODAY()-DATEVALUE(Klaviyo_Product_Usage__r.PRODUCT_Last_Sync_Time_With_Klaviyo__c)&gt;3,
+OR(
+Klaviyo_Product_Usage__r.PRODUCT_Stripe_Net_MRR__c&gt;0,
+MRRCalc__c&gt;0)),
+&quot;Account with Postitive MRR or Stripe MRR Not Synced Recently - &quot;,&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Account Hygiene Flag</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

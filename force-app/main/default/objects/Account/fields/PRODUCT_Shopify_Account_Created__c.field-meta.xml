@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Shopify_Account_Created__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The date they created their Shopify account, this comes from Shopify&apos;s API.</inlineHelpText>
+    <label>(Automation Use) Shopify Account Created</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

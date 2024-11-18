@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Last_Target_Account_Status_Change__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Date the last target account status was last changed</inlineHelpText>
+    <label>Date Last Target Account Status Change</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

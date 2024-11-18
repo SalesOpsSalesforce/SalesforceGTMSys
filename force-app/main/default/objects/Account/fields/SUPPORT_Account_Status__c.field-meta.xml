@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SUPPORT_Account_Status__c</fullName>
+    <description>Account Management field to help classify the &quot;health&quot; of accounts. Used by Account Managers.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Account Management field to help classify the &quot;health&quot; of accounts. Used by Account Managers.</inlineHelpText>
+    <label>Account Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Elated</fullName>
+                <default>false</default>
+                <label>Elated</label>
+            </value>
+            <value>
+                <fullName>Maintain</fullName>
+                <default>false</default>
+                <label>Maintain</label>
+            </value>
+            <value>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+                <label>Onboarding</label>
+            </value>
+            <value>
+                <fullName>At Risk</fullName>
+                <default>false</default>
+                <label>At Risk</label>
+            </value>
+            <value>
+                <fullName>Disengaged</fullName>
+                <default>false</default>
+                <label>Disengaged</label>
+            </value>
+            <value>
+                <fullName>CSM Removed</fullName>
+                <default>false</default>
+                <label>CSM Removed</label>
+            </value>
+            <value>
+                <fullName>Churned</fullName>
+                <default>false</default>
+                <label>Churned</label>
+            </value>
+            <value>
+                <fullName>Churn Under 90</fullName>
+                <default>false</default>
+                <label>Churn Under 90</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>Free</fullName>
+                <default>false</default>
+                <label>Free</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

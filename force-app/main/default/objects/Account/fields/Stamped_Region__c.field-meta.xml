@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stamped_Region__c</fullName>
+    <description>SFDC 5309 - Stamped on Account Claim flow. Managers Account dispute process</description>
+    <externalId>false</externalId>
+    <label>Stamped Region</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Region</valueSetName>
+    </valueSet>
+</CustomField>

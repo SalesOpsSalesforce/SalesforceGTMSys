@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PWR_CSM_Winner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Used for PWR Dedupe (Ishita&apos;s Apex) 5/22/24</description>
+    <externalId>false</externalId>
+    <label>PWR - CSM Winner</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Accountsk2pd</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

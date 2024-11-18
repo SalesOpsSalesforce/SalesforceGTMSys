@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_1000_Retailers__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>A checkbox field to mark Accounts as a Top 1000 Retailer</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A checkbox field to mark Accounts as a Top 1000 Retailer</inlineHelpText>
+    <label>Top 1000 Retailers</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

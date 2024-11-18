@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Heard_About_Klaviyo_Through__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Question on Partner Application form that asks: &quot;How did you hear about Klaviyo?&quot;</inlineHelpText>
+    <label>Heard About Klaviyo Through:</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Podcast</fullName>
+                <default>false</default>
+                <label>Podcast</label>
+            </value>
+            <value>
+                <fullName>Web search</fullName>
+                <default>false</default>
+                <label>Web search</label>
+            </value>
+            <value>
+                <fullName>Referral - word of mouth</fullName>
+                <default>false</default>
+                <label>Referral - word of mouth</label>
+            </value>
+            <value>
+                <fullName>Through client</fullName>
+                <default>false</default>
+                <label>Through client</label>
+            </value>
+            <value>
+                <fullName>Article</fullName>
+                <default>false</default>
+                <label>Article</label>
+            </value>
+            <value>
+                <fullName>Review site</fullName>
+                <default>false</default>
+                <label>Review site</label>
+            </value>
+            <value>
+                <fullName>Vendor/technology partner</fullName>
+                <default>false</default>
+                <label>Vendor/technology partner</label>
+            </value>
+            <value>
+                <fullName>Upwork</fullName>
+                <default>false</default>
+                <label>Upwork</label>
+            </value>
+            <value>
+                <fullName>Fiverr</fullName>
+                <default>false</default>
+                <label>Fiverr</label>
+            </value>
+            <value>
+                <fullName>Breef</fullName>
+                <default>false</default>
+                <label>Breef</label>
+            </value>
+            <value>
+                <fullName>AmazonBwP</fullName>
+                <default>false</default>
+                <label>AmazonBwP</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
