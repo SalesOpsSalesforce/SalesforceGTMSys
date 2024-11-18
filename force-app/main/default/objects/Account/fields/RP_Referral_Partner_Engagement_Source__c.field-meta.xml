@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Referral_Partner_Engagement_Source__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The way this Referral Partner was engaged with Klaviyo.</inlineHelpText>
+    <label>Referral Partner Engagement Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Referral_Partner_Engagement_Source</valueSetName>
+    </valueSet>
+</CustomField>

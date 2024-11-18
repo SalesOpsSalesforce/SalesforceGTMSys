@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_MRR__c</fullName>
+    <description>SFDC-2577 Rolls up all MRR from OLIs with Email Product Family. 
+
+Note: We have a separate field, Email Subscription MRR that calculates Email MRR as Total MRR - SMS MRR. Thats not accurate, but we’re using that field in flows so can’t easily adjust it.</description>
+    <externalId>false</externalId>
+    <label>Email MRR</label>
+    <summarizedField>Opportunity.Email_MRR__c</summarizedField>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>Closed Won</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

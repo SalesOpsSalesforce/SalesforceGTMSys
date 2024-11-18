@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_Parent_Domain__c</fullName>
+    <description>The domain of the company&apos;s parent company (if any).</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The domain of the company&apos;s parent company (if any).</inlineHelpText>
+    <label>Clearbit Parent Domain</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

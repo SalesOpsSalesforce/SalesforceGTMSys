@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compliance_Flag__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flags if associated Opportunity has a cancellation reason with &apos;Compliance &amp; Deliverability&apos;
+Associated with TP ticket: 80662</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Flags if associated Opportunity has a cancellation reason with &apos;Compliance &amp; Deliverability&apos;</inlineHelpText>
+    <label>Compliance Flag</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

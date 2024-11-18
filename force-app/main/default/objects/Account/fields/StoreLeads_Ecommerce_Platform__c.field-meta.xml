@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StoreLeads_Ecommerce_Platform__c</fullName>
+    <description>The ecommerce platform of the store&apos;s ecommerce website. (e.g. shopify or magento)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The ecommerce platform of the store&apos;s ecommerce website. (e.g. shopify or magento)</inlineHelpText>
+    <label>StoreLeads Ecommerce Platform</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Shopify</fullName>
+                <default>false</default>
+                <label>Shopify</label>
+            </value>
+            <value>
+                <fullName>Mercado Shops</fullName>
+                <default>false</default>
+                <label>Mercado Shops</label>
+            </value>
+            <value>
+                <fullName>Zid</fullName>
+                <default>false</default>
+                <label>Zid</label>
+            </value>
+            <value>
+                <fullName>Network Solutions Commerce</fullName>
+                <default>false</default>
+                <label>Network Solutions Commerce</label>
+            </value>
+            <value>
+                <fullName>Shopcada</fullName>
+                <default>false</default>
+                <label>Shopcada</label>
+            </value>
+            <value>
+                <fullName>Delivery Biz Pro</fullName>
+                <default>false</default>
+                <label>Delivery Biz Pro</label>
+            </value>
+            <value>
+                <fullName>LnwShop</fullName>
+                <default>false</default>
+                <label>LnwShop</label>
+            </value>
+            <value>
+                <fullName>TeeChip</fullName>
+                <default>false</default>
+                <label>TeeChip</label>
+            </value>
+            <value>
+                <fullName>Sprwt</fullName>
+                <default>false</default>
+                <label>Sprwt</label>
+            </value>
+            <value>
+                <fullName>ueeshop</fullName>
+                <default>false</default>
+                <label>ueeshop</label>
+            </value>
+            <value>
+                <fullName>Yahoo Store</fullName>
+                <default>false</default>
+                <label>Yahoo Store</label>
+            </value>
+            <value>
+                <fullName>IdeaSoft</fullName>
+                <default>false</default>
+                <label>IdeaSoft</label>
+            </value>
+            <value>
+                <fullName>Fbits</fullName>
+                <default>false</default>
+                <label>Fbits</label>
+            </value>
+            <value>
+                <fullName>GrazeCart</fullName>
+                <default>false</default>
+                <label>GrazeCart</label>
+            </value>
+            <value>
+                <fullName>prom</fullName>
+                <default>false</default>
+                <label>prom</label>
+            </value>
+            <value>
+                <fullName>JET</fullName>
+                <default>false</default>
+                <label>JET</label>
+            </value>
+            <value>
+                <fullName>Square Online</fullName>
+                <default>false</default>
+                <label>Square Online</label>
+            </value>
+            <value>
+                <fullName>Rain</fullName>
+                <default>false</default>
+                <label>Rain</label>
+            </value>
+            <value>
+                <fullName>Tray Commerce</fullName>
+                <default>false</default>
+                <label>Tray Commerce</label>
+            </value>
+            <value>
+                <fullName>AspDotNetStorefront</fullName>
+                <default>false</default>
+                <label>AspDotNetStorefront</label>
+            </value>
+            <value>
+                <fullName>Sitecore Commerce</fullName>
+                <default>false</default>
+                <label>Sitecore Commerce</label>
+            </value>
+            <value>
+                <fullName>Future Shop</fullName>
+                <default>false</default>
+                <label>Future Shop</label>
+            </value>
+            <value>
+                <fullName>Cartzy</fullName>
+                <default>false</default>
+                <label>Cartzy</label>
+            </value>
+            <value>
+                <fullName>Shopmatic</fullName>
+                <default>false</default>
+                <label>Shopmatic</label>
+            </value>
+            <value>
+                <fullName>Vnda</fullName>
+                <default>false</default>
+                <label>Vnda</label>
+            </value>
+            <value>
+                <fullName>Magazord</fullName>
+                <default>false</default>
+                <label>Magazord</label>
+            </value>
+            <value>
+                <fullName>IdoSell</fullName>
+                <default>false</default>
+                <label>IdoSell</label>
+            </value>
+            <value>
+                <fullName>Haravan</fullName>
+                <default>false</default>
+                <label>Haravan</label>
+            </value>
+            <value>
+                <fullName>Vendre</fullName>
+                <default>false</default>
+                <label>Vendre</label>
+            </value>
+            <value>
+                <fullName>MakeShop</fullName>
+                <default>false</default>
+                <label>MakeShop</label>
+            </value>
+            <value>
+                <fullName>Webflow</fullName>
+                <default>false</default>
+                <label>Webflow</label>
+            </value>
+            <value>
+                <fullName>SAP Commerce Cloud</fullName>
+                <default>false</default>
+                <label>SAP Commerce Cloud</label>
+            </value>
+            <value>
+                <fullName>Spree Commerce</fullName>
+                <default>false</default>
+                <label>Spree Commerce</label>
+            </value>
+            <value>
+                <fullName>3DCart</fullName>
+                <default>false</default>
+                <label>3DCart</label>
+            </value>
+            <value>
+                <fullName>Weebly Commerce</fullName>
+                <default>false</default>
+                <label>Weebly Commerce</label>
+            </value>
+            <value>
+                <fullName>HCL Commerce</fullName>
+                <default>false</default>
+                <label>HCL Commerce</label>
+            </value>
+            <value>
+                <fullName>Visualsoft</fullName>
+                <default>false</default>
+                <label>Visualsoft</label>
+            </value>
+            <value>
+                <fullName>82Cart</fullName>
+                <default>false</default>
+                <label>82Cart</label>
+            </value>
+            <value>
+                <fullName>Workarea</fullName>
+                <default>false</default>
+                <label>Workarea</label>
+            </value>
+            <value>
+                <fullName>THG Ingenuity</fullName>
+                <default>false</default>
+                <label>THG Ingenuity</label>
+            </value>
+            <value>
+                <fullName>Miva Merchant</fullName>
+                <default>false</default>
+                <label>Miva Merchant</label>
+            </value>
+            <value>
+                <fullName>Teachable</fullName>
+                <default>false</default>
+                <label>Teachable</label>
+            </value>
+            <value>
+                <fullName>SHOPLINE</fullName>
+                <default>false</default>
+                <label>SHOPLINE</label>
+            </value>
+            <value>
+                <fullName>Wikinggruppen</fullName>
+                <default>false</default>
+                <label>Wikinggruppen</label>
+            </value>
+            <value>
+                <fullName>Loja Integrada</fullName>
+                <default>false</default>
+                <label>Loja Integrada</label>
+            </value>
+            <value>
+                <fullName>City Hive</fullName>
+                <default>false</default>
+                <label>City Hive</label>
+            </value>
+            <value>
+                <fullName>ePages</fullName>
+                <default>false</default>
+                <label>ePages</label>
+            </value>
+            <value>
+                <fullName>BaseKit</fullName>
+                <default>false</default>
+                <label>BaseKit</label>
+            </value>
+            <value>
+                <fullName>Viskan</fullName>
+                <default>false</default>
+                <label>Viskan</label>
+            </value>
+            <value>
+                <fullName>Yampi</fullName>
+                <default>false</default>
+                <label>Yampi</label>
+            </value>
+            <value>
+                <fullName>CommerceUp</fullName>
+                <default>false</default>
+                <label>CommerceUp</label>
+            </value>
+            <value>
+                <fullName>STORES</fullName>
+                <default>false</default>
+                <label>STORES</label>
+            </value>
+            <value>
+                <fullName>OpenCart</fullName>
+                <default>false</default>
+                <label>OpenCart</label>
+            </value>
+            <value>
+                <fullName>CommentSold</fullName>
+                <default>false</default>
+                <label>CommentSold</label>
+            </value>
+            <value>
+                <fullName>Big Cartel</fullName>
+                <default>false</default>
+                <label>Big Cartel</label>
+            </value>
+            <value>
+                <fullName>Shoptet</fullName>
+                <default>false</default>
+                <label>Shoptet</label>
+            </value>
+            <value>
+                <fullName>Intershop</fullName>
+                <default>false</default>
+                <label>Intershop</label>
+            </value>
+            <value>
+                <fullName>Etsy Pattern</fullName>
+                <default>false</default>
+                <label>Etsy Pattern</label>
+            </value>
+            <value>
+                <fullName>XShoppy</fullName>
+                <default>false</default>
+                <label>XShoppy</label>
+            </value>
+            <value>
+                <fullName>Music Glue</fullName>
+                <default>false</default>
+                <label>Music Glue</label>
+            </value>
+            <value>
+                <fullName>Salla</fullName>
+                <default>false</default>
+                <label>Salla</label>
+            </value>
+            <value>
+                <fullName>Linx Commerce</fullName>
+                <default>false</default>
+                <label>Linx Commerce</label>
+            </value>
+            <value>
+                <fullName>Kajabi</fullName>
+                <default>false</default>
+                <label>Kajabi</label>
+            </value>
+            <value>
+                <fullName>Askås</fullName>
+                <default>false</default>
+                <label>Askås</label>
+            </value>
+            <value>
+                <fullName>Shoper</fullName>
+                <default>false</default>
+                <label>Shoper</label>
+            </value>
+            <value>
+                <fullName>Convertize</fullName>
+                <default>false</default>
+                <label>Convertize</label>
+            </value>
+            <value>
+                <fullName>Sapo</fullName>
+                <default>false</default>
+                <label>Sapo</label>
+            </value>
+            <value>
+                <fullName>E37</fullName>
+                <default>false</default>
+                <label>E37</label>
+            </value>
+            <value>
+                <fullName>WooCommerce</fullName>
+                <default>false</default>
+                <label>WooCommerce</label>
+            </value>
+            <value>
+                <fullName>Squarespace</fullName>
+                <default>false</default>
+                <label>Squarespace</label>
+            </value>
+            <value>
+                <fullName>PrestaShop</fullName>
+                <default>false</default>
+                <label>PrestaShop</label>
+            </value>
+            <value>
+                <fullName>GoDaddy Online Store</fullName>
+                <default>false</default>
+                <label>GoDaddy Online Store</label>
+            </value>
+            <value>
+                <fullName>Custom Cart</fullName>
+                <default>false</default>
+                <label>Custom Cart</label>
+            </value>
+            <value>
+                <fullName>Magento</fullName>
+                <default>false</default>
+                <label>Magento</label>
+            </value>
+            <value>
+                <fullName>ShopBase</fullName>
+                <default>false</default>
+                <label>ShopBase</label>
+            </value>
+            <value>
+                <fullName>BigCommerce</fullName>
+                <default>false</default>
+                <label>BigCommerce</label>
+            </value>
+            <value>
+                <fullName>Boutir</fullName>
+                <default>false</default>
+                <label>Boutir</label>
+            </value>
+            <value>
+                <fullName>Wix</fullName>
+                <default>false</default>
+                <label>Wix</label>
+            </value>
+            <value>
+                <fullName>NetSuite SuiteCommerce</fullName>
+                <default>false</default>
+                <label>NetSuite SuiteCommerce</label>
+            </value>
+            <value>
+                <fullName>Shopware</fullName>
+                <default>false</default>
+                <label>Shopware</label>
+            </value>
+            <value>
+                <fullName>Ecwid</fullName>
+                <default>false</default>
+                <label>Ecwid</label>
+            </value>
+            <value>
+                <fullName>Commerce7</fullName>
+                <default>false</default>
+                <label>Commerce7</label>
+            </value>
+            <value>
+                <fullName>VTEX</fullName>
+                <default>false</default>
+                <label>VTEX</label>
+            </value>
+            <value>
+                <fullName>Odoo</fullName>
+                <default>false</default>
+                <label>Odoo</label>
+            </value>
+            <value>
+                <fullName>Tiendanube</fullName>
+                <default>false</default>
+                <label>Tiendanube</label>
+            </value>
+            <value>
+                <fullName>cartX</fullName>
+                <default>false</default>
+                <label>cartX</label>
+            </value>
+            <value>
+                <fullName>Gambio</fullName>
+                <default>false</default>
+                <label>Gambio</label>
+            </value>
+            <value>
+                <fullName>MerchantPro</fullName>
+                <default>false</default>
+                <label>MerchantPro</label>
+            </value>
+            <value>
+                <fullName>Wx3</fullName>
+                <default>false</default>
+                <label>Wx3</label>
+            </value>
+            <value>
+                <fullName>Starweb</fullName>
+                <default>false</default>
+                <label>Starweb</label>
+            </value>
+            <value>
+                <fullName>Thinkific</fullName>
+                <default>false</default>
+                <label>Thinkific</label>
+            </value>
+            <value>
+                <fullName>JTL-Shop</fullName>
+                <default>false</default>
+                <label>JTL-Shop</label>
+            </value>
+            <value>
+                <fullName>CommerceHQ</fullName>
+                <default>false</default>
+                <label>CommerceHQ</label>
+            </value>
+            <value>
+                <fullName>Dooca</fullName>
+                <default>false</default>
+                <label>Dooca</label>
+            </value>
+            <value>
+                <fullName>AllValue</fullName>
+                <default>false</default>
+                <label>AllValue</label>
+            </value>
+            <value>
+                <fullName>nopCommerce</fullName>
+                <default>false</default>
+                <label>nopCommerce</label>
+            </value>
+            <value>
+                <fullName>Quickbutik</fullName>
+                <default>false</default>
+                <label>Quickbutik</label>
+            </value>
+            <value>
+                <fullName>sixshop</fullName>
+                <default>false</default>
+                <label>sixshop</label>
+            </value>
+            <value>
+                <fullName>Moovin</fullName>
+                <default>false</default>
+                <label>Moovin</label>
+            </value>
+            <value>
+                <fullName>MakanE</fullName>
+                <default>false</default>
+                <label>MakanE</label>
+            </value>
+            <value>
+                <fullName>Launch Cart</fullName>
+                <default>false</default>
+                <label>Launch Cart</label>
+            </value>
+            <value>
+                <fullName>StackCommerce</fullName>
+                <default>false</default>
+                <label>StackCommerce</label>
+            </value>
+            <value>
+                <fullName>NHN Godo</fullName>
+                <default>false</default>
+                <label>NHN Godo</label>
+            </value>
+            <value>
+                <fullName>Shoprenter</fullName>
+                <default>false</default>
+                <label>Shoprenter</label>
+            </value>
+            <value>
+                <fullName>Dukaan</fullName>
+                <default>false</default>
+                <label>Dukaan</label>
+            </value>
+            <value>
+                <fullName>Cyberbiz</fullName>
+                <default>false</default>
+                <label>Cyberbiz</label>
+            </value>
+            <value>
+                <fullName>Volusion</fullName>
+                <default>false</default>
+                <label>Volusion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

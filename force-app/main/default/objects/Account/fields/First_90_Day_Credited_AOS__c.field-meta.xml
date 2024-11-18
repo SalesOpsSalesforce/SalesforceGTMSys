@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_90_Day_Credited_AOS__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Credit AOS for opportunities created in the first 90 days of an Agencies lifecycle</description>
+    <externalId>false</externalId>
+    <label>Original Credited AOS</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Accounts2XlH</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

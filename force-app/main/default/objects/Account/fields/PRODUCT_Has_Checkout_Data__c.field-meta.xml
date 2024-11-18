@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Has_Checkout_Data__c</fullName>
+    <externalId>false</externalId>
+    <formula>Klaviyo_Product_Usage__r.PRODUCT_Metrics_StartedCheckout_Value__c &gt; 0</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>True if an account has &quot;Started Checkout&quot; data and that data has revenue data.</inlineHelpText>
+    <label>Has Checkout Data</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

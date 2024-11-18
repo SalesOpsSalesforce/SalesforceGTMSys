@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Has_Order_And_Checkout_Data__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(PRODUCT_Has_Order_Data__c,PRODUCT_Has_Checkout_Data__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>True if &quot;Has Order Data&quot; and &quot;Has Checkout Data&quot; are true.</inlineHelpText>
+    <label>Has Order and Checkout Data</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

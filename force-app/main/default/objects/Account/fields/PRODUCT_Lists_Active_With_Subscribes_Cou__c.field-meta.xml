@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Lists_Active_With_Subscribes_Cou__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Lists where someone has either subscribed via a Klaviyo form or the API in the last 48 hours.</inlineHelpText>
+    <label>(Automation Use) No of Active Lists</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Experts_Tier__c</fullName>
+    <description>API name doesn&apos;t match bc of Mike</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Agencies who have an email program and are experts at delivering value with the Klaviyo product for eCommerce brands via setting up/supporting/managing our customers.</inlineHelpText>
+    <label>Masters Referral Partner Tier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Referral_Partner_Tier</valueSetName>
+    </valueSet>
+</CustomField>

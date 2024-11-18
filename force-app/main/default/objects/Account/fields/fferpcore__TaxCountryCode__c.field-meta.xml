@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fferpcore__TaxCountryCode__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Code for the European Union country in which this account operates. You can update the entries in this custom picklist if required.
+The country code is required for the correct reporting of VAT on cross-border trades within the European Union.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The country code for this account. This is required for correct reporting of VAT on cross-border trades within the European Union.</inlineHelpText>
+    <label>Tax Country Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>fferpcore__TaxCountryCode</valueSetName>
+    </valueSet>
+</CustomField>

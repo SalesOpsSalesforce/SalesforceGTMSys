@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Account__c</fullName>
+    <description>SFDC 4201 Sales Segmentation</description>
+    <externalId>false</externalId>
+    <label>Assigned Account</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Named Account (AE)</fullName>
+                <default>false</default>
+                <label>Named Account (AE)</label>
+            </value>
+            <value>
+                <fullName>Temporary Named Account (AE)</fullName>
+                <default>false</default>
+                <label>Temporary Named Account (AE)</label>
+            </value>
+            <value>
+                <fullName>CG AMER ENTR 1</fullName>
+                <default>false</default>
+                <label>CG AMER ENTR 1</label>
+            </value>
+            <value>
+                <fullName>CG AMER ENTR 2</fullName>
+                <default>false</default>
+                <label>CG AMER ENTR 2</label>
+            </value>
+            <value>
+                <fullName>CG AMER ENTR 3</fullName>
+                <default>false</default>
+                <label>CG AMER ENTR 3</label>
+            </value>
+            <value>
+                <fullName>CG AMER ENTR 4</fullName>
+                <default>false</default>
+                <label>CG AMER ENTR 4</label>
+            </value>
+            <value>
+                <fullName>CG AMER ENTR 5</fullName>
+                <default>false</default>
+                <label>CG AMER ENTR 5</label>
+            </value>
+            <value>
+                <fullName>CG AMER ENTR 6</fullName>
+                <default>false</default>
+                <label>CG AMER ENTR 6</label>
+            </value>
+            <value>
+                <fullName>CG AMER ENTR 7</fullName>
+                <default>false</default>
+                <label>CG AMER ENTR 7</label>
+            </value>
+            <value>
+                <fullName>CG AMER ENTR 8</fullName>
+                <default>false</default>
+                <label>CG AMER ENTR 8</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 1</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 1</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 2</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 2</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 3</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 3</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 4</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 4</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 5</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 5</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 6</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 6</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 7</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 7</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 8</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 8</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 9</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 9</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 10</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 10</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 11</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 11</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 12</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 12</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 13</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 13</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 14</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 14</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 15</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 15</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 16</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 16</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 17</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 17</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 18</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 18</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 19</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 19</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 20</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 20</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 21</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 21</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 22</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 22</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 23</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 23</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 24</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 24</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 25</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 25</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 26</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 26</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 27</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 27</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 28</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 28</label>
+            </value>
+            <value>
+                <fullName>CG AMER SMB 29</fullName>
+                <default>false</default>
+                <label>CG AMER SMB 29</label>
+            </value>
+            <value>
+                <fullName>CG AMER MM 1</fullName>
+                <default>false</default>
+                <label>CG AMER MM 1</label>
+            </value>
+            <value>
+                <fullName>CG AMER MM 2</fullName>
+                <default>false</default>
+                <label>CG AMER MM 2</label>
+            </value>
+            <value>
+                <fullName>CG AMER MM 3</fullName>
+                <default>false</default>
+                <label>CG AMER MM 3</label>
+            </value>
+            <value>
+                <fullName>CG AMER MM 4</fullName>
+                <default>false</default>
+                <label>CG AMER MM 4</label>
+            </value>
+            <value>
+                <fullName>CG AMER MM 5</fullName>
+                <default>false</default>
+                <label>CG AMER MM 5</label>
+            </value>
+            <value>
+                <fullName>CG AMER MM 6</fullName>
+                <default>false</default>
+                <label>CG AMER MM 6</label>
+            </value>
+            <value>
+                <fullName>CG AMER MM 7</fullName>
+                <default>false</default>
+                <label>CG AMER MM 7</label>
+            </value>
+            <value>
+                <fullName>CG EMEA ENTR 1</fullName>
+                <default>false</default>
+                <label>CG EMEA ENTR 1</label>
+            </value>
+            <value>
+                <fullName>CG EMEA ENTR 2</fullName>
+                <default>false</default>
+                <label>CG EMEA ENTR 2</label>
+            </value>
+            <value>
+                <fullName>CG EMEA ENTR 3</fullName>
+                <default>false</default>
+                <label>CG EMEA ENTR 3</label>
+            </value>
+            <value>
+                <fullName>CG EMEA SMB 1</fullName>
+                <default>false</default>
+                <label>CG EMEA SMB 1</label>
+            </value>
+            <value>
+                <fullName>CG EMEA SMB 2</fullName>
+                <default>false</default>
+                <label>CG EMEA SMB 2</label>
+            </value>
+            <value>
+                <fullName>CG EMEA SMB 3</fullName>
+                <default>false</default>
+                <label>CG EMEA SMB 3</label>
+            </value>
+            <value>
+                <fullName>CG EMEA SMB 4</fullName>
+                <default>false</default>
+                <label>CG EMEA SMB 4</label>
+            </value>
+            <value>
+                <fullName>CG EMEA SMB 5</fullName>
+                <default>false</default>
+                <label>CG EMEA SMB 5</label>
+            </value>
+            <value>
+                <fullName>CG EMEA MM 1</fullName>
+                <default>false</default>
+                <label>CG EMEA MM 1</label>
+            </value>
+            <value>
+                <fullName>CG EMEA MM 2</fullName>
+                <default>false</default>
+                <label>CG EMEA MM 2</label>
+            </value>
+            <value>
+                <fullName>CG APAC ENTR 1</fullName>
+                <default>false</default>
+                <label>CG APAC ENTR 1</label>
+            </value>
+            <value>
+                <fullName>CG APAC ENTR 2</fullName>
+                <default>false</default>
+                <label>CG APAC ENTR 2</label>
+            </value>
+            <value>
+                <fullName>CG APAC SMB 1</fullName>
+                <default>false</default>
+                <label>CG APAC SMB 1</label>
+            </value>
+            <value>
+                <fullName>CG APAC SMB 2</fullName>
+                <default>false</default>
+                <label>CG APAC SMB 2</label>
+            </value>
+            <value>
+                <fullName>CG APAC SMB 3</fullName>
+                <default>false</default>
+                <label>CG APAC SMB 3</label>
+            </value>
+            <value>
+                <fullName>CG APAC SMB 4</fullName>
+                <default>false</default>
+                <label>CG APAC SMB 4</label>
+            </value>
+            <value>
+                <fullName>CG APAC MM 1</fullName>
+                <default>false</default>
+                <label>CG APAC MM 1</label>
+            </value>
+            <value>
+                <fullName>CG APAC MM 2</fullName>
+                <default>false</default>
+                <label>CG APAC MM 2</label>
+            </value>
+            <value>
+                <fullName>STRAT AMER AE 1</fullName>
+                <default>false</default>
+                <label>STRAT AMER AE 1</label>
+            </value>
+            <value>
+                <fullName>STRAT AMER AE 2</fullName>
+                <default>false</default>
+                <label>STRAT AMER AE 2</label>
+            </value>
+            <value>
+                <fullName>STRAT AMER AE 3</fullName>
+                <default>false</default>
+                <label>STRAT AMER AE 3</label>
+            </value>
+            <value>
+                <fullName>STRAT AMER AE 4</fullName>
+                <default>false</default>
+                <label>STRAT AMER AE 4</label>
+            </value>
+            <value>
+                <fullName>STRAT AMER AE 5</fullName>
+                <default>false</default>
+                <label>STRAT AMER AE 5</label>
+            </value>
+            <value>
+                <fullName>STRAT AMER AE 6</fullName>
+                <default>false</default>
+                <label>STRAT AMER AE 6</label>
+            </value>
+            <value>
+                <fullName>Entrepreneur Holdover Account</fullName>
+                <default>false</default>
+                <label>Entrepreneur Holdover Account</label>
+            </value>
+            <value>
+                <fullName>SMB Holdover Account</fullName>
+                <default>false</default>
+                <label>SMB Holdover Account</label>
+            </value>
+            <value>
+                <fullName>Mid Market Holdover Account</fullName>
+                <default>false</default>
+                <label>Mid Market Holdover Account</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

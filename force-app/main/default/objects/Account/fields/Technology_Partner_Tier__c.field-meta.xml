@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technology_Partner_Tier__c</fullName>
+    <description>TP110713. Tech Partner tiering system to help Partner Managers prioritize technology partner accounts and different benefits that can be offered to each tier.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Tech Partner tiering system to help Partner Managers prioritize technology partner accounts and different benefits that can be offered to each tier.</inlineHelpText>
+    <label>Technology Partner Tier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+                <label>Tier 1</label>
+            </value>
+            <value>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+                <label>Tier 2</label>
+            </value>
+            <value>
+                <fullName>Tier 3</fullName>
+                <default>false</default>
+                <label>Tier 3</label>
+            </value>
+            <value>
+                <fullName>Tier 1: Elite</fullName>
+                <default>false</default>
+                <label>Tier 1: Elite</label>
+            </value>
+            <value>
+                <fullName>Tier 2: Verified</fullName>
+                <default>false</default>
+                <label>Tier 2: Verified</label>
+            </value>
+            <value>
+                <fullName>Tier 3: Growth</fullName>
+                <default>false</default>
+                <label>Tier 3: Growth</label>
+            </value>
+            <value>
+                <fullName>Developer</fullName>
+                <default>false</default>
+                <label>Developer</label>
+            </value>
+            <value>
+                <fullName>Klaviyo One Partner</fullName>
+                <default>false</default>
+                <label>Klaviyo One Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

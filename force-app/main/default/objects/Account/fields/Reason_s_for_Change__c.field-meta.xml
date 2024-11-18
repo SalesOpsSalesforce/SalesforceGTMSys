@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_s_for_Change__c</fullName>
+    <description>SFDC 5309</description>
+    <externalId>false</externalId>
+    <label>Reason(s) for Change</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Company website</fullName>
+                <default>false</default>
+                <label>Company website</label>
+            </value>
+            <value>
+                <fullName>Company social</fullName>
+                <default>false</default>
+                <label>Company social</label>
+            </value>
+            <value>
+                <fullName>Public Filing</fullName>
+                <default>false</default>
+                <label>Public Filing</label>
+            </value>
+            <value>
+                <fullName>Press Release</fullName>
+                <default>false</default>
+                <label>Press Release</label>
+            </value>
+            <value>
+                <fullName>Exception</fullName>
+                <default>false</default>
+                <label>Exception</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

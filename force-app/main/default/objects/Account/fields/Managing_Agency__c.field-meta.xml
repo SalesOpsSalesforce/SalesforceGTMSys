@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Managing_Agency__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Link to the managing agency account</inlineHelpText>
+    <label>Managing Agency</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Accounts (Managing Agency)</relationshipLabel>
+    <relationshipName>Accounts_del</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

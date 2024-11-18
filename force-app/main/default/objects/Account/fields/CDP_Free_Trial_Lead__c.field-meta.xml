@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CDP_Free_Trial_Lead__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SFDC 3489 Grabs CDP Free Trial Lead</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Lead from CDP Free Trial</inlineHelpText>
+    <label>CDP Free Trial Lead</label>
+    <referenceTo>Lead</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

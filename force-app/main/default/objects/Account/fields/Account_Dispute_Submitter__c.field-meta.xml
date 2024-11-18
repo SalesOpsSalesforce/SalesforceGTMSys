@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Dispute_Submitter__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SFDC 5921 - Referenced in Approval Process Account Claim Dispute Process</description>
+    <externalId>false</externalId>
+    <label>Account Dispute Submitter</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Accountsuh3Z</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

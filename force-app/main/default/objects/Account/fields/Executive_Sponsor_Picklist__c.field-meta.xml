@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Executive_Sponsor_Picklist__c</fullName>
+    <description>SFDC 3211 + SFDC 3663</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Klaviyo Executive assigned as Exec Sponsor of this account</inlineHelpText>
+    <label>Executive Sponsor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amanda Whalen</fullName>
+                <default>false</default>
+                <label>Amanda Whalen</label>
+            </value>
+            <value>
+                <fullName>Andrew Bialecki</fullName>
+                <default>false</default>
+                <label>Andrew Bialecki</label>
+            </value>
+            <value>
+                <fullName>Carmel Galvin</fullName>
+                <default>false</default>
+                <label>Carmel Galvin</label>
+            </value>
+            <value>
+                <fullName>Chris Chiodo</fullName>
+                <default>false</default>
+                <label>Chris Chiodo</label>
+            </value>
+            <value>
+                <fullName>Eddie O’Brien</fullName>
+                <default>false</default>
+                <label>Eddie O’Brien</label>
+            </value>
+            <value>
+                <fullName>Ed Hallen</fullName>
+                <default>false</default>
+                <label>Ed Hallen</label>
+            </value>
+            <value>
+                <fullName>Jamie Domenici</fullName>
+                <default>false</default>
+                <label>Jamie Domenici</label>
+            </value>
+            <value>
+                <fullName>Jen Kessler</fullName>
+                <default>false</default>
+                <label>Jen Kessler</label>
+            </value>
+            <value>
+                <fullName>Jessica Meschino</fullName>
+                <default>false</default>
+                <label>Jessica Meschino</label>
+            </value>
+            <value>
+                <fullName>Landon Edmond</fullName>
+                <default>false</default>
+                <label>Landon Edmond</label>
+            </value>
+            <value>
+                <fullName>Ryan Meadows</fullName>
+                <default>false</default>
+                <label>Ryan Meadows</label>
+            </value>
+            <value>
+                <fullName>Steve Rowland</fullName>
+                <default>false</default>
+                <label>Steve Rowland</label>
+            </value>
+            <value>
+                <fullName>Suzy Nicoletti</fullName>
+                <default>false</default>
+                <label>Suzy Nicoletti</label>
+            </value>
+            <value>
+                <fullName>Allen Chaves</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Allen Chaves</label>
+            </value>
+            <value>
+                <fullName>Justin Khaksar</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Justin Khaksar</label>
+            </value>
+            <value>
+                <fullName>Kim Peretti</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Kim Peretti</label>
+            </value>
+            <value>
+                <fullName>Lisa Maronski</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lisa Maronski</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

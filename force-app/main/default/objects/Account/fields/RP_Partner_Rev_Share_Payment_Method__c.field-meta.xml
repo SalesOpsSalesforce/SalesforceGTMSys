@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Partner_Rev_Share_Payment_Method__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The method through which we will pay rev share to partners. &quot;Verifying Payment Method&quot; means that we have received their payment method but have yet to verify that the information is correct.</inlineHelpText>
+    <label>Partner Rev Share Payment Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Partner_Rev_Share_Payment_Method</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KPU_Last_Login_Date__c</fullName>
+    <description>Last Login Date from KPU</description>
+    <externalId>false</externalId>
+    <formula>Klaviyo_Product_Usage__r.PRODUCT_Last_Klaviyo_Log_In_Date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Last Login Date from KPU</inlineHelpText>
+    <label>KPU Last Login Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

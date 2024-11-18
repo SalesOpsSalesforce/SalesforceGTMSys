@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DNBConnect__D_B_Connect_Company_Profile__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Upon a successful match, D&amp;B Connect populates this field that links the Account record to a specific D-U-N-S Number for display of a custom object with D&amp;B data.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Upon a successful match, D&amp;B Connect populates this field that links the Account record to a specific D-U-N-S Number for display of a custom object with D&amp;B data.</inlineHelpText>
+    <label>D&amp;B Connect Company Profile</label>
+    <referenceTo>DNBConnect__D_B_Connect_Company_Profile__c</referenceTo>
+    <relationshipLabel>DBConnectAccountCompanyProfile</relationshipLabel>
+    <relationshipName>DBConnectAccountCompanyProfile</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

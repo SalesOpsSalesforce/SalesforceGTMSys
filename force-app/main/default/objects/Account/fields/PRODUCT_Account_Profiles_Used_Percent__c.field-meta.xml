@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Account_Profiles_Used_Percent__c</fullName>
+    <externalId>false</externalId>
+    <formula>Klaviyo_Product_Usage__r.PRODUCT_of_Emailable_Profiles__c  /  Klaviyo_Product_Usage__r.PRODUCT_Klaviyo_Plan_Limit__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Profiles Used %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

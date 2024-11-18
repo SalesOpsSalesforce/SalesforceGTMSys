@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Success_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SFDC 4812
+THIS FIELD HAS HISTORY TRACKING APPLIED - DO NOT REMOVE HISTORY TRACKING.
+This field is used by Data Engineering in assessing who the Month Start PSM and Month End PSM was at the month start and month end respectively for an account. Do not disable tracking on this field without first checking with Padrig Tuck and Evan Cover as it has direct implications in determining variable compensation for the PSN organization.</description>
+    <externalId>false</externalId>
+    <label>Partner Success Manager</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>PartnerSuccessManager</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fferpcore__SalesTaxStatus__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The tax status for this account for SUT companies.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The tax status for this account for SUT companies.</inlineHelpText>
+    <label>Sales Tax Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Taxable</fullName>
+                <default>false</default>
+                <label>Taxable</label>
+            </value>
+            <value>
+                <fullName>Exempt</fullName>
+                <default>false</default>
+                <label>Exempt</label>
+            </value>
+            <value>
+                <fullName>Exempt for Qualifying Products</fullName>
+                <default>false</default>
+                <label>Exempt for Qualifying Products</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

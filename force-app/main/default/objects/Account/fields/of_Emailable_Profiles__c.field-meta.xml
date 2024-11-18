@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_Emailable_Profiles__c</fullName>
+    <externalId>false</externalId>
+    <formula>Klaviyo_Product_Usage__r.PRODUCT_of_Emailable_Profiles__c</formula>
+    <label># of Emailable Profiles</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

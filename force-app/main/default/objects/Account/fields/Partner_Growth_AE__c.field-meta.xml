@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Growth_AE__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>TP # 112920 Customer Growth AE exclusively handles the related partner account and its managed customer accounts.</description>
+    <externalId>false</externalId>
+    <label>Partner Growth AE</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>AccountsNdkF</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

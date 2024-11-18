@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Duplicate__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used by Riley to dedupe Accounts in Full</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used by Riley to dedupe Accounts in Full</inlineHelpText>
+    <label>Is Duplicate</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

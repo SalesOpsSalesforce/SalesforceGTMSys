@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DNBConnect__D_B_Match_Confidence_Code__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A numeric value from 1 (low) up to 10 (high) indicating the level of certainty at which this possible candidate was included in this result set.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A numeric value from 1 (low) up to 10 (high) indicating the level of certainty at which this possible candidate was included in this result set.</inlineHelpText>
+    <label>D&amp;B Match Confidence Code</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

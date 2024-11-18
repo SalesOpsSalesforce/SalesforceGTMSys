@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Portal_Tier_Logo_Pack_Link__c</fullName>
+    <description>Text formula for providing dynamic logo pack URL to Partner Portal quick links download.</description>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Experts_Tier__c),
+&quot;Silver&quot;, &quot;/sfsites/c/resource/PartnerPortalLogoPackSilverMaster&quot;,
+&quot;Gold&quot;, &quot;/sfsites/c/resource/PartnerPortalLogoPackGoldMaster&quot;,
+&quot;Platinum&quot;, &quot;/sfsites/c/resource/PartnerPortalLogoPackPlatinumMaster&quot;,
+&quot;Elite&quot;, &quot;/sfsites/c/resource/PartnerPortalLogoPackEliteMaster&quot;, 
+&quot;Klaviyo Partner&quot;, &quot;/sfsites/c/resource/PartnerPortalLogoPackKlaviyoPartner&quot;,
+  CASE(TEXT(Services_Tier__c),
+  &quot;Silver&quot;, &quot;/sfsites/c/resource/PartnerPortalLogoPackSilverAdvisor&quot;,
+  &quot;Gold&quot;, &quot;/sfsites/c/resource/PartnerPortalLogoPackGoldAdvisor&quot;,
+  &quot;Platinum&quot;, &quot;/sfsites/c/resource/PartnerPortalLogoPackPlatinumAdvisor&quot;,
+  &quot;Elite&quot;, &quot;&quot;,
+  &quot;Klaviyo Partner&quot;, &quot;/sfsites/c/resource/PartnerPortalLogoPackKlaviyoPartner&quot;,
+  &quot;&quot;)
+)</formula>
+    <label>Partner Portal Tier Logo Pack Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

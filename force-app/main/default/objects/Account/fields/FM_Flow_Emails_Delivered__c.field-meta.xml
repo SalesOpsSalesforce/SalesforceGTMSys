@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Flow_Emails_Delivered__c</fullName>
+    <externalId>false</externalId>
+    <formula>Klaviyo_Product_Usage__r.PRODUCT_Num_of_Emails_Sent_in_Last_30__c -  Klaviyo_Product_Usage__r.PRODUCT_Campaigns_Delivered__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The number of flow emails delivered in the last 30 days. Computed as &quot;Emails Delivered&quot; minus &quot;Newsletters Delivered.&quot;</inlineHelpText>
+    <label>Flow Emails Delivered</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

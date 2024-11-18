@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Contract_Effective_Date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Field managed by Finance to identify customers with a custom contract and the term effective date</inlineHelpText>
+    <label>Custom Contract Effective Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Confirmed_Reference_Date__c</fullName>
+    <description>Set by PB. Date the Customer Reference Disposition was updated to != null</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date the Customer Reference Disposition was confirmed.</inlineHelpText>
+    <label>Confirmed Reference Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

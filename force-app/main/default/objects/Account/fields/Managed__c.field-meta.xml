@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Managed__c</fullName>
+    <description>If the account is a Masters tier then this is the Managed % they get paid out on.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the account is a Masters tier then this is the Managed % they get paid out on.</inlineHelpText>
+    <label>Managed %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

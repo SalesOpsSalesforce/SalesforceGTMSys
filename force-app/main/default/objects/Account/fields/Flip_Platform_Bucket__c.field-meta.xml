@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flip_Platform_Bucket__c</fullName>
+    <externalId>false</externalId>
+    <label>Flip Platform Bucket</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Low Sophistication</fullName>
+                <default>false</default>
+                <label>Low Sophistication</label>
+            </value>
+            <value>
+                <fullName>High Sophistication</fullName>
+                <default>false</default>
+                <label>High Sophistication</label>
+            </value>
+            <value>
+                <fullName>Non-Ecommerce</fullName>
+                <default>false</default>
+                <label>Non-Ecommerce</label>
+            </value>
+            <value>
+                <fullName>New Agency without a Lead</fullName>
+                <default>false</default>
+                <label>New Agency without a Lead</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

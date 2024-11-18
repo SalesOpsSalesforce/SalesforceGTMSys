@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integration_Status__c</fullName>
+    <description>SFDC 4081</description>
+    <externalId>false</externalId>
+    <label>Integration Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Considering a Build</fullName>
+                <default>false</default>
+                <label>Considering a Build</label>
+            </value>
+            <value>
+                <fullName>Planning to or Actively Building</fullName>
+                <default>false</default>
+                <label>Planning to or Actively Building</label>
+            </value>
+            <value>
+                <fullName>Integration is Active</fullName>
+                <default>false</default>
+                <label>Integration is Active</label>
+            </value>
+            <value>
+                <fullName>1: Weak</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1: Weak</label>
+            </value>
+            <value>
+                <fullName>2: Modest</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2: Modest</label>
+            </value>
+            <value>
+                <fullName>3: Moderate</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3: Moderate</label>
+            </value>
+            <value>
+                <fullName>4: Strong</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>4: Strong</label>
+            </value>
+            <value>
+                <fullName>5: Very Strong</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>5: Very Strong</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

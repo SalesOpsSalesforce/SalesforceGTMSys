@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BI_Enrichment_Synced__c</fullName>
+    <description>Datetime stamp indicates when the record is synced from Salesforce to BI model for enrichment</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Datetime stamp indicates when the record is synced from Salesforce to BI model for enrichment</inlineHelpText>
+    <label>BI Enrichment Synced</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Account_Claim_Request__c</fullName>
+    <description>SFDC-541 Reason why a rep is requesting approval for an Account Claim</description>
+    <externalId>false</externalId>
+    <label>Reason for Account Claim Request</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

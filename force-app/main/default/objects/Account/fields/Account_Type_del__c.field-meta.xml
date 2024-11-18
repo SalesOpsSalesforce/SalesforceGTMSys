@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Type_del__c</fullName>
+    <description>Type of account being managed by CSMs</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Type of account being managed by CSMs</inlineHelpText>
+    <label>CS Account Level</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Single</fullName>
+                <default>false</default>
+                <label>Single Account</label>
+            </value>
+            <value>
+                <fullName>Parent Account</fullName>
+                <default>false</default>
+                <label>Parent Account</label>
+            </value>
+            <value>
+                <fullName>Child Account</fullName>
+                <default>false</default>
+                <label>Child Account</label>
+            </value>
+            <value>
+                <fullName>Brand Account</fullName>
+                <default>false</default>
+                <label>Brand Account</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

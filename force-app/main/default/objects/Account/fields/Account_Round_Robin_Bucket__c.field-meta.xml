@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Round_Robin_Bucket__c</fullName>
+    <description>Determines which bucket this Account routed to at the time it was assigned via Leandata Routing.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Determines which bucket this Account routed to at the time it was assigned via Leandata Routing.</inlineHelpText>
+    <label>Account Round Robin Bucket</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mid Market</fullName>
+                <default>false</default>
+                <label>Mid Market</label>
+            </value>
+            <value>
+                <fullName>U SMB</fullName>
+                <default>false</default>
+                <label>U SMB</label>
+            </value>
+            <value>
+                <fullName>APAC</fullName>
+                <default>false</default>
+                <label>APAC</label>
+            </value>
+            <value>
+                <fullName>EMEA</fullName>
+                <default>false</default>
+                <label>EMEA</label>
+            </value>
+            <value>
+                <fullName>Customer Growth Place Holder</fullName>
+                <default>false</default>
+                <label>Customer Growth Place Holder</label>
+            </value>
+            <value>
+                <fullName>AMER CG ENTR</fullName>
+                <default>false</default>
+                <label>AMER CG ENTR</label>
+            </value>
+            <value>
+                <fullName>AMER CG MM</fullName>
+                <default>false</default>
+                <label>AMER CG MM</label>
+            </value>
+            <value>
+                <fullName>AMER CG SMB</fullName>
+                <default>false</default>
+                <label>AMER CG SMB</label>
+            </value>
+            <value>
+                <fullName>EMEA CG ENTR</fullName>
+                <default>false</default>
+                <label>EMEA CG ENTR</label>
+            </value>
+            <value>
+                <fullName>EMEA CG MM</fullName>
+                <default>false</default>
+                <label>EMEA CG MM</label>
+            </value>
+            <value>
+                <fullName>EMEA CG SMB</fullName>
+                <default>false</default>
+                <label>EMEA CG SMB</label>
+            </value>
+            <value>
+                <fullName>APAC CG ENTR</fullName>
+                <default>false</default>
+                <label>APAC CG ENTR</label>
+            </value>
+            <value>
+                <fullName>APAC CG MM</fullName>
+                <default>false</default>
+                <label>APAC CG MM</label>
+            </value>
+            <value>
+                <fullName>APAC CG SMB</fullName>
+                <default>false</default>
+                <label>APAC CG SMB</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

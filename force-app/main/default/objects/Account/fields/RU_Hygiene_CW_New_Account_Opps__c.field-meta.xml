@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RU_Hygiene_CW_New_Account_Opps__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>A sum of all Closed Won Land: New account opps associated with this account.</inlineHelpText>
+    <label>Hygiene - CW New Account Opps</label>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>Closed Won</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.Type__c</field>
+        <operation>equals</operation>
+        <value>Land: New Account</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

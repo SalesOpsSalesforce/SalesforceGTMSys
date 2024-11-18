@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RU_Num_of_AM_Activities_Last_30__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of AM activities in the last thirty days. Declarative Roll-up Summary</inlineHelpText>
+    <label># of CSM Activities Last 30</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

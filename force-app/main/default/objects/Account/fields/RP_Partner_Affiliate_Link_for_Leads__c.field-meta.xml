@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Partner_Affiliate_Link_for_Leads__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;https://www.klaviyo.com/partner/signup?utm_source=&quot;&amp;FM_Salesforce_Account_ID__c&amp;&quot;&amp;utm_medium=partner&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Partner Affiliate Link for Leads</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

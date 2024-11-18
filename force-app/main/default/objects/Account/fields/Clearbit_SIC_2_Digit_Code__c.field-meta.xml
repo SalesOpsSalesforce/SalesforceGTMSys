@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_SIC_2_Digit_Code__c</fullName>
+    <description>The two digit company Standard Industry Classification (SIC) code.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The two digit company Standard Industry Classification (SIC) code.</inlineHelpText>
+    <label>Clearbit SIC 2 Digit Code</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

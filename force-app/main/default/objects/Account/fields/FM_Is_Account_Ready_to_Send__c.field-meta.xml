@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Is_Account_Ready_to_Send__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+ISBLANK(FLOW_Has_Complete_ActivityData_DateStamp__c) = TRUE,
+ISBLANK(FLOW_HasEmailSignUpsIntegrated_DateStamp__c) = TRUE,
+ISBLANK(FLOW_HasActiveSubscriberListDate__c) = TRUE,
+ISBLANK(FLOW_HasUploadedSuppressionListDateStamp__c) = TRUE,
+ISBLANK(FLOW_HasEngagementListSegmentDateStamp__c) = TRUE,
+ISBLANK(FLOW_AEHasDNSRecordsProperlySetUpDate__c) = TRUE),FALSE,TRUE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Assesses if an account has completed the six onboarding essentials currently or at any point in the past</inlineHelpText>
+    <label>(X) Is Account Ready to Send?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

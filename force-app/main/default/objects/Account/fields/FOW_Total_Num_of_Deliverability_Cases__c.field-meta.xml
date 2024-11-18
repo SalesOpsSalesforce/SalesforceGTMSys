@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FOW_Total_Num_of_Deliverability_Cases__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Over all time.</inlineHelpText>
+    <label>Total # of Deliverability Cases</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

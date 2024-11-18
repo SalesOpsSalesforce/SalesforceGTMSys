@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Top_Onboarding_Priority__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+ Klaviyo_Product_Usage__r.PRODUCT_Has_Complete_Activity_Data__c =TRUE,
+PRODUCT_Is_Sending_Campaigns__c=TRUE,
+PRODUCT_Is_Sending_Flows__c=TRUE),&quot;Everything Complete&quot;,
+IF(
+AND(
+Klaviyo_Product_Usage__r.PRODUCT_Has_Complete_Activity_Data__c=FALSE,
+PRODUCT_Is_Sending_Campaigns__c=FALSE,
+PRODUCT_Is_Sending_Flows__c=FALSE),&quot;Activity Data, Campaigns, Flows&quot;,
+IF(
+AND(
+Klaviyo_Product_Usage__r.PRODUCT_Has_Complete_Activity_Data__c=TRUE,
+PRODUCT_Is_Sending_Campaigns__c=FALSE,
+PRODUCT_Is_Sending_Flows__c=FALSE),&quot;Campaigns, Flows&quot;,
+IF(
+AND(
+Klaviyo_Product_Usage__r.PRODUCT_Has_Complete_Activity_Data__c=TRUE,
+PRODUCT_Is_Sending_Campaigns__c=TRUE,
+PRODUCT_Is_Sending_Flows__c=FALSE),&quot;Flows&quot;,
+IF(
+AND(
+Klaviyo_Product_Usage__r.PRODUCT_Has_Complete_Activity_Data__c=FALSE,
+PRODUCT_Is_Sending_Campaigns__c=TRUE,
+PRODUCT_Is_Sending_Flows__c=FALSE),&quot;Activity Data, Flows&quot;,
+IF(
+AND(
+Klaviyo_Product_Usage__r.PRODUCT_Has_Complete_Activity_Data__c=FALSE,
+PRODUCT_Is_Sending_Campaigns__c=TRUE,
+PRODUCT_Is_Sending_Flows__c=TRUE),&quot;Activity Data&quot;,
+IF(
+AND(
+Klaviyo_Product_Usage__r.PRODUCT_Has_Complete_Activity_Data__c=FALSE,
+PRODUCT_Is_Sending_Campaigns__c=FALSE,
+PRODUCT_Is_Sending_Flows__c=TRUE),&quot;Activity Data, Campaigns&quot;,
+IF(
+AND(
+Klaviyo_Product_Usage__r.PRODUCT_Has_Complete_Activity_Data__c=TRUE,
+PRODUCT_Is_Sending_Campaigns__c=FALSE,
+PRODUCT_Is_Sending_Flows__c=TRUE),&quot;Campaigns&quot;,&quot;ERROR&quot;))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>FLOW_Is_Sending_Flows_Date_Stamp__c
+
+FLOW_Is_Sending_Campaigns_Date_Stamp__c
+
+FLOW_Has_Complete_ActivityData_DateStamp__c</inlineHelpText>
+    <label>Top Onboarding Priority</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

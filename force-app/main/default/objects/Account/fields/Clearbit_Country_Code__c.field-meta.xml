@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_Country_Code__c</fullName>
+    <description>The country code of the company headquarters based on their location.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The country code of the company headquarters based on their location.</inlineHelpText>
+    <label>Clearbit Country Code</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

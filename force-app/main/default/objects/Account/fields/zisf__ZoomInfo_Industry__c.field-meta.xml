@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zisf__ZoomInfo_Industry__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The Salesforce standard Industry field is only 40 characters in length. As ZoomInfo industries are sometimes longer than this, the ZoomInfo Industry field can hold up to 255 characters.</description>
+    <externalId>false</externalId>
+    <label>ZoomInfo Industry</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

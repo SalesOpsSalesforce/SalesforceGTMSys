@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technology_Vertical__c</fullName>
+    <description>TP110713. Used to segment partner accounts across Partner Manager via Technology Vertical. This information is essential for routing potential new Technology Partners to the proper Partner Manager. Also enable reporting based on Technology Vertical to understand our current integration gaps.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used to segment partner accounts across Partner Manager via Technology Vertical. This information is essential for routing potential new Technology Partners to the proper Partner Manager. Also enable reporting based on Technology Vertical to understand our current integration gaps.</inlineHelpText>
+    <label>Technology Vertical</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>Affiliate &amp; Influencer Marketing</fullName>
+                <default>false</default>
+                <label>Affiliate &amp; Influencer Marketing</label>
+            </value>
+            <value>
+                <fullName>Automation</fullName>
+                <default>false</default>
+                <label>Automation</label>
+            </value>
+            <value>
+                <fullName>Chat &amp; Messaging</fullName>
+                <default>false</default>
+                <label>Chat &amp; Messaging</label>
+            </value>
+            <value>
+                <fullName>Customer Data Platform (CDP)</fullName>
+                <default>false</default>
+                <label>Customer Data Platform (CDP)</label>
+            </value>
+            <value>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+                <label>Direct Mail</label>
+            </value>
+            <value>
+                <fullName>E-commerce Platform</fullName>
+                <default>false</default>
+                <label>E-commerce Platform</label>
+            </value>
+            <value>
+                <fullName>Email Template Building</fullName>
+                <default>false</default>
+                <label>Email Template Building</label>
+            </value>
+            <value>
+                <fullName>Email Testing &amp; List Cleaning</fullName>
+                <default>false</default>
+                <label>Email Testing &amp; List Cleaning</label>
+            </value>
+            <value>
+                <fullName>Forms &amp; Pop Ups</fullName>
+                <default>false</default>
+                <label>Forms &amp; Pop Ups</label>
+            </value>
+            <value>
+                <fullName>Fundraising &amp; Sustainable Commerce</fullName>
+                <default>false</default>
+                <label>Fundraising &amp; Sustainable Commerce</label>
+            </value>
+            <value>
+                <fullName>Headless Commerce</fullName>
+                <default>false</default>
+                <label>Headless Commerce</label>
+            </value>
+            <value>
+                <fullName>Helpdesk</fullName>
+                <default>false</default>
+                <label>Helpdesk</label>
+            </value>
+            <value>
+                <fullName>Loyalty</fullName>
+                <default>false</default>
+                <label>Loyalty</label>
+            </value>
+            <value>
+                <fullName>Mobile App Development</fullName>
+                <default>false</default>
+                <label>Mobile App Development</label>
+            </value>
+            <value>
+                <fullName>Payments</fullName>
+                <default>false</default>
+                <label>Payments</label>
+            </value>
+            <value>
+                <fullName>Personalization &amp; Recommendation</fullName>
+                <default>false</default>
+                <label>Personalization &amp; Recommendation</label>
+            </value>
+            <value>
+                <fullName>POS</fullName>
+                <default>false</default>
+                <label>POS</label>
+            </value>
+            <value>
+                <fullName>Quiz &amp; Survey</fullName>
+                <default>false</default>
+                <label>Quiz &amp; Survey</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+            <value>
+                <fullName>Reporting &amp; Analytics</fullName>
+                <default>false</default>
+                <label>Reporting &amp; Analytics</label>
+            </value>
+            <value>
+                <fullName>Returns</fullName>
+                <default>false</default>
+                <label>Returns</label>
+            </value>
+            <value>
+                <fullName>Reviews</fullName>
+                <default>false</default>
+                <label>Reviews</label>
+            </value>
+            <value>
+                <fullName>Shipping &amp; Logistics</fullName>
+                <default>false</default>
+                <label>Shipping &amp; Logistics</label>
+            </value>
+            <value>
+                <fullName>Subscription</fullName>
+                <default>false</default>
+                <label>Subscription</label>
+            </value>
+            <value>
+                <fullName>User Generated Content (UGC)</fullName>
+                <default>false</default>
+                <label>User Generated Content (UGC)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>ERP</fullName>
+                <default>false</default>
+                <label>ERP</label>
+            </value>
+            <value>
+                <fullName>CMS</fullName>
+                <default>false</default>
+                <label>CMS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

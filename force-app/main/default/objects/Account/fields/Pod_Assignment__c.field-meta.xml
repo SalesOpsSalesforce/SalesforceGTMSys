@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pod_Assignment__c</fullName>
+    <externalId>false</externalId>
+    <label>Pod Assignment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pod 1</fullName>
+                <default>false</default>
+                <label>Pod 1</label>
+            </value>
+            <value>
+                <fullName>Pod 2</fullName>
+                <default>false</default>
+                <label>Pod 2</label>
+            </value>
+            <value>
+                <fullName>Pod 3</fullName>
+                <default>false</default>
+                <label>Pod 3</label>
+            </value>
+            <value>
+                <fullName>Pod 4</fullName>
+                <default>false</default>
+                <label>Pod 4</label>
+            </value>
+            <value>
+                <fullName>Pod 5</fullName>
+                <default>false</default>
+                <label>Pod 5</label>
+            </value>
+            <value>
+                <fullName>Pod 6</fullName>
+                <default>false</default>
+                <label>Pod 6</label>
+            </value>
+            <value>
+                <fullName>Pod 7</fullName>
+                <default>false</default>
+                <label>Pod 7</label>
+            </value>
+            <value>
+                <fullName>Pod 8</fullName>
+                <default>false</default>
+                <label>Pod 8</label>
+            </value>
+            <value>
+                <fullName>Pod 9</fullName>
+                <default>false</default>
+                <label>Pod 9</label>
+            </value>
+            <value>
+                <fullName>Pod 10</fullName>
+                <default>false</default>
+                <label>Pod 10</label>
+            </value>
+            <value>
+                <fullName>Pod 11</fullName>
+                <default>false</default>
+                <label>Pod 11</label>
+            </value>
+            <value>
+                <fullName>AU/NZ</fullName>
+                <default>false</default>
+                <label>AU/NZ</label>
+            </value>
+            <value>
+                <fullName>AU/NZ 2</fullName>
+                <default>false</default>
+                <label>AU/NZ 2</label>
+            </value>
+            <value>
+                <fullName>EMEA 1</fullName>
+                <default>false</default>
+                <label>EMEA 1</label>
+            </value>
+            <value>
+                <fullName>EMEA 2</fullName>
+                <default>false</default>
+                <label>EMEA 2</label>
+            </value>
+            <value>
+                <fullName>EMEA 3</fullName>
+                <default>false</default>
+                <label>EMEA 3</label>
+            </value>
+            <value>
+                <fullName>EMEA 4</fullName>
+                <default>false</default>
+                <label>EMEA 4</label>
+            </value>
+            <value>
+                <fullName>EMEA 5</fullName>
+                <default>false</default>
+                <label>EMEA 5</label>
+            </value>
+            <value>
+                <fullName>EMEA 6</fullName>
+                <default>false</default>
+                <label>EMEA 6</label>
+            </value>
+            <value>
+                <fullName>EMEA 7</fullName>
+                <default>false</default>
+                <label>EMEA 7</label>
+            </value>
+            <value>
+                <fullName>EMEA 8</fullName>
+                <default>false</default>
+                <label>EMEA 8</label>
+            </value>
+            <value>
+                <fullName>GPM 1</fullName>
+                <default>false</default>
+                <label>GPM 1</label>
+            </value>
+            <value>
+                <fullName>GPM 2</fullName>
+                <default>false</default>
+                <label>GPM 2</label>
+            </value>
+            <value>
+                <fullName>Pod - PE/VC</fullName>
+                <default>false</default>
+                <label>Pod - PE/VC</label>
+            </value>
+            <value>
+                <fullName>Unmanaged</fullName>
+                <default>false</default>
+                <label>Unmanaged</label>
+            </value>
+            <value>
+                <fullName>Tech Partner 1</fullName>
+                <default>false</default>
+                <label>Tech Partner 1</label>
+            </value>
+            <value>
+                <fullName>Asia</fullName>
+                <default>false</default>
+                <label>Asia</label>
+            </value>
+            <value>
+                <fullName>EMEA - 5</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EMEA - 5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

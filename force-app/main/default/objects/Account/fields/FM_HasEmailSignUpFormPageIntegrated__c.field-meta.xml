@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_HasEmailSignUpFormPageIntegrated__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+NOT(ISBLANK(PRODUCT_NumListSubscribersfromFormsPages__c)),
+PRODUCT_NumListSubscribersfromFormsPages__c&lt;&gt;0),TRUE,FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>True if subscribers across all lists from modals, flyouts, sign up pages and Lists API is greater than zero in the last 7 days. Populated every 12 hours by the staff-side sync.</inlineHelpText>
+    <label>Has Subscribers from Forms / Pages</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

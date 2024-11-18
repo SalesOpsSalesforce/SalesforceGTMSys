@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_AE_Partner_Management_Status_Stamp__c</fullName>
+    <description>Stamps date/time when AE Partner Management Status is changed</description>
+    <externalId>false</externalId>
+    <label>AE Partner Management Status Stamp</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricing_A_B_Test_Group__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>2014_02: Control Group 
+2018_11: Test Group</inlineHelpText>
+    <label>Pricing A/B Test Group</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StoreLeads_Annual_Revenue__c</fullName>
+    <description>The store&apos;s estimated yearly sales (based on traffic estimates to the store&apos;s ecommerce website). Values in USD dollars.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The store&apos;s estimated yearly sales (based on traffic estimates to the store&apos;s ecommerce website). Values in USD dollars.</inlineHelpText>
+    <label>StoreLeads Annual Revenue</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

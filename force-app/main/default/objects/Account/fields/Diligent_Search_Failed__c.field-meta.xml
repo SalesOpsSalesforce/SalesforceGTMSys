@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diligent_Search_Failed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SFDC-1881 Indicates Failed Diligent Search</description>
+    <externalId>false</externalId>
+    <label>Diligent Search Failed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

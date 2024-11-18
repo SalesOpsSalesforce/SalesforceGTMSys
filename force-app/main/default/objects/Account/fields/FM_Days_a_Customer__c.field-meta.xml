@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Days_a_Customer__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+
+OR(
+AND(
+NOT(ISBLANK(RU_Most_Recent_Became_Customer_Date__c)),
+ISBLANK(Cancellation_Date__c)),
+RU_Most_Recent_Became_Customer_Date__c &gt; Cancellation_Date__c),
+
+TODAY()-RU_Most_Recent_Became_Customer_Date__c,
+Cancellation_Date__c-RU_Most_Recent_Became_Customer_Date__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If Account is current customer, takes the number days between Most Recent Became Customer Date and today. If Account has Cancelled, shows the number of days between the Most Recent Became Customer Date and the Most Recent Cancellation Date.</inlineHelpText>
+    <label>Days a Customer</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

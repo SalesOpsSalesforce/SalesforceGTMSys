@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StoreLeads_Technology__c</fullName>
+    <description>A list of third-party technologies installed on the store&apos;s ecommerce website</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A list of third-party technologies installed on the store&apos;s ecommerce website</inlineHelpText>
+    <label>StoreLeads Technology</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>SpeedCurve LUX</fullName>
+                <default>false</default>
+                <label>SpeedCurve LUX</label>
+            </value>
+            <value>
+                <fullName>Craft CMS</fullName>
+                <default>false</default>
+                <label>Craft CMS</label>
+            </value>
+            <value>
+                <fullName>Chargebee</fullName>
+                <default>false</default>
+                <label>Chargebee</label>
+            </value>
+            <value>
+                <fullName>Easyship</fullName>
+                <default>false</default>
+                <label>Easyship</label>
+            </value>
+            <value>
+                <fullName>Adyen Online Payments</fullName>
+                <default>false</default>
+                <label>Adyen Online Payments</label>
+            </value>
+            <value>
+                <fullName>Bambuser</fullName>
+                <default>false</default>
+                <label>Bambuser</label>
+            </value>
+            <value>
+                <fullName>QuickSpark</fullName>
+                <default>false</default>
+                <label>QuickSpark</label>
+            </value>
+            <value>
+                <fullName>Sift</fullName>
+                <default>false</default>
+                <label>Sift</label>
+            </value>
+            <value>
+                <fullName>Iterable</fullName>
+                <default>false</default>
+                <label>Iterable</label>
+            </value>
+            <value>
+                <fullName>Mollie</fullName>
+                <default>false</default>
+                <label>Mollie</label>
+            </value>
+            <value>
+                <fullName>Pixlee</fullName>
+                <default>false</default>
+                <label>Pixlee</label>
+            </value>
+            <value>
+                <fullName>Rebillia</fullName>
+                <default>false</default>
+                <label>Rebillia</label>
+            </value>
+            <value>
+                <fullName>Contentful</fullName>
+                <default>false</default>
+                <label>Contentful</label>
+            </value>
+            <value>
+                <fullName>Sitecore CMS</fullName>
+                <default>false</default>
+                <label>Sitecore CMS</label>
+            </value>
+            <value>
+                <fullName>Pitney Bowes</fullName>
+                <default>false</default>
+                <label>Pitney Bowes</label>
+            </value>
+            <value>
+                <fullName>Braze</fullName>
+                <default>false</default>
+                <label>Braze</label>
+            </value>
+            <value>
+                <fullName>SEMrush</fullName>
+                <default>false</default>
+                <label>SEMrush</label>
+            </value>
+            <value>
+                <fullName>Click Funnels</fullName>
+                <default>false</default>
+                <label>Click Funnels</label>
+            </value>
+            <value>
+                <fullName>Resolve</fullName>
+                <default>false</default>
+                <label>Resolve</label>
+            </value>
+            <value>
+                <fullName>eShopWorld</fullName>
+                <default>false</default>
+                <label>eShopWorld</label>
+            </value>
+            <value>
+                <fullName>Scalapay</fullName>
+                <default>false</default>
+                <label>Scalapay</label>
+            </value>
+            <value>
+                <fullName>ShippyPro</fullName>
+                <default>false</default>
+                <label>ShippyPro</label>
+            </value>
+            <value>
+                <fullName>Kount</fullName>
+                <default>false</default>
+                <label>Kount</label>
+            </value>
+            <value>
+                <fullName>Recurly</fullName>
+                <default>false</default>
+                <label>Recurly</label>
+            </value>
+            <value>
+                <fullName>Endless Aisles</fullName>
+                <default>false</default>
+                <label>Endless Aisles</label>
+            </value>
+            <value>
+                <fullName>Toast</fullName>
+                <default>false</default>
+                <label>Toast</label>
+            </value>
+            <value>
+                <fullName>Hero</fullName>
+                <default>false</default>
+                <label>Hero</label>
+            </value>
+            <value>
+                <fullName>Tagalys</fullName>
+                <default>false</default>
+                <label>Tagalys</label>
+            </value>
+            <value>
+                <fullName>Fresh Relevance</fullName>
+                <default>false</default>
+                <label>Fresh Relevance</label>
+            </value>
+            <value>
+                <fullName>Ordergroove</fullName>
+                <default>false</default>
+                <label>Ordergroove</label>
+            </value>
+            <value>
+                <fullName>zinrelo</fullName>
+                <default>false</default>
+                <label>zinrelo</label>
+            </value>
+            <value>
+                <fullName>AnnexCloud</fullName>
+                <default>false</default>
+                <label>AnnexCloud</label>
+            </value>
+            <value>
+                <fullName>Facebook SDK</fullName>
+                <default>false</default>
+                <label>Facebook SDK</label>
+            </value>
+            <value>
+                <fullName>Freshchat</fullName>
+                <default>false</default>
+                <label>Freshchat</label>
+            </value>
+            <value>
+                <fullName>Medallia</fullName>
+                <default>false</default>
+                <label>Medallia</label>
+            </value>
+            <value>
+                <fullName>Heap Analytics</fullName>
+                <default>false</default>
+                <label>Heap Analytics</label>
+            </value>
+            <value>
+                <fullName>Builder</fullName>
+                <default>false</default>
+                <label>Builder</label>
+            </value>
+            <value>
+                <fullName>Retail Rocket</fullName>
+                <default>false</default>
+                <label>Retail Rocket</label>
+            </value>
+            <value>
+                <fullName>Criteo</fullName>
+                <default>false</default>
+                <label>Criteo</label>
+            </value>
+            <value>
+                <fullName>Ready Returns</fullName>
+                <default>false</default>
+                <label>Ready Returns</label>
+            </value>
+            <value>
+                <fullName>Pepperjam</fullName>
+                <default>false</default>
+                <label>Pepperjam</label>
+            </value>
+            <value>
+                <fullName>Signifyd</fullName>
+                <default>false</default>
+                <label>Signifyd</label>
+            </value>
+            <value>
+                <fullName>Plobal Apps</fullName>
+                <default>false</default>
+                <label>Plobal Apps</label>
+            </value>
+            <value>
+                <fullName>Tone Messaging</fullName>
+                <default>false</default>
+                <label>Tone Messaging</label>
+            </value>
+            <value>
+                <fullName>EcoCart</fullName>
+                <default>false</default>
+                <label>EcoCart</label>
+            </value>
+            <value>
+                <fullName>Global-e</fullName>
+                <default>false</default>
+                <label>Global-e</label>
+            </value>
+            <value>
+                <fullName>ManyChat</fullName>
+                <default>false</default>
+                <label>ManyChat</label>
+            </value>
+            <value>
+                <fullName>Help Scout</fullName>
+                <default>false</default>
+                <label>Help Scout</label>
+            </value>
+            <value>
+                <fullName>Outbrain</fullName>
+                <default>false</default>
+                <label>Outbrain</label>
+            </value>
+            <value>
+                <fullName>Happy Returns</fullName>
+                <default>false</default>
+                <label>Happy Returns</label>
+            </value>
+            <value>
+                <fullName>Baazarvoice</fullName>
+                <default>false</default>
+                <label>Baazarvoice</label>
+            </value>
+            <value>
+                <fullName>Nosto</fullName>
+                <default>false</default>
+                <label>Nosto</label>
+            </value>
+            <value>
+                <fullName>Catch</fullName>
+                <default>false</default>
+                <label>Catch</label>
+            </value>
+            <value>
+                <fullName>Postpay</fullName>
+                <default>false</default>
+                <label>Postpay</label>
+            </value>
+            <value>
+                <fullName>Smartrr</fullName>
+                <default>false</default>
+                <label>Smartrr</label>
+            </value>
+            <value>
+                <fullName>Ravelin</fullName>
+                <default>false</default>
+                <label>Ravelin</label>
+            </value>
+            <value>
+                <fullName>WHMCS</fullName>
+                <default>false</default>
+                <label>WHMCS</label>
+            </value>
+            <value>
+                <fullName>Sellbrite</fullName>
+                <default>false</default>
+                <label>Sellbrite</label>
+            </value>
+            <value>
+                <fullName>LiveRecover</fullName>
+                <default>false</default>
+                <label>LiveRecover</label>
+            </value>
+            <value>
+                <fullName>Sidecar</fullName>
+                <default>false</default>
+                <label>Sidecar</label>
+            </value>
+            <value>
+                <fullName>Extole</fullName>
+                <default>false</default>
+                <label>Extole</label>
+            </value>
+            <value>
+                <fullName>WisePops</fullName>
+                <default>false</default>
+                <label>WisePops</label>
+            </value>
+            <value>
+                <fullName>Authorize.net</fullName>
+                <default>false</default>
+                <label>Authorize.net</label>
+            </value>
+            <value>
+                <fullName>Refersion</fullName>
+                <default>false</default>
+                <label>Refersion</label>
+            </value>
+            <value>
+                <fullName>Subscrimia</fullName>
+                <default>false</default>
+                <label>Subscrimia</label>
+            </value>
+            <value>
+                <fullName>LeadDyno</fullName>
+                <default>false</default>
+                <label>LeadDyno</label>
+            </value>
+            <value>
+                <fullName>Ingrid</fullName>
+                <default>false</default>
+                <label>Ingrid</label>
+            </value>
+            <value>
+                <fullName>Remarkety</fullName>
+                <default>false</default>
+                <label>Remarkety</label>
+            </value>
+            <value>
+                <fullName>PriceYak</fullName>
+                <default>false</default>
+                <label>PriceYak</label>
+            </value>
+            <value>
+                <fullName>Tabby</fullName>
+                <default>false</default>
+                <label>Tabby</label>
+            </value>
+            <value>
+                <fullName>Skubana</fullName>
+                <default>false</default>
+                <label>Skubana</label>
+            </value>
+            <value>
+                <fullName>Shefield Financial</fullName>
+                <default>false</default>
+                <label>Shefield Financial</label>
+            </value>
+            <value>
+                <fullName>Fit Predictor</fullName>
+                <default>false</default>
+                <label>Fit Predictor</label>
+            </value>
+            <value>
+                <fullName>Drift</fullName>
+                <default>false</default>
+                <label>Drift</label>
+            </value>
+            <value>
+                <fullName>Maxymiser</fullName>
+                <default>false</default>
+                <label>Maxymiser</label>
+            </value>
+            <value>
+                <fullName>Glosku</fullName>
+                <default>false</default>
+                <label>Glosku</label>
+            </value>
+            <value>
+                <fullName>optinmonster</fullName>
+                <default>false</default>
+                <label>optinmonster</label>
+            </value>
+            <value>
+                <fullName>FraudLabs Pro</fullName>
+                <default>false</default>
+                <label>FraudLabs Pro</label>
+            </value>
+            <value>
+                <fullName>Nacelle</fullName>
+                <default>false</default>
+                <label>Nacelle</label>
+            </value>
+            <value>
+                <fullName>Feedonomics</fullName>
+                <default>false</default>
+                <label>Feedonomics</label>
+            </value>
+            <value>
+                <fullName>Ruby Has</fullName>
+                <default>false</default>
+                <label>Ruby Has</label>
+            </value>
+            <value>
+                <fullName>AutoAnything Wholesale PRO</fullName>
+                <default>false</default>
+                <label>AutoAnything Wholesale PRO</label>
+            </value>
+            <value>
+                <fullName>Loop Commerce</fullName>
+                <default>false</default>
+                <label>Loop Commerce</label>
+            </value>
+            <value>
+                <fullName>ShopRunner</fullName>
+                <default>false</default>
+                <label>ShopRunner</label>
+            </value>
+            <value>
+                <fullName>PayPlug</fullName>
+                <default>false</default>
+                <label>PayPlug</label>
+            </value>
+            <value>
+                <fullName>ControQ</fullName>
+                <default>false</default>
+                <label>ControQ</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

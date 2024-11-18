@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Potential_Reference_Reason__c</fullName>
+    <description>Customer&apos;s willingness to provide a reference at time of Land opp close</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if the customer is willing to provide a reference at the time the Land opp is closed/won</inlineHelpText>
+    <label>Potential Customer Reference</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contractually committed to being a case study/testimonial</fullName>
+                <default>false</default>
+                <label>Contractually committed to being a case study/testimonial</label>
+            </value>
+            <value>
+                <fullName>Use Logo/Name in Marketing Materials</fullName>
+                <default>false</default>
+                <label>Use Logo/Name in Marketing Materials</label>
+            </value>
+            <value>
+                <fullName>Willing to be a Customer Reference</fullName>
+                <default>false</default>
+                <label>Willing to be a Customer Reference</label>
+            </value>
+            <value>
+                <fullName>Willing to do a Case Study/Testimonial</fullName>
+                <default>false</default>
+                <label>Willing to do a Case Study/Testimonial</label>
+            </value>
+            <value>
+                <fullName>Do Not Use Logo</fullName>
+                <default>false</default>
+                <label>Do Not Use Logo</label>
+            </value>
+            <value>
+                <fullName>Do Not Reference At All</fullName>
+                <default>false</default>
+                <label>Do Not Reference At All</label>
+            </value>
+            <value>
+                <fullName>Reach Back Out</fullName>
+                <default>false</default>
+                <label>Not currently willing - reach back out</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commerce_Type__c</fullName>
+    <description>Accounts with at least one placed order event are first classified as ecommerce. Of the remaining, if the website URL is bad or is for a &apos;coming soon&apos; store, these
+are tagged as Website Unavailable. ~30% that remain are run through mechanical turk thrice to classify as Ecom or not. Accounts classified similarly at least 2 out of 3 times by Mturk are given that classification. Blanks are new accounts that have not been run through Mturk yet.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Accounts with at least one placed order event = ecommerce. Of remaining, if website URL is bad or is for a &apos;coming soon&apos; store, these are tagged as Website Unavailable. ~30% that remain are run through mechanical turk thrice  to classify as Ecom or not.</inlineHelpText>
+    <label>Commerce Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>E-Commerce</fullName>
+                <default>false</default>
+                <label>E-Commerce</label>
+            </value>
+            <value>
+                <fullName>Non E-Commerce</fullName>
+                <default>false</default>
+                <label>Non E-Commerce</label>
+            </value>
+            <value>
+                <fullName>Website Unavailable</fullName>
+                <default>false</default>
+                <label>Website Unavailable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Type__c</fullName>
+    <description>Consolidates the partner &apos;type&apos; into a single useable field. Most likely retire this in lieu of a single spot but made as part of TP 91728 to more easily look up metadata.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+ISPICKVAL(Experts_Tier__c, &quot;Silver&quot;),
+ISPICKVAL(Experts_Tier__c , &quot;Gold&quot;),
+ISPICKVAL(Experts_Tier__c , &quot;Platinum&quot;),
+ISPICKVAL(Experts_Tier__c , &quot;Elite&quot;),
+ISPICKVAL(Experts_Tier__c , &quot;Klaviyo Partner&quot;)), &quot;Masters&quot;,
+IF(
+OR(
+ISPICKVAL( Services_Tier__c, &quot;Silver&quot;),
+ISPICKVAL( Services_Tier__c, &quot;Gold&quot;),
+ISPICKVAL( Services_Tier__c,&quot;Platinum&quot;),
+ISPICKVAL( Services_Tier__c,&quot;Elite&quot;),
+ISPICKVAL( Services_Tier__c, &quot;Klaviyo Partner&quot;)),&quot;Advisors&quot;,
+IF(
+OR(
+ISPICKVAL( RP_Referral_Partner_Tier__c ,&quot;Silver&quot;),
+ISPICKVAL( RP_Referral_Partner_Tier__c ,&quot;Gold&quot;),
+ISPICKVAL( RP_Referral_Partner_Tier__c ,&quot;Platinum&quot;),
+ISPICKVAL( RP_Referral_Partner_Tier__c ,&quot;Elite&quot;),
+ISPICKVAL(RP_Referral_Partner_Tier__c ,&quot;Klaviyo Partner&quot;)),&quot;Influencers&quot;,
+IF(
+OR(
+ISPICKVAL( RP_Referral_Partner_Type__c ,&quot;Restaurant Platform&quot;),
+ISPICKVAL( RP_Referral_Partner_Type__c ,&quot;Strategic Partner&quot;),
+ISPICKVAL( RP_Referral_Partner_Type__c ,&quot;Platform Partner&quot;)),&quot;Platform Partner&quot;,
+IF(
+ISPICKVAL( RP_Referral_Partner_Type__c ,&quot;Technology Partner&quot;),&quot;Technology Partner&quot;,
+IF(
+OR(
+ISPICKVAL(RP_Referral_Partner_Type__c,&quot;Investment Firm - VC&quot;),
+ISPICKVAL(RP_Referral_Partner_Type__c,&quot;Investment Firm - PE&quot;)),&quot;Investment Firm&quot;,
+&quot;&quot;))))))</formula>
+    <inlineHelpText>Consolidates the partner &apos;type&apos; into a single useable field. Most likely retire this in lieu of a single spot but made as part of TP 91728 to more easily look up metadata.</inlineHelpText>
+    <label>Partner Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

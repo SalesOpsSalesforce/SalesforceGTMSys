@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stripe_MRR_Salesforce_HYGIENE_MRR__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF 
+(AND(ISPICKVAL(FINANCE_Payment_Method__c, &quot;Stripe&quot;),ISPICKVAL(FINANCE_Payment_Plan_Frequency__c,&quot;Monthly&quot;)), 
+RU_HYGIENE_MRR__c-Klaviyo_Product_Usage__r.PRODUCT_Stripe_Net_MRR__c, 
+RU_HYGIENE_MRR__c-RU_HYGIENE_MRR__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Stripe MRR - Salesforce HYGIENE MRR</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

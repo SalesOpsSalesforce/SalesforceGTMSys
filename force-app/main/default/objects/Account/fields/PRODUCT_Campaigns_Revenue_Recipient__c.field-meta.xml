@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PRODUCT_Campaigns_Revenue_Recipient__c</fullName>
+    <description>PRODUCT_Campaigns_ConversionValue__c  / PRODUCT_Campaigns_Delivered__c</description>
+    <externalId>false</externalId>
+    <formula>Klaviyo_Product_Usage__r.PRODUCT_Campaigns_ConversionValue__c  / Klaviyo_Product_Usage__r.PRODUCT_Campaigns_Delivered__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Campaign Revenue divided by Campaigns Delivered</inlineHelpText>
+    <label>Campaign Revenue / Recipient</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

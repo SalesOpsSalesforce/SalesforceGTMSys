@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FLOW_All_Paid_Klaviyo_Customer_Referred__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of paying Klaviyo customer that this Referral Partner has brought on over all time. Only counts Klaviyo accounts attributed to the Referral Partner.</inlineHelpText>
+    <label>All Paid Klaviyo Customer Referred</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

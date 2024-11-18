@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FM_Compiled_Ecommerce_Platform__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Klaviyo_Product_Usage__r.Ecommerce_Platform__c,&quot;&quot;),
+IF(
+ISPICKVAL(Klaviyo_Product_Usage__r.PRODUCT_WizardDeclaredEcommercePlatform__c,&quot;Custom Ecommerce Integration&quot;),&quot;Custom&quot;,
+IF(
+AND(
+ISPICKVAL(Klaviyo_Product_Usage__r.PRODUCT_Ecommerce_Integration__c,&quot;&quot;),
+NOT(ISPICKVAL(Ecommerce_Platform__c,&quot;&quot;))
+),
+TEXT(Ecommerce_Platform__c),
+IF(
+ISPICKVAL(Klaviyo_Product_Usage__r.PRODUCT_Ecommerce_Integration__c,&quot;&quot;),
+&quot;No Active Ecommerce Integration&quot;,
+IF(
+AND(
+ISPICKVAL(Klaviyo_Product_Usage__r.PRODUCT_Shopify_Plan__c,&quot;shopify_plus&quot;),
+ISPICKVAL(Klaviyo_Product_Usage__r.PRODUCT_Ecommerce_Integration__c,&quot;shopify&quot;)),
+&quot;Shopify Plus&quot;,TEXT(Klaviyo_Product_Usage__r.PRODUCT_Ecommerce_Integration__c))))),
+TEXT(Klaviyo_Product_Usage__r.Ecommerce_Platform__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Compiled Ecommerce Platform</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

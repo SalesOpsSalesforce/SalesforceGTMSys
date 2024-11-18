@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Medal__c</fullName>
+    <description>Tier 1: Platinum
+Tier 2: Gold
+Tier 3: Bronze + Silver</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Tier 1: Platinum
+Tier 2: Gold
+Tier 3: Bronze + Silver</inlineHelpText>
+    <label>Tier</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tier 1</fullName>
+                <default>false</default>
+                <label>Tier 1</label>
+            </value>
+            <value>
+                <fullName>Tier 2</fullName>
+                <default>false</default>
+                <label>Tier 2</label>
+            </value>
+            <value>
+                <fullName>Tier 3</fullName>
+                <default>false</default>
+                <label>Tier 3</label>
+            </value>
+            <value>
+                <fullName>Tier 4</fullName>
+                <default>false</default>
+                <label>Tier 4</label>
+            </value>
+            <value>
+                <fullName>Engaged</fullName>
+                <default>false</default>
+                <label>Engaged</label>
+            </value>
+            <value>
+                <fullName>High Opportunity</fullName>
+                <default>false</default>
+                <label>High Opportunity</label>
+            </value>
+            <value>
+                <fullName>Longtail</fullName>
+                <default>false</default>
+                <label>Longtail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

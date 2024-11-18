@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role_of_User_with_Last_Activity__c</fullName>
+    <description>SFDC-353 Populated by Task: After Save flow. References the Role of user assigned to activity from Calculated Last Activity Date field</description>
+    <externalId>false</externalId>
+    <inlineHelpText>References the Role of user assigned to activity from Calculated Last Activity Date field</inlineHelpText>
+    <label>Role of User with Last Activity</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

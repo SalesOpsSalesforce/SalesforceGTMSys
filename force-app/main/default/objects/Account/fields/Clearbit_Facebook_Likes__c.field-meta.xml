@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_Facebook_Likes__c</fullName>
+    <description>The number of likes the company has on their Facebook page.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of likes the company has on their Facebook page.</inlineHelpText>
+    <label>Clearbit Facebook Likes</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DNBConnect__D_B_Name_Match_Score__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A number from -1 to 100 (including decimals) that indicates the detailed level of match on the name of the matched candidate.
+0 indicates no match.
+100 indicates most accurate match.
+Note: This parameter is not applicable for Multi-Process High-Volume Match.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A number from -1 to 100 (including decimals) that indicates the detailed level of match on the name of the matched candidate.
+0 indicates no match.
+100 indicates most accurate match.
+Note: This parameter is not applicable for Multi-Process High-Volume Match.</inlineHelpText>
+    <label>D&amp;B Name Match Score</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

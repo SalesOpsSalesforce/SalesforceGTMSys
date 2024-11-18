@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technology_Partner_Management_Status__c</fullName>
+    <description>TP110713. The steps we track for Technology Partners on as they go through our Technology Partner Onboarding Process.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The steps we track for Technology Partners on as they go through our Technology Partner Onboarding Process.</inlineHelpText>
+    <label>Technology Partner Management Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Engage</fullName>
+                <default>false</default>
+                <label>Engage</label>
+            </value>
+            <value>
+                <fullName>Build</fullName>
+                <default>false</default>
+                <label>Build</label>
+            </value>
+            <value>
+                <fullName>Adopt</fullName>
+                <default>false</default>
+                <label>Adopt</label>
+            </value>
+            <value>
+                <fullName>Grow</fullName>
+                <default>false</default>
+                <label>Grow</label>
+            </value>
+            <value>
+                <fullName>Expand</fullName>
+                <default>false</default>
+                <label>Expand</label>
+            </value>
+            <value>
+                <fullName>Application Submitted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Application Submitted</label>
+            </value>
+            <value>
+                <fullName>Developer Active Integration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Developer Active Integration</label>
+            </value>
+            <value>
+                <fullName>Did NOT Pass Legal or Security Screening</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Did NOT Pass Legal or Security Screening</label>
+            </value>
+            <value>
+                <fullName>Growth Active Integration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Growth Active Integration</label>
+            </value>
+            <value>
+                <fullName>P0: Legal &amp; Security Screening</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P0: Legal &amp; Security Screening</label>
+            </value>
+            <value>
+                <fullName>P1: Evaluation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P1: Evaluation</label>
+            </value>
+            <value>
+                <fullName>P2: Scope</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P2: Scope</label>
+            </value>
+            <value>
+                <fullName>P3: Build</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P3: Build</label>
+            </value>
+            <value>
+                <fullName>P4: Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P4: Review</label>
+            </value>
+            <value>
+                <fullName>P5: Launch</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>P5: Launch</label>
+            </value>
+            <value>
+                <fullName>Sent to Developer Community</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sent to Developer Community</label>
+            </value>
+            <value>
+                <fullName>TP0: Inactive</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TP0: Inactive</label>
+            </value>
+            <value>
+                <fullName>TP1: Evaluation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TP1: Evaluation</label>
+            </value>
+            <value>
+                <fullName>TP2: Planning to Build</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TP2: Planning to Build</label>
+            </value>
+            <value>
+                <fullName>TP3: Building</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TP3: Building</label>
+            </value>
+            <value>
+                <fullName>TP4: Integration Complete</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TP4: Integration Complete</label>
+            </value>
+            <value>
+                <fullName>TP5: GTM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TP5: GTM</label>
+            </value>
+            <value>
+                <fullName>TP6: Active Tech Partner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TP6: Active Tech Partner</label>
+            </value>
+            <value>
+                <fullName>Tiered Partner Active Integration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Tiered Partner Active Integration</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

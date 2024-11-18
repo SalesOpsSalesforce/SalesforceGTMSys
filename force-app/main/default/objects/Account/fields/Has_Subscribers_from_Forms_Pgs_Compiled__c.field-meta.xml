@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Subscribers_from_Forms_Pgs_Compiled__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Has_Subscrbrs_from_FrmsPgs_CustomInt__c=TRUE,TRUE,
+
+IF(
+AND(
+NOT(ISBLANK(PRODUCT_NumListSubscribersfromFormsPages__c)),
+PRODUCT_NumListSubscribersfromFormsPages__c&lt;&gt;0),TRUE,FALSE
+
+)
+)</formula>
+    <label>Has Subscribers from Forms/Pgs(Compiled)</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Length_of_Time_in_Business__c</fullName>
+    <description>Populated for the Partner Application Form 
+Jira SFDC-527</description>
+    <externalId>false</externalId>
+    <label>Length of Time in Business</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Less than 6 months</fullName>
+                <default>false</default>
+                <label>Less than 6 months</label>
+            </value>
+            <value>
+                <fullName>6 months to 2 years</fullName>
+                <default>false</default>
+                <label>6 months to 2 years</label>
+            </value>
+            <value>
+                <fullName>2 to 5 years</fullName>
+                <default>false</default>
+                <label>2 to 5 years</label>
+            </value>
+            <value>
+                <fullName>More than 5 years</fullName>
+                <default>false</default>
+                <label>More than 5 years</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

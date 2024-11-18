@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DNBConnect__D_B_Match_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The type of match performed to identify the identified entity. May be one of the following:
+DUNS Number Lookup: D-U-N-S Number was used to perform match.
+Name and Address Lookup: Name and Address were used to perform match.
+National ID Lookup: Registration Number was used to perform match.
+Telephone Number Lookup: Telephone Number was used to perform match.
+ZIP Code Lookup: Postal Code was used to perform match.
+Note: This parameter is not applicable for Multi-Process High-Volume Match.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The type of match performed to identify the identified entity. May be one of the following:
+DUNS Number Lookup: D-U-N-S Number was used to perform match.
+Name and Address Lookup: Name and Address were used to perform match.
+National ID Lookup: Registration Number was used to perform match.
+Telephone Number Lookup: Telephone Number was used to perform match.
+ZIP Code Lookup: Postal Code was used to perform match.
+Note: This parameter is not applicable for Multi-Process High-Volume Match.</inlineHelpText>
+    <label>D&amp;B Match Type</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

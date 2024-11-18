@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Temporary_Website__c</fullName>
+    <description>SFDC-6168: Temporary field used to populate website URL which will be used to claculate Deduplicate Account Website Field. It can be deleted later</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SFDC-6168: Temporary field used to populate website URL which will be used to claculate Deduplicate Account Website Field. It can be deleted later</inlineHelpText>
+    <label>Temporary Website</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_Open_Opps_With_Exceptions__c</fullName>
+    <description>SMS Exception Approval Status has Approved or Waiting for Approval</description>
+    <externalId>false</externalId>
+    <inlineHelpText>SMS Exception Approval Status has Approved or Waiting for Approval</inlineHelpText>
+    <label>SMS Open Opps with Exception</label>
+    <summaryFilterItems>
+        <field>Opportunity.SMS_Exception_Approval_Status__c</field>
+        <operation>equals</operation>
+        <value>Waiting for Approval, Waiting for Approval, Confirmed</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>notEqual</operation>
+        <value>Closed Won, Closed Lost, Closed Won - Needs Review, &lt;NEEDS RESOLUTION&gt;</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.Concatenated_Opportunity_Product_Family__c</field>
+        <operation>contains</operation>
+        <value>SMS</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

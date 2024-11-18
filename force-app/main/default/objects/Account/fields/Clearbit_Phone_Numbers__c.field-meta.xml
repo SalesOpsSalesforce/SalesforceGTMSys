@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_Phone_Numbers__c</fullName>
+    <description>A list of phone numbers listed on the company&apos;s website.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A list of phone numbers listed on the company&apos;s website.</inlineHelpText>
+    <label>Clearbit Phone Numbers</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Charm_Revenue_at_Last_Owner_Change__c</fullName>
+    <description>SFDC-243 Stamp of the Charm Revenue field that is populated by the Account: Before Save whenever the Owner is changed</description>
+    <externalId>false</externalId>
+    <label>Charm Revenue at Last Owner Change</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

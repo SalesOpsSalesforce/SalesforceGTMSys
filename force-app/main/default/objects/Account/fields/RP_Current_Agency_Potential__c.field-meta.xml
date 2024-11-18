@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RP_Current_Agency_Potential__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Used by the Agency Sales team to manage and spend time on the Agencies with the highest potential to bring in new business.</inlineHelpText>
+    <label>Current Agency Potential</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High Potential</fullName>
+                <default>false</default>
+                <label>High Potential</label>
+            </value>
+            <value>
+                <fullName>Medium Potential</fullName>
+                <default>false</default>
+                <label>Medium Potential</label>
+            </value>
+            <value>
+                <fullName>Low Potential</fullName>
+                <default>false</default>
+                <label>Low Potential</label>
+            </value>
+            <value>
+                <fullName>No Potential</fullName>
+                <default>false</default>
+                <label>No Potential</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Details__c</fullName>
+    <description>SFDC 5309 - Related to Account Claim flow when managers submit an account claim process</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Managers can enter additional sources to confirm the change.</inlineHelpText>
+    <label>Request Details</label>
+    <length>131072</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

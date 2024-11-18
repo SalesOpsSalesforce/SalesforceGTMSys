@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sum_Last_30_Days_KAV__c</fullName>
+    <description>SFDC-5284 SUM Last 30 KAV onto Account from KPUs</description>
+    <externalId>false</externalId>
+    <label>Sum Last 30 Days KAV</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

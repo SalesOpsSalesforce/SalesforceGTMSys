@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SMS_Competitor_Contract_Exp_Date__c</fullName>
+    <description>The date in which an Account&apos;s current competitor SMS contract expires</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date in which an Account&apos;s current competitor SMS contract expires</inlineHelpText>
+    <label>SMS Competitor Contract Exp. Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

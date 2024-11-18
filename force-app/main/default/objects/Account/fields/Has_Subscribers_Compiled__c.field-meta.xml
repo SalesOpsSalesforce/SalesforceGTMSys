@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Subscribers_Compiled__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Has_Subscribers_Custom_Integration__c=TRUE,TRUE,PRODUCT_Has_Email_Sign_Ups_Integrated__c)</formula>
+    <label>Has Subscribers (Compiled)</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

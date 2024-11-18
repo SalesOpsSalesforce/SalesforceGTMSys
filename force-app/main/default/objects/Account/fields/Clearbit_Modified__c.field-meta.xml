@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clearbit_Modified__c</fullName>
+    <description>Timestamp indicating when the company&apos;s record was last updated in Clearbit&apos;s database. A record update may or may not include new information about the company.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Timestamp indicating when the company&apos;s record was last updated in Clearbit&apos;s database. A record update may or may not include new information about the company.</inlineHelpText>
+    <label>Clearbit Modified</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

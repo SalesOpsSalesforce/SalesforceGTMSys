@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>accountReachScore6sense__c</fullName>
+    <description>A measure of current outreach activities against optimal quality, quantity, and diversity of outreach activities as defined by your company’s historical success on won opportunities. Outbound calls, both marketing and sales emails are analyzed for this measure</description>
+    <externalId>false</externalId>
+    <label>6sense Account Reach Score</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

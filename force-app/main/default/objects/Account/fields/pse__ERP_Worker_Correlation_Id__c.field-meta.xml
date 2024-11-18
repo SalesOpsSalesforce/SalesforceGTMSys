@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__ERP_Worker_Correlation_Id__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This records the worker correlation key used within the Foundations system.</description>
+    <externalId>true</externalId>
+    <inlineHelpText>This records the worker correlation key used within the Foundations system.</inlineHelpText>
+    <label>Foundations Worker Correlation</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

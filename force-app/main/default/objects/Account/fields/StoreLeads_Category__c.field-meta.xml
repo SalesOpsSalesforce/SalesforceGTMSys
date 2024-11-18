@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StoreLeads_Category__c</fullName>
+    <description>A list of the store&apos;s ecommerce website top-level categories. Categories represent the store&apos;s industry vertical (e.g. &quot;/Apparel&quot; or &quot;/Beauty &amp; Fitness&quot;)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A list of the store&apos;s ecommerce website top-level categories. Categories represent the store&apos;s industry vertical (e.g. &quot;/Apparel&quot; or &quot;/Beauty &amp; Fitness&quot;)</inlineHelpText>
+    <label>StoreLeads Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>/Travel</fullName>
+                <default>false</default>
+                <label>/Travel</label>
+            </value>
+            <value>
+                <fullName>/Coupons &amp; Discounts</fullName>
+                <default>false</default>
+                <label>/Coupons &amp; Discounts</label>
+            </value>
+            <value>
+                <fullName>/Mass Merchants &amp; Department Stores</fullName>
+                <default>false</default>
+                <label>/Mass Merchants &amp; Department Stores</label>
+            </value>
+            <value>
+                <fullName>/Holidays &amp; Seasonal</fullName>
+                <default>false</default>
+                <label>/Holidays &amp; Seasonal</label>
+            </value>
+            <value>
+                <fullName>/Home &amp; Garden</fullName>
+                <default>false</default>
+                <label>/Home &amp; Garden</label>
+            </value>
+            <value>
+                <fullName>/Games</fullName>
+                <default>false</default>
+                <label>/Games</label>
+            </value>
+            <value>
+                <fullName>/Internet</fullName>
+                <default>false</default>
+                <label>/Internet</label>
+            </value>
+            <value>
+                <fullName>/Libraries &amp; Museums</fullName>
+                <default>false</default>
+                <label>/Libraries &amp; Museums</label>
+            </value>
+            <value>
+                <fullName>/Books &amp; Literature</fullName>
+                <default>false</default>
+                <label>/Books &amp; Literature</label>
+            </value>
+            <value>
+                <fullName>/Apparel</fullName>
+                <default>false</default>
+                <label>/Apparel</label>
+            </value>
+            <value>
+                <fullName>/Firearms &amp; Weapons</fullName>
+                <default>false</default>
+                <label>/Firearms &amp; Weapons</label>
+            </value>
+            <value>
+                <fullName>/Toys &amp; Hobbies</fullName>
+                <default>false</default>
+                <label>/Toys &amp; Hobbies</label>
+            </value>
+            <value>
+                <fullName>/Business &amp; Industrial</fullName>
+                <default>false</default>
+                <label>/Business &amp; Industrial</label>
+            </value>
+            <value>
+                <fullName>/People &amp; Society</fullName>
+                <default>false</default>
+                <label>/People &amp; Society</label>
+            </value>
+            <value>
+                <fullName>/Beauty &amp; Fitness</fullName>
+                <default>false</default>
+                <label>/Beauty &amp; Fitness</label>
+            </value>
+            <value>
+                <fullName>/Health</fullName>
+                <default>false</default>
+                <label>/Health</label>
+            </value>
+            <value>
+                <fullName>/Computers</fullName>
+                <default>false</default>
+                <label>/Computers</label>
+            </value>
+            <value>
+                <fullName>/Food &amp; Drink</fullName>
+                <default>false</default>
+                <label>/Food &amp; Drink</label>
+            </value>
+            <value>
+                <fullName>/Gifts &amp; Special Events</fullName>
+                <default>false</default>
+                <label>/Gifts &amp; Special Events</label>
+            </value>
+            <value>
+                <fullName>/Smoking &amp; Vaping</fullName>
+                <default>false</default>
+                <label>/Smoking &amp; Vaping</label>
+            </value>
+            <value>
+                <fullName>/Science</fullName>
+                <default>false</default>
+                <label>/Science</label>
+            </value>
+            <value>
+                <fullName>/Photo &amp; Video Services</fullName>
+                <default>false</default>
+                <label>/Photo &amp; Video Services</label>
+            </value>
+            <value>
+                <fullName>/Consumer Electronics</fullName>
+                <default>false</default>
+                <label>/Consumer Electronics</label>
+            </value>
+            <value>
+                <fullName>/Antiques &amp; Collectibles</fullName>
+                <default>false</default>
+                <label>/Antiques &amp; Collectibles</label>
+            </value>
+            <value>
+                <fullName>/Autos &amp; Vehicles</fullName>
+                <default>false</default>
+                <label>/Autos &amp; Vehicles</label>
+            </value>
+            <value>
+                <fullName>/Wedding</fullName>
+                <default>false</default>
+                <label>/Wedding</label>
+            </value>
+            <value>
+                <fullName>/Sports</fullName>
+                <default>false</default>
+                <label>/Sports</label>
+            </value>
+            <value>
+                <fullName>/Arts &amp; Entertainment</fullName>
+                <default>false</default>
+                <label>/Arts &amp; Entertainment</label>
+            </value>
+            <value>
+                <fullName>/Jobs &amp; Education</fullName>
+                <default>false</default>
+                <label>/Jobs &amp; Education</label>
+            </value>
+            <value>
+                <fullName>/Pets &amp; Animals</fullName>
+                <default>false</default>
+                <label>/Pets &amp; Animals</label>
+            </value>
+            <value>
+                <fullName>/Safety &amp; Survival</fullName>
+                <default>false</default>
+                <label>/Safety &amp; Survival</label>
+            </value>
+            <value>
+                <fullName>/Adult</fullName>
+                <default>false</default>
+                <label>/Adult</label>
+            </value>
+            <value>
+                <fullName>/Finance</fullName>
+                <default>false</default>
+                <label>/Finance</label>
+            </value>
+            <value>
+                <fullName>/Attractions</fullName>
+                <default>false</default>
+                <label>/Attractions</label>
+            </value>
+            <value>
+                <fullName>/Legal Services</fullName>
+                <default>false</default>
+                <label>/Legal Services</label>
+            </value>
+            <value>
+                <fullName>/None</fullName>
+                <default>false</default>
+                <label>/None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

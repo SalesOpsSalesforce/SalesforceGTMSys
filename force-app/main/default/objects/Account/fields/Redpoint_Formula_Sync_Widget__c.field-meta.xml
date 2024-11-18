@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Redpoint_Formula_Sync_Widget__c</fullName>
+    <description>SFDC-1158 Redpoint monitored formula field depends on related object&apos;s (such as KPU object) fields. This widget stamps current datetime when related object&apos;s field gets updated.</description>
+    <externalId>false</externalId>
+    <label>Redpoint Formula Sync Widget</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

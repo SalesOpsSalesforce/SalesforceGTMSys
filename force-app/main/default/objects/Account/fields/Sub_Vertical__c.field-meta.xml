@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Vertical__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Vertical</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Industry</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Sub_Verticals</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Apparel &amp; Accessories</controllingFieldValue>
+            <valueName>Footwear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Apparel &amp; Accessories</controllingFieldValue>
+            <valueName>Hats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Apparel &amp; Accessories</controllingFieldValue>
+            <valueName>Activewear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Apparel &amp; Accessories</controllingFieldValue>
+            <valueName>Fast Fashion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialty</controllingFieldValue>
+            <valueName>CBD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housewares, Home Furnishings, &amp; Garden</controllingFieldValue>
+            <valueName>Bedding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housewares, Home Furnishings, &amp; Garden</controllingFieldValue>
+            <valueName>Furniture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Beauty</controllingFieldValue>
+            <valueName>Skincare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Beauty</controllingFieldValue>
+            <valueName>Haircare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Beauty</controllingFieldValue>
+            <valueName>Fragrance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Beauty</controllingFieldValue>
+            <valueName>Makeup</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events and Entertainment</controllingFieldValue>
+            <valueName>Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events and Entertainment</controllingFieldValue>
+            <valueName>Industry to Industry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food &amp; Beverage</controllingFieldValue>
+            <valueName>Restaurant Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food &amp; Beverage</controllingFieldValue>
+            <valueName>Restaurant + Ecommerce</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CleanWebsite_Stamp__c</fullName>
+    <description>Stamped version of the Clean Website field so that we can utilize it in Matching and Duplicate Rules. TP88781</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Stamped version of the Clean Website field so that we can utilize it in Matching and Duplicate Rules.</inlineHelpText>
+    <label>CleanWebsite Stamp</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

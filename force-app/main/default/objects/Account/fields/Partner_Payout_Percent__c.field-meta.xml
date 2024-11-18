@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Payout_Percent__c</fullName>
+    <description>Calculated based on the Referral Partner Tier. Used in order to calculate entitled payout percentages.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Calculated based on the Referral Partner Tier. Used in order to calculate entitled payout percentages.</inlineHelpText>
+    <label>Partner Payout Percent</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

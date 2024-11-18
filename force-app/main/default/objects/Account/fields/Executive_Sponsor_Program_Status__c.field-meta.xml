@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Executive_Sponsor_Program_Status__c</fullName>
+    <description>SFDC-3211</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This status indicates if a customer is part of the Executive Sponsor Program. If &quot;active&quot;, customer is actively participating in the program; if &quot;archived&quot;, customer is no longer participating in the program; if null, customer has never participated in the program</inlineHelpText>
+    <label>Executive Sponsor Program Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Archived</fullName>
+                <default>false</default>
+                <label>Archived</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Upcoming_Executive_Sponsor_Call__c</fullName>
+    <description>SFDC 3211</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The scheduled date of the upcoming call between the Klaviyo Executive and the Executive Sponsor POC.  This should be set manually.</inlineHelpText>
+    <label>Upcoming Executive Sponsor Call</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

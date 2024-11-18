@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assignment_Picklist__c</fullName>
+    <externalId>false</externalId>
+    <label>Assignment Picklist</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assign aBDR</fullName>
+                <default>false</default>
+                <label>Assign aBDR</label>
+            </value>
+            <value>
+                <fullName>90 Day BDR Assignment</fullName>
+                <default>false</default>
+                <label>90 Day BDR Assignment</label>
+            </value>
+            <value>
+                <fullName>Assign SA</fullName>
+                <default>false</default>
+                <label>Assign SA</label>
+            </value>
+            <value>
+                <fullName>Assign CSM</fullName>
+                <default>false</default>
+                <label>Assign CSM</label>
+            </value>
+            <value>
+                <fullName>GMV Alignment</fullName>
+                <default>false</default>
+                <label>GMV Alignment</label>
+            </value>
+            <value>
+                <fullName>Customer Growth Routing</fullName>
+                <default>false</default>
+                <label>Customer Growth Routing</label>
+            </value>
+            <value>
+                <fullName>L SMB Assignment</fullName>
+                <default>false</default>
+                <label>L SMB Assignment</label>
+            </value>
+            <value>
+                <fullName>Entrepreneur CG Assignment</fullName>
+                <default>false</default>
+                <label>Entrepreneur CG Assignment</label>
+            </value>
+            <value>
+                <fullName>Mid Market CG Assignment</fullName>
+                <default>false</default>
+                <label>Mid Market CG Assignment</label>
+            </value>
+            <value>
+                <fullName>SMB CG Assignment</fullName>
+                <default>false</default>
+                <label>SMB CG Assignment</label>
+            </value>
+            <value>
+                <fullName>No Customer Segment CG Assignment</fullName>
+                <default>false</default>
+                <label>No Customer Segment CG Assignment</label>
+            </value>
+            <value>
+                <fullName>Assign cCSM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Assign cCSM</label>
+            </value>
+            <value>
+                <fullName>Strategic Partner Alignment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Strategic Partner Alignment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
