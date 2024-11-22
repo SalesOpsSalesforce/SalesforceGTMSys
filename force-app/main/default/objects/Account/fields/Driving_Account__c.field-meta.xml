@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Driving_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>SFDC-7353 - Child Account Sales Territory UI</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the parent account which drives this child account.</inlineHelpText>
+    <label>Driving Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Accounts (Driving Account)</relationshipLabel>
+    <relationshipName>AccountsDriver</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>
