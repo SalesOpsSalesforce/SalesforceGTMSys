@@ -1659,8 +1659,6 @@ ISBLANK({!sobjLeadInformation.KPU_GMV_Segment__c}),
         <queriedFields>Id</queriedFields>
         <queriedFields>RP_Referral_Partner_AE_of_Record__c</queriedFields>
         <queriedFields>AE_of_Record_Assignment__c</queriedFields>
-        <queriedFields>Shopify_AE_of_Record__c</queriedFields>
-        <queriedFields>Non_Shopify_AE_of_Record__c</queriedFields>
     </recordLookups>
     <recordLookups>
         <name>Get_Lead</name>

@@ -3,23 +3,18 @@
     <actionCalls>
         <name>Send_Email_to_AE</name>
         <label>Send Email to AE</label>
-        <locationX>393</locationX>
-        <locationY>894</locationY>
+        <locationX>182</locationX>
+        <locationY>2894</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <connector>
             <targetReference>Accept_Reject</targetReference>
         </connector>
-        <inputParameters>
-            <name>emailBody</name>
-            <value>
-                <elementReference>Body</elementReference>
-            </value>
-        </inputParameters>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>emailAddresses</name>
             <value>
-                <stringValue>{!User1.Email}, catherine.curran@klaviyo.com</stringValue>
+                <elementReference>User1.Email</elementReference>
             </value>
         </inputParameters>
         <inputParameters>
@@ -28,31 +23,21 @@
                 <elementReference>Subject</elementReference>
             </value>
         </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Body</elementReference>
+            </value>
+        </inputParameters>
         <nameSegment>emailSimple</nameSegment>
         <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>49.0</apiVersion>
     <assignments>
-        <name>Assign_AE_to_Agency</name>
-        <label>Assign AE to Agency</label>
-        <locationX>1038</locationX>
-        <locationY>748</locationY>
-        <assignmentItems>
-            <assignToReference>RP.RP_Referral_Partner_AE_of_Record__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>MyLead.OwnerId</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Shopify_or_Non_Shopify</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>Manual_Route</name>
         <label>Manual Route</label>
-        <locationX>764</locationX>
-        <locationY>172</locationY>
+        <locationX>50</locationX>
+        <locationY>890</locationY>
         <assignmentItems>
             <assignToReference>sobjLeadInformation.Manually_Route__c</assignToReference>
             <operator>Assign</operator>
@@ -88,15 +73,8 @@
     <assignments>
         <name>NonShopify1_0</name>
         <label>Non-Shopify</label>
-        <locationX>825</locationX>
-        <locationY>514</locationY>
-        <assignmentItems>
-            <assignToReference>RP.Non_Shopify_AE_of_Record__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>MyLead.OwnerId</elementReference>
-            </value>
-        </assignmentItems>
+        <locationX>314</locationX>
+        <locationY>2270</locationY>
         <assignmentItems>
             <assignToReference>RP.AE_of_Record_Assignment__c</assignToReference>
             <operator>Assign</operator>
@@ -111,8 +89,8 @@
     <assignments>
         <name>Reassign</name>
         <label>Reassign</label>
-        <locationX>465</locationX>
-        <locationY>50</locationY>
+        <locationX>182</locationX>
+        <locationY>458</locationY>
         <assignmentItems>
             <assignToReference>sobjLeadInformation.FLOW_Flip_Owner__c</assignToReference>
             <operator>Assign</operator>
@@ -267,15 +245,8 @@
     <assignments>
         <name>Shopify1</name>
         <label>Shopify</label>
-        <locationX>709</locationX>
-        <locationY>598</locationY>
-        <assignmentItems>
-            <assignToReference>RP.Shopify_AE_of_Record__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>MyLead.OwnerId</elementReference>
-            </value>
-        </assignmentItems>
+        <locationX>50</locationX>
+        <locationY>2270</locationY>
         <assignmentItems>
             <assignToReference>RP.AE_of_Record_Assignment__c</assignToReference>
             <operator>Assign</operator>
@@ -661,42 +632,10 @@
         </value>
     </choices>
     <decisions>
-        <name>Is_there_already_an_AE_of_record</name>
-        <label>Is there already an AE of record?</label>
-        <locationX>122</locationX>
-        <locationY>515</locationY>
-        <defaultConnector>
-            <targetReference>Flip_to_Sales</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
-        <rules>
-            <name>AE_already_exists</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>AEOFRECORD</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <conditions>
-                <leftValueReference>AEOFRECORD.ProfileId</leftValueReference>
-                <operator>EqualTo</operator>
-                <rightValue>
-                    <stringValue>00e0V000002JWoTQAW</stringValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>Wait</targetReference>
-            </connector>
-            <label>AE already exists</label>
-        </rules>
-    </decisions>
-    <decisions>
         <name>Manual</name>
         <label>Manual</label>
-        <locationX>530</locationX>
-        <locationY>138</locationY>
+        <locationX>182</locationX>
+        <locationY>566</locationY>
         <defaultConnector>
             <targetReference>Create_Lead</targetReference>
         </defaultConnector>
@@ -720,8 +659,8 @@
     <decisions>
         <name>Shopify_or_Non_Shopify</name>
         <label>Shopify or Non Shopify</label>
-        <locationX>821</locationX>
-        <locationY>751</locationY>
+        <locationX>182</locationX>
+        <locationY>2162</locationY>
         <defaultConnector>
             <targetReference>NonShopify1_0</targetReference>
         </defaultConnector>
@@ -1112,6 +1051,7 @@
         <picklistField>RP_Partner_Sourced_or_Klaviyo_Sourced__c</picklistField>
         <picklistObject>Lead</picklistObject>
     </dynamicChoiceSets>
+    <environments>Default</environments>
     <formulas>
         <name>company</name>
         <dataType>String</dataType>
@@ -1143,12 +1083,18 @@
             <stringValue>LightningFlowBuilder</stringValue>
         </value>
     </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
     <processType>Flow</processType>
     <recordCreates>
         <name>Create_Lead</name>
         <label>Create Lead</label>
-        <locationX>715</locationX>
-        <locationY>49</locationY>
+        <locationX>182</locationX>
+        <locationY>1082</locationY>
         <connector>
             <targetReference>Get_Lead</targetReference>
         </connector>
@@ -1157,8 +1103,8 @@
     <recordLookups>
         <name>Get_Lead</name>
         <label>Get Lead</label>
-        <locationX>848</locationX>
-        <locationY>47</locationY>
+        <locationX>182</locationX>
+        <locationY>1190</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Update_Lead_0</targetReference>
@@ -1182,8 +1128,8 @@
     <recordLookups>
         <name>Get_Lead_0</name>
         <label>Get Lead</label>
-        <locationX>549</locationX>
-        <locationY>536</locationY>
+        <locationX>182</locationX>
+        <locationY>2570</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Update_Lead_Owner</targetReference>
@@ -1204,11 +1150,11 @@
     <recordLookups>
         <name>Get_Lead_0_0</name>
         <label>Get Lead</label>
-        <locationX>1312</locationX>
-        <locationY>748</locationY>
+        <locationX>182</locationX>
+        <locationY>2054</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Assign_AE_to_Agency</targetReference>
+            <targetReference>Shopify_or_Non_Shopify</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -1227,8 +1173,8 @@
     <recordLookups>
         <name>Get_Owner_Info</name>
         <label>Get Owner Info</label>
-        <locationX>1374</locationX>
-        <locationY>35</locationY>
+        <locationX>182</locationX>
+        <locationY>1622</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>AE_of_Record</targetReference>
@@ -1250,8 +1196,8 @@
     <recordLookups>
         <name>Look_up_Agency</name>
         <label>Look up Agency</label>
-        <locationX>154</locationX>
-        <locationY>50</locationY>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>User</targetReference>
@@ -1269,17 +1215,14 @@
         <queriedFields>Id</queriedFields>
         <queriedFields>Channel_Manager__c</queriedFields>
         <queriedFields>Name</queriedFields>
-        <queriedFields>RP_Referral_Partner_AE_of_Record__c</queriedFields>
-        <queriedFields>Shopify_AE_of_Record__c</queriedFields>
-        <queriedFields>Non_Shopify_AE_of_Record__c</queriedFields>
         <queriedFields>AE_of_Record_Assignment__c</queriedFields>
         <queriedFields>Pod_Assignment__c</queriedFields>
     </recordLookups>
     <recordLookups>
         <name>LookLead1</name>
         <label>LookLead</label>
-        <locationX>1242</locationX>
-        <locationY>44</locationY>
+        <locationX>182</locationX>
+        <locationY>1514</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_Owner_Info</targetReference>
@@ -1306,8 +1249,8 @@
     <recordLookups>
         <name>Sales_Rep1</name>
         <label>Sales Rep</label>
-        <locationX>820</locationX>
-        <locationY>387</locationY>
+        <locationX>50</locationX>
+        <locationY>782</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Manual_Route</targetReference>
@@ -1330,11 +1273,11 @@
     <recordLookups>
         <name>User</name>
         <label>User</label>
-        <locationX>258</locationX>
-        <locationY>50</locationY>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>User_0_0</targetReference>
+            <targetReference>Flip_to_Sales</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -1353,8 +1296,9 @@
     <recordLookups>
         <name>User_0</name>
         <label>User</label>
-        <locationX>393</locationX>
-        <locationY>768</locationY>
+        <locationX>182</locationX>
+        <locationY>2786</locationY>
+
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Send_Email_to_AE</targetReference>
@@ -1372,34 +1316,12 @@
         <queriedFields>Id</queriedFields>
         <queriedFields>Email</queriedFields>
     </recordLookups>
-    <recordLookups>
-        <name>User_0_0</name>
-        <label>User</label>
-        <locationX>15</locationX>
-        <locationY>309</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Is_there_already_an_AE_of_record</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>RP.RP_Referral_Partner_AE_of_Record__c</elementReference>
-            </value>
-        </filters>
-        <object>User</object>
-        <outputReference>AEOFRECORD</outputReference>
-        <queriedFields>Id</queriedFields>
-        <queriedFields>Username</queriedFields>
-        <queriedFields>ProfileId</queriedFields>
-    </recordLookups>
     <recordUpdates>
         <name>Update_Agency</name>
         <label>Update Agency</label>
-        <locationX>710</locationX>
-        <locationY>449</locationY>
+        <locationX>182</locationX>
+        <locationY>2462</locationY>
+
         <connector>
             <targetReference>Get_Lead_0</targetReference>
         </connector>
@@ -1408,8 +1330,8 @@
     <recordUpdates>
         <name>Update_Lead_0</name>
         <label>Update Lead</label>
-        <locationX>976</locationX>
-        <locationY>48</locationY>
+        <locationX>182</locationX>
+        <locationY>1298</locationY>
         <connector>
             <targetReference>Update_Lead_0_0_0</targetReference>
         </connector>
@@ -1438,8 +1360,9 @@
     <recordUpdates>
         <name>Update_Lead_0_0</name>
         <label>Update Lead</label>
-        <locationX>1310</locationX>
-        <locationY>473</locationY>
+        <locationX>182</locationX>
+        <locationY>1946</locationY>
+
         <connector>
             <targetReference>Get_Lead_0_0</targetReference>
         </connector>
@@ -1486,8 +1409,9 @@
     <recordUpdates>
         <name>Update_Lead_0_0_0</name>
         <label>Update Lead</label>
-        <locationX>1108</locationX>
-        <locationY>46</locationY>
+        <locationX>182</locationX>
+        <locationY>1406</locationY>
+
         <connector>
             <targetReference>LookLead1</targetReference>
         </connector>
@@ -1510,8 +1434,9 @@
     <recordUpdates>
         <name>Update_Lead_Owner</name>
         <label>Update Lead Owner</label>
-        <locationX>394</locationX>
-        <locationY>639</locationY>
+        <locationX>182</locationX>
+        <locationY>2678</locationY>
+
         <connector>
             <targetReference>User_0</targetReference>
         </connector>
@@ -1520,8 +1445,9 @@
     <screens>
         <name>Additional_Information</name>
         <label>Additional Information</label>
-        <locationX>1310</locationX>
-        <locationY>291</locationY>
+        <locationX>182</locationX>
+        <locationY>1838</locationY>
+
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1535,6 +1461,8 @@
             <dataType>String</dataType>
             <fieldText>Industry</fieldText>
             <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1542,6 +1470,8 @@
             <dataType>Boolean</dataType>
             <fieldText>Dropshipper</fieldText>
             <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1549,6 +1479,7 @@
             <dataType>Number</dataType>
             <fieldText># of Contacts</fieldText>
             <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>false</isRequired>
             <scale>0</scale>
         </fields>
@@ -1558,8 +1489,9 @@
     <screens>
         <name>AE_of_Record</name>
         <label>AE of Record</label>
-        <locationX>1376</locationX>
-        <locationY>155</locationY>
+        <locationX>182</locationX>
+        <locationY>1730</locationY>
+
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1577,8 +1509,9 @@
     <screens>
         <name>Flip_to_Sales</name>
         <label>Flip to Sales</label>
-        <locationX>352</locationX>
-        <locationY>39</locationY>
+        <locationX>182</locationX>
+        <locationY>350</locationY>
+
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -1590,6 +1523,8 @@
             <dataType>String</dataType>
             <fieldText>First Name</fieldText>
             <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>false</isRequired>
         </fields>
         <fields>
@@ -1597,6 +1532,8 @@
             <dataType>String</dataType>
             <fieldText>Last Name</fieldText>
             <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>false</isRequired>
         </fields>
         <fields>
@@ -1604,6 +1541,8 @@
             <dataType>String</dataType>
             <fieldText>Company Name</fieldText>
             <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>false</isRequired>
         </fields>
         <fields>
@@ -1625,6 +1564,8 @@
             <dataType>String</dataType>
             <fieldText>Flip Size by Bucket</fieldText>
             <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1633,6 +1574,8 @@
             <dataType>String</dataType>
             <fieldText>Ecommerce Platform</fieldText>
             <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1641,6 +1584,8 @@
             <dataType>String</dataType>
             <fieldText># of Employees</fieldText>
             <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1648,6 +1593,8 @@
             <dataType>Number</dataType>
             <fieldText>GMV</fieldText>
             <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>false</isRequired>
             <scale>0</scale>
         </fields>
@@ -1703,6 +1650,8 @@
                     <elementReference>varHQState_Province</elementReference>
                 </value>
             </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
             <outputParameters>
                 <assignToReference>varGeoLocation</assignToReference>
@@ -1718,6 +1667,8 @@
             <dataType>String</dataType>
             <fieldText>HQ City</fieldText>
             <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>false</isRequired>
         </fields>
         <fields>
@@ -1729,6 +1680,8 @@
             <dataType>Boolean</dataType>
             <fieldText>Manually Route</fieldText>
             <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
@@ -1737,8 +1690,9 @@
     <screens>
         <name>Pod_4_AEs</name>
         <label>Pod 4 AEs</label>
-        <locationX>611</locationX>
-        <locationY>281</locationY>
+        <locationX>50</locationX>
+        <locationY>674</locationY>
+
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -1752,39 +1706,25 @@
             <dataType>String</dataType>
             <fieldText>Sales Rep</fieldText>
             <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
             <name>Reason_for_Manual_Assignment4</name>
             <fieldText>Reason for Manual Assignment</fieldText>
             <fieldType>LargeTextArea</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
-    <screens>
-        <name>Wait</name>
-        <label>Wait</label>
-        <locationX>406</locationX>
-        <locationY>472</locationY>
-        <allowBack>true</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>false</allowPause>
-        <connector>
-            <targetReference>Flip_to_Sales</targetReference>
-        </connector>
-        <fields>
-            <name>Wait1</name>
-            <fieldText>&lt;p&gt;Wait!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;It looks like this referral partner already has an AE of Record. &lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;If you still wish to continue, click Next.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;If you got here in error, click Previous to return to the referral partner account.&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-        </fields>
-        <showFooter>true</showFooter>
-        <showHeader>true</showHeader>
-    </screens>
     <start>
-        <locationX>50</locationX>
-        <locationY>50</locationY>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+
         <connector>
             <targetReference>Look_up_Agency</targetReference>
         </connector>
@@ -1793,8 +1733,9 @@
     <subflows>
         <name>Accept_Reject</name>
         <label>Accept Reject</label>
-        <locationX>393</locationX>
-        <locationY>1083</locationY>
+        <locationX>182</locationX>
+        <locationY>3002</locationY>
+
         <flowName>Partner_Lead_Accept_Reject_Button</flowName>
         <inputAssignments>
             <name>varLeadID</name>
