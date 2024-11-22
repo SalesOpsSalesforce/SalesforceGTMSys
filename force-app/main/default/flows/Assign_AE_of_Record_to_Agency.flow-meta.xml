@@ -1298,6 +1298,7 @@
         <label>User</label>
         <locationX>182</locationX>
         <locationY>2786</locationY>
+
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Send_Email_to_AE</targetReference>
@@ -1320,6 +1321,7 @@
         <label>Update Agency</label>
         <locationX>182</locationX>
         <locationY>2462</locationY>
+
         <connector>
             <targetReference>Get_Lead_0</targetReference>
         </connector>
@@ -1360,6 +1362,7 @@
         <label>Update Lead</label>
         <locationX>182</locationX>
         <locationY>1946</locationY>
+
         <connector>
             <targetReference>Get_Lead_0_0</targetReference>
         </connector>
@@ -1408,6 +1411,7 @@
         <label>Update Lead</label>
         <locationX>182</locationX>
         <locationY>1406</locationY>
+
         <connector>
             <targetReference>LookLead1</targetReference>
         </connector>
@@ -1432,6 +1436,7 @@
         <label>Update Lead Owner</label>
         <locationX>182</locationX>
         <locationY>2678</locationY>
+
         <connector>
             <targetReference>User_0</targetReference>
         </connector>
@@ -1442,6 +1447,7 @@
         <label>Additional Information</label>
         <locationX>182</locationX>
         <locationY>1838</locationY>
+
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1456,6 +1462,7 @@
             <fieldText>Industry</fieldText>
             <fieldType>DropdownBox</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1464,6 +1471,7 @@
             <fieldText>Dropshipper</fieldText>
             <fieldType>InputField</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1483,6 +1491,7 @@
         <label>AE of Record</label>
         <locationX>182</locationX>
         <locationY>1730</locationY>
+
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -1502,6 +1511,7 @@
         <label>Flip to Sales</label>
         <locationX>182</locationX>
         <locationY>350</locationY>
+
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -1514,6 +1524,7 @@
             <fieldText>First Name</fieldText>
             <fieldType>InputField</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>false</isRequired>
         </fields>
         <fields>
@@ -1522,6 +1533,7 @@
             <fieldText>Last Name</fieldText>
             <fieldType>InputField</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>false</isRequired>
         </fields>
         <fields>
@@ -1530,6 +1542,7 @@
             <fieldText>Company Name</fieldText>
             <fieldType>InputField</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>false</isRequired>
         </fields>
         <fields>
@@ -1552,6 +1565,7 @@
             <fieldText>Flip Size by Bucket</fieldText>
             <fieldType>DropdownBox</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1561,6 +1575,7 @@
             <fieldText>Ecommerce Platform</fieldText>
             <fieldType>DropdownBox</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1570,6 +1585,7 @@
             <fieldText># of Employees</fieldText>
             <fieldType>DropdownBox</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1578,6 +1594,7 @@
             <fieldText>GMV</fieldText>
             <fieldType>InputField</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>false</isRequired>
             <scale>0</scale>
         </fields>
@@ -1634,6 +1651,7 @@
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
             <outputParameters>
                 <assignToReference>varGeoLocation</assignToReference>
@@ -1650,6 +1668,7 @@
             <fieldText>HQ City</fieldText>
             <fieldType>InputField</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>false</isRequired>
         </fields>
         <fields>
@@ -1662,6 +1681,7 @@
             <fieldText>Manually Route</fieldText>
             <fieldType>InputField</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
@@ -1672,6 +1692,7 @@
         <label>Pod 4 AEs</label>
         <locationX>50</locationX>
         <locationY>674</locationY>
+
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -1686,6 +1707,7 @@
             <fieldText>Sales Rep</fieldText>
             <fieldType>DropdownBox</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <fields>
@@ -1693,6 +1715,7 @@
             <fieldText>Reason for Manual Assignment</fieldText>
             <fieldType>LargeTextArea</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+
             <isRequired>true</isRequired>
         </fields>
         <showFooter>true</showFooter>
@@ -1701,6 +1724,7 @@
     <start>
         <locationX>56</locationX>
         <locationY>0</locationY>
+
         <connector>
             <targetReference>Look_up_Agency</targetReference>
         </connector>
@@ -1711,6 +1735,7 @@
         <label>Accept Reject</label>
         <locationX>182</locationX>
         <locationY>3002</locationY>
+
         <flowName>Partner_Lead_Accept_Reject_Button</flowName>
         <inputAssignments>
             <name>varLeadID</name>
