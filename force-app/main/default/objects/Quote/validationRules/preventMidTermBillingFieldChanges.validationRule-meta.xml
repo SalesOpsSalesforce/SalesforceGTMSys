@@ -5,11 +5,10 @@
     <description>SFDC-7169 Prevents certain contracted fields from being adjusted in the middle of an existing term</description>
     <errorConditionFormula>AND(
 
-/* prevents rule from triggering for admins
+/* prevents rule from triggering for admins */
 NOT(CONTAINS($Profile.Name,&quot;System&quot;)),
 NOT(CONTAINS($Profile.Name,&quot;Admin&quot;)),
 $Profile.Name &lt;&gt;&quot;Operations&quot;,
-*/
 
 ISPICKVAL(Amendment_Behavior__c, &quot;Co-Term with Existing&quot;),
 

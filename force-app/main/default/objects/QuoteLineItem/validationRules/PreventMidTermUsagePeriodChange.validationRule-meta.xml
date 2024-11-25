@@ -4,11 +4,10 @@
     <active>true</active>
     <description>SFDC-7169 Prevents adjustment of Usage Period on Co-Terms</description>
     <errorConditionFormula>AND(
-/* prevents rule from triggering for admins 
+/* prevents rule from triggering for admins */
 NOT(CONTAINS($Profile.Name,&quot;System&quot;)),
 NOT(CONTAINS($Profile.Name,&quot;Admin&quot;)),
 $Profile.Name &lt;&gt;&quot;Operations&quot;,
-*/
 
 ISNEW(),
 TEXT(Quote.Amendment_Behavior__c) = &quot;Co-Term with Existing&quot;,
