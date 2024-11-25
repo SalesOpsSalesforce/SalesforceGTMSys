@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>preventMidTermBillingFieldChanges</fullName>
+    <active>true</active>
+    <description>SFDC-7169 Prevents certain contracted fields from being adjusted in the middle of an existing term</description>
+    <errorConditionFormula>AND(
+
+/* prevents rule from triggering for admins
+NOT(CONTAINS($Profile.Name,&quot;System&quot;)),
+NOT(CONTAINS($Profile.Name,&quot;Admin&quot;)),
+$Profile.Name &lt;&gt;&quot;Operations&quot;,
+*/
+
+ISPICKVAL(Amendment_Behavior__c, &quot;Co-Term with Existing&quot;),
+
+OR(
+ISCHANGED(Billing_Cycle__c),
+ISCHANGED(Payment_Term__c)
+),
+
+
+/* Will trigger if any of the following fields dont match the value on the Contract */
+OR(
+TEXT(Billing_Cycle__c) != TEXT(Opportunity.Contract__r.Billing_Cycle__c),
+TEXT(Payment_Term__c) != TEXT(Opportunity.Contract__r.Payment_Term__c)
+)
+
+
+
+)</errorConditionFormula>
+    <errorMessage>Billing Cycle and Payment Term cannot be changed on</errorMessage>
+</ValidationRule>

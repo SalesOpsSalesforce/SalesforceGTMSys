@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventMidTermUsagePeriodChange</fullName>
+    <active>true</active>
+    <description>SFDC-7169 Prevents adjustment of Usage Period on Co-Terms</description>
+    <errorConditionFormula>AND(
+/* prevents rule from triggering for admins 
+NOT(CONTAINS($Profile.Name,&quot;System&quot;)),
+NOT(CONTAINS($Profile.Name,&quot;Admin&quot;)),
+$Profile.Name &lt;&gt;&quot;Operations&quot;,
+*/
+
+ISNEW(),
+TEXT(Quote.Amendment_Behavior__c) = &quot;Co-Term with Existing&quot;,
+TEXT(Usage_Period__c) != TEXT(Opportunity_Product__r.Amended_Subscription__r.Usage_Period__c),
+TEXT(Product2.Pricing_Type__c) = &quot;Block Pricing&quot;,
+
+/* Wont trigger if the Usage Period is blank on the Subscription */
+NOT(ISBLANK(TEXT(Opportunity_Product__r.Amended_Subscription__r.Usage_Period__c)))
+
+)</errorConditionFormula>
+    <errorMessage>Usage Periods cannot be changed in the middle of a term</errorMessage>
+</ValidationRule>
