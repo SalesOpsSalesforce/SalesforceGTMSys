@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>preventProgressingEmptyOpp</fullName>
+    <active>true</active>
+    <description>SFDC-7485 - AE Stage 0 -&gt; 1 ownership rules</description>
+    <errorConditionFormula>AND(
+
+/* prevents rule from triggering for admins
+NOT(CONTAINS($Profile.Name,&amp;quot;System&amp;quot;)),
+NOT(CONTAINS($Profile.Name,&amp;quot;Admin&amp;quot;)),
+$Profile.Name &amp;lt;&amp;gt;&amp;quot;Operations&amp;quot;,
+*/
+
+
+/* Rule is enforced only when a relevant field is changed */
+OR(
+ISCHANGED(of_Products__c),
+ISCHANGED(Identify_Pain_I__c)
+),
+
+/* Opportunity lacks a product or identified pain */
+OR(
+NOT(of_Products__c &gt; 0),
+ISBLANK(Identify_Pain_I__c) 
+)
+
+)</errorConditionFormula>
+    <errorMessage>The opportunity needs a product and identified pain.</errorMessage>
+</ValidationRule>
