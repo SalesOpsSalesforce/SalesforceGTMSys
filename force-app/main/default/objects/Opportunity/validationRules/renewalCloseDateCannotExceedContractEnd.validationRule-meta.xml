@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>renewalCloseDateCannotExceedContractEnd</fullName>
+    <active>true</active>
+    <description>SFDC-7592 - Prevent Renewal Opp Close Date from extending past Contract End Date</description>
+    <errorConditionFormula>AND(
+
+/* prevents rule from triggering for admins 
+NOT(CONTAINS($Profile.Name,&amp;quot;System&amp;quot;)),
+NOT(CONTAINS($Profile.Name,&amp;quot;Admin&amp;quot;)),
+$Profile.Name &amp;lt;&amp;gt;&amp;quot;Operations&amp;quot;,
+*/
+
+/* Error is only presented if record is new or relevant field is changed */
+
+OR(
+ISNEW(),
+ISCHANGED(CloseDate),
+ISCHANGED(Type)
+),
+
+/* Type is renewal and close date is too far past contract end date */
+
+ISPICKVAL(Type, &quot;Renewal&quot;),
+CloseDate &gt; Contract__r.EndDate + 1
+
+)</errorConditionFormula>
+    <errorDisplayField>CloseDate</errorDisplayField>
+    <errorMessage>Renewal opportunity close date cannot be more than a day past the contract&apos;s end date</errorMessage>
+</ValidationRule>
