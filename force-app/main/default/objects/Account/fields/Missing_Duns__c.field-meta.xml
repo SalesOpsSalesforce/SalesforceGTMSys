@@ -3,7 +3,7 @@
     <fullName>Missing_Duns__c</fullName>
     <description>This account has no DUNS # but its DUNS global ultimate parent account does have one.</description>
     <externalId>false</externalId>
-    <formula>ISBLANK(DUNS__c) &amp;&amp; NOT(ISBLANK( TracHier__DUNS_Global_Ultimate_Parent__r.DUNS__c))</formula>
+    <formula>ISBLANK(DUNS__c) &amp;&amp; NOT(ISBLANK(Ultimate_Parent_Account__r.DUNS__c))</formula>
     <inlineHelpText>This account has no DUNS # but its DUNS global ultimate parent account does have one.</inlineHelpText>
     <label>Missing Duns</label>
     <trackHistory>false</trackHistory>
