@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>SFDC-1206 sends the 45 day email.</description>
+        <name>Send_45_Day_Email</name>
+        <label>Send 45 Day Email</label>
+        <locationX>72</locationX>
+        <locationY>768</locationY>
+        <actionName>Opportunity.FortyFive_Days_since_Calculated_Last_Activity_Date</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Update_Opportunity</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.FortyFive_Days_since_Calculated_Last_Activity_Date</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <description>SFDC-1206 sends an email reminder on day 80.</description>
+        <name>Send_80_Day_Email</name>
+        <label>Send 80 Day Email</label>
+        <locationX>336</locationX>
+        <locationY>768</locationY>
+        <actionName>Opportunity.Eighty_Days_since_Calculated_Last_Activity_Date</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Update_Opportunity</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>Opportunity.Eighty_Days_since_Calculated_Last_Activity_Date</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Assign_Opp_Stage_to_Closed_Lost</name>
+        <label>Assign Opp Stage to Closed Lost</label>
+        <locationX>600</locationX>
+        <locationY>768</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.StageName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Closed Lost</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Opportunity</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Opp_Stage_to_Closed_Lost2</name>
+        <label>Assign Opp Stage to Closed Lost</label>
+        <locationX>50</locationX>
+        <locationY>360</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.StageName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Closed Lost</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Opp_Owner_is_Sales</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <name>constantStage0StagnantDayLimit</name>
+        <dataType>Number</dataType>
+        <value>
+            <numberValue>30.0</numberValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>SFDC-7484 - Opportunity rules for Stage 0/ Close Lost Stage 0</description>
+        <name>Has_Opp_Been_in_Stage_0_for_30_Days</name>
+        <label>Has Opp Been in Stage 0 for 30 Days?</label>
+        <locationX>182</locationX>
+        <locationY>252</locationY>
+        <defaultConnector>
+            <targetReference>Opp_Owner_is_Sales</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>numberDaysSinceCreation</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>constantStage0StagnantDayLimit</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>S0: Pre-Pipeline</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Opp_Stage_to_Closed_Lost2</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFDC-1206 checks the days since last activity and fires emails if on day 45 or 80, otherwise on day 91 closes the opp out.</description>
+        <name>How_many_days_since_last_activity</name>
+        <label>How many days since last activity?</label>
+        <locationX>468</locationX>
+        <locationY>660</locationY>
+        <defaultConnector>
+            <targetReference>Update_Opportunity</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>X45_Days</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Days_Since_Account_Last_Activity__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>45.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_45_Day_Email</targetReference>
+            </connector>
+            <label>45 Days</label>
+        </rules>
+        <rules>
+            <name>X80_Days</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Days_Since_Account_Last_Activity__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>80.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_80_Day_Email</targetReference>
+            </connector>
+            <label>80 Days</label>
+        </rules>
+        <rules>
+            <name>X90_Days</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Days_Since_Account_Last_Activity__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>91.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Opp_Stage_to_Closed_Lost</targetReference>
+            </connector>
+            <label>91 Days</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>SFDC 2768 - Determine if Opp is owned by Role = GA.  If yes, exit flow.  If no, continue on to auto-close functionality.</description>
+        <name>Opp_Owner_is_Sales</name>
+        <label>Opp Owner is Sales?</label>
+        <locationX>182</locationX>
+        <locationY>552</locationY>
+        <defaultConnector>
+            <targetReference>How_many_days_since_last_activity</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Owned By Sales</defaultConnectorLabel>
+        <rules>
+            <name>Not_Owned_by_Sales</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Owner_Role__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>GA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner_Role__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>CG</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Owner_Role__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Strategic</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Assigned_Account__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Opportunity</targetReference>
+            </connector>
+            <label>Not Owned by Sales</label>
+        </rules>
+    </decisions>
+    <description>SFDC-4421 - By pass for Opps with Accounts where Assigned Account != null and Opps with Owners where Users Role name includes “Strategic” or “CG”.
+SFDC 2768 - 6/19/23 - Exclude CS owned opps from being auto-closed
+SFDC 1206. Send emails on day 45 and 80 then on day 91 auto closed losts the opportunity.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>formulaOwnerRoleNotCGOrStrategic</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+NOT(CONTAINS({!$Record.Owner_Role__c}, &quot;CG&quot;)),
+NOT(CONTAINS({!$Record.Owner_Role__c}, &quot;Strategic&quot;)))</expression>
+    </formulas>
+    <formulas>
+        <name>NinetyOneDaysAgo</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()-91</expression>
+    </formulas>
+    <formulas>
+        <name>numberDaysSinceCreation</name>
+        <dataType>Number</dataType>
+        <expression>TODAY() - DATEVALUE({!$Record.CreatedDate})</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Scheduled: Opportunity Auto Closed Lost {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Scheduled: Opportunity Auto Closed Lost</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Opportunity</name>
+        <label>Update Opportunity</label>
+        <locationX>182</locationX>
+        <locationY>1044</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Has_Opp_Been_in_Stage_0_for_30_Days</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>StageName</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Closed Won</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Closed Lost</stringValue>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2022-12-09</startDate>
+            <startTime>18:45:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
