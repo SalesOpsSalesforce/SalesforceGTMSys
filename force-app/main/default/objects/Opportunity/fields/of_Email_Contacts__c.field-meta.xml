@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_Email_Contacts__c</fullName>
+    <description>The number of contacts (= email addresses) in the prospect or customer&apos;s database.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The number of contacts (= email addresses) in the prospect or customer&apos;s database.</inlineHelpText>
+    <label># of Email Contacts</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

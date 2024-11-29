@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_Did_They_Hear_About_Us_Detail__c</fullName>
+    <description>Records in greater detail how they heard about us.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Records in greater detail how they heard about us.</inlineHelpText>
+    <label>How Did They Hear About Us Detail</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2X Ecommerce</fullName>
+                <default>false</default>
+                <label>2X Ecommerce</label>
+            </value>
+            <value>
+                <fullName>5-Minute Pitch</fullName>
+                <default>false</default>
+                <label>5-Minute Pitch</label>
+            </value>
+            <value>
+                <fullName>Agency</fullName>
+                <default>false</default>
+                <label>Agency</label>
+            </value>
+            <value>
+                <fullName>BigCommerce</fullName>
+                <default>false</default>
+                <label>BigCommerce</label>
+            </value>
+            <value>
+                <fullName>Brex</fullName>
+                <default>false</default>
+                <label>Brex</label>
+            </value>
+            <value>
+                <fullName>Brex Partnership</fullName>
+                <default>false</default>
+                <label>Brex Partnership</label>
+            </value>
+            <value>
+                <fullName>Capterra</fullName>
+                <default>false</default>
+                <label>Capterra</label>
+            </value>
+            <value>
+                <fullName>Clearbanc</fullName>
+                <default>false</default>
+                <label>Clearbanc</label>
+            </value>
+            <value>
+                <fullName>Colleague</fullName>
+                <default>false</default>
+                <label>Colleague</label>
+            </value>
+            <value>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <label>Consultant</label>
+            </value>
+            <value>
+                <fullName>CRM Platforms</fullName>
+                <default>false</default>
+                <label>CRM Platforms</label>
+            </value>
+            <value>
+                <fullName>DuctTape Marketing</fullName>
+                <default>false</default>
+                <label>DuctTape Marketing</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Fuel</fullName>
+                <default>false</default>
+                <label>Ecommerce Fuel</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Fuel Live</fullName>
+                <default>false</default>
+                <label>Ecommerce Fuel Live</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Influence</fullName>
+                <default>false</default>
+                <label>Ecommerce Influence</label>
+            </value>
+            <value>
+                <fullName>Ecommerce Uncensored</fullName>
+                <default>false</default>
+                <label>Ecommerce Uncensored</label>
+            </value>
+            <value>
+                <fullName>Email List Tools</fullName>
+                <default>false</default>
+                <label>Email List Tools</label>
+            </value>
+            <value>
+                <fullName>Entrepreneur on Fire</fullName>
+                <default>false</default>
+                <label>Entrepreneur on Fire</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>FedEx</fullName>
+                <default>false</default>
+                <label>FedEx</label>
+            </value>
+            <value>
+                <fullName>Future Commerce</fullName>
+                <default>false</default>
+                <label>Future Commerce</label>
+            </value>
+            <value>
+                <fullName>G2 Crowd</fullName>
+                <default>false</default>
+                <label>G2 Crowd</label>
+            </value>
+            <value>
+                <fullName>GetApp</fullName>
+                <default>false</default>
+                <label>GetApp</label>
+            </value>
+            <value>
+                <fullName>Glossy</fullName>
+                <default>false</default>
+                <label>Glossy</label>
+            </value>
+            <value>
+                <fullName>Helpdesk Software</fullName>
+                <default>false</default>
+                <label>Helpdesk Software</label>
+            </value>
+            <value>
+                <fullName>IRCE</fullName>
+                <default>false</default>
+                <label>IRCE</label>
+            </value>
+            <value>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+                <label>LinkedIn</label>
+            </value>
+            <value>
+                <fullName>Magento</fullName>
+                <default>false</default>
+                <label>Magento</label>
+            </value>
+            <value>
+                <fullName>Marketing Tools</fullName>
+                <default>false</default>
+                <label>Marketing Tools</label>
+            </value>
+            <value>
+                <fullName>Masterclassing</fullName>
+                <default>false</default>
+                <label>Masterclassing</label>
+            </value>
+            <value>
+                <fullName>Morning Brew Newsletter</fullName>
+                <default>false</default>
+                <label>Morning Brew Newsletter</label>
+            </value>
+            <value>
+                <fullName>MyWifeQuitHerJob</fullName>
+                <default>false</default>
+                <label>MyWifeQuitHerJob</label>
+            </value>
+            <value>
+                <fullName>NPR How I Built This</fullName>
+                <default>false</default>
+                <label>NPR How I Built This</label>
+            </value>
+            <value>
+                <fullName>NPR Planet Money</fullName>
+                <default>false</default>
+                <label>NPR Planet Money</label>
+            </value>
+            <value>
+                <fullName>NPR TED Radio Hour</fullName>
+                <default>false</default>
+                <label>NPR TED Radio Hour</label>
+            </value>
+            <value>
+                <fullName>Payment Software</fullName>
+                <default>false</default>
+                <label>Payment Software</label>
+            </value>
+            <value>
+                <fullName>Retail Brew Newsletter</fullName>
+                <default>false</default>
+                <label>Retail Brew Newsletter</label>
+            </value>
+            <value>
+                <fullName>Retail Dive</fullName>
+                <default>false</default>
+                <label>Retail Dive</label>
+            </value>
+            <value>
+                <fullName>Rewards Program Software</fullName>
+                <default>false</default>
+                <label>Rewards Program Software</label>
+            </value>
+            <value>
+                <fullName>Secret Leaders</fullName>
+                <default>false</default>
+                <label>Secret Leaders</label>
+            </value>
+            <value>
+                <fullName>Sellers Summit</fullName>
+                <default>false</default>
+                <label>Sellers Summit</label>
+            </value>
+            <value>
+                <fullName>Shipping and Tracking Software</fullName>
+                <default>false</default>
+                <label>Shipping and Tracking Software</label>
+            </value>
+            <value>
+                <fullName>Shopify</fullName>
+                <default>false</default>
+                <label>Shopify</label>
+            </value>
+            <value>
+                <fullName>Shopify Plus</fullName>
+                <default>false</default>
+                <label>Shopify Plus</label>
+            </value>
+            <value>
+                <fullName>ShopTalk</fullName>
+                <default>false</default>
+                <label>ShopTalk</label>
+            </value>
+            <value>
+                <fullName>Software Advice</fullName>
+                <default>false</default>
+                <label>Software Advice</label>
+            </value>
+            <value>
+                <fullName>Starter Story</fullName>
+                <default>false</default>
+                <label>Starter Story</label>
+            </value>
+            <value>
+                <fullName>Technology Company</fullName>
+                <default>false</default>
+                <label>Technology Company</label>
+            </value>
+            <value>
+                <fullName>The Hustle</fullName>
+                <default>false</default>
+                <label>The Hustle</label>
+            </value>
+            <value>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+                <label>Twitter</label>
+            </value>
+            <value>
+                <fullName>VC/PE</fullName>
+                <default>false</default>
+                <label>VC/PE</label>
+            </value>
+            <value>
+                <fullName>Wavebreak</fullName>
+                <default>false</default>
+                <label>Wavebreak</label>
+            </value>
+            <value>
+                <fullName>Woocommerce</fullName>
+                <default>false</default>
+                <label>Woocommerce</label>
+            </value>
+            <value>
+                <fullName>YouTube</fullName>
+                <default>false</default>
+                <label>YouTube</label>
+            </value>
+            <value>
+                <fullName>Prestashop</fullName>
+                <default>false</default>
+                <label>Prestashop</label>
+            </value>
+            <value>
+                <fullName>Klaviyo Product Announcement Event</fullName>
+                <default>false</default>
+                <label>Klaviyo Product Announcement Event</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_SMS_Credits__c</fullName>
+    <description>Records the estimated number of SMS credits needed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Records the estimated number of SMS credits needed.</inlineHelpText>
+    <label># of SMS Credits</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

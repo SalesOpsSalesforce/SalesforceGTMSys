@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LEAD_Flip_List_Size_by_Bucket__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Maps from Lead. The size of a lead when it was flipped to sales</inlineHelpText>
+    <label>List Size by Bucket</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Flip_List_Size_by_Bucket</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Initial_Scheduled_Demo_Date__c</fullName>
+    <description>The first scheduled date of the demo/call with an an AE.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The first scheduled date of the demo/call with an an AE.</inlineHelpText>
+    <label>Initial Scheduled Demo Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>
