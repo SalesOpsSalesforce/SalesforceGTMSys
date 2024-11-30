@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SFDC-7483 - Stage 0 Opportunities will Replace &quot;Flips&quot;</description>
+    <flowDefinition>Create_Opportunity</flowDefinition>
+    <label>Create Opportunity</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>
