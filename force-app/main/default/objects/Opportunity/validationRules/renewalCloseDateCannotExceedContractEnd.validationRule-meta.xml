@@ -5,11 +5,10 @@
     <description>SFDC-7592 - Prevent Renewal Opp Close Date from extending past Contract End Date</description>
     <errorConditionFormula>AND(
 
-/* prevents rule from triggering for admins 
+/* prevents rule from triggering for admins */
 NOT(CONTAINS($Profile.Name,&amp;quot;System&amp;quot;)),
 NOT(CONTAINS($Profile.Name,&amp;quot;Admin&amp;quot;)),
 $Profile.Name &amp;lt;&amp;gt;&amp;quot;Operations&amp;quot;,
-*/
 
 /* Error is only presented if record is new or relevant field is changed */
 
